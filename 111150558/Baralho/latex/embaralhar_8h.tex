@@ -1,0 +1,107 @@
+\hypertarget{embaralhar_8h}{
+\section{Referência do Arquivo embaralhar.h}
+\label{embaralhar_8h}\index{embaralhar.h@{embaralhar.h}}
+}
+\subsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnodo}{nodo}
+\end{DoxyCompactItemize}
+\subsection*{Definições de Tipos}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structnodo}{nodo} \hyperlink{embaralhar_8h_a320a4f7845c53306e254a8ac96f4fad7}{lista}
+\item 
+typedef \hyperlink{structnodo}{lista} $\ast$ \hyperlink{embaralhar_8h_a55f1cef7a68d15235c49fa7ca22afed3}{Baralho}
+\begin{DoxyCompactList}\small\item\em Lista que representa um baralho. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structnodo}{Baralho} \hyperlink{embaralhar_8h_a6d427e3d4a2a4ca9b60e1e5251e7412d}{cria} (void)
+\item 
+\hyperlink{structnodo}{Baralho} \hyperlink{embaralhar_8h_a7063c0087949c844bcf617bb0fe9ec1a}{embaralhar} (\hyperlink{structnodo}{Baralho} B)
+\item 
+int \hyperlink{embaralhar_8h_acac98e14e97aca23de0535d38b0961d1}{verifica\_\-Carta} (\hyperlink{structnodo}{Baralho} B, int carta, int naipe)
+\item 
+\hyperlink{structnodo}{Baralho} \hyperlink{embaralhar_8h_af278e53e84d11de6cb995569d3f74681}{insere\_\-Carta} (\hyperlink{structnodo}{Baralho} B, int carta, int naipe)
+\item 
+void \hyperlink{embaralhar_8h_a80deac0aee3c981fa8c7556505a96823}{imprime} (\hyperlink{structnodo}{Baralho} B)
+\end{DoxyCompactItemize}
+
+
+\subsection{Definições dos tipos}
+\hypertarget{embaralhar_8h_a55f1cef7a68d15235c49fa7ca22afed3}{
+\index{embaralhar.h@{embaralhar.h}!Baralho@{Baralho}}
+\index{Baralho@{Baralho}!embaralhar.h@{embaralhar.h}}
+\subsubsection[{Baralho}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf lista}$\ast$ {\bf Baralho}}}
+\label{embaralhar_8h_a55f1cef7a68d15235c49fa7ca22afed3}
+
+
+Lista que representa um baralho. 
+
+\hypertarget{embaralhar_8h_a320a4f7845c53306e254a8ac96f4fad7}{
+\index{embaralhar.h@{embaralhar.h}!lista@{lista}}
+\index{lista@{lista}!embaralhar.h@{embaralhar.h}}
+\subsubsection[{lista}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf nodo} {\bf lista}}}
+\label{embaralhar_8h_a320a4f7845c53306e254a8ac96f4fad7}
+Estrutura que representa uma carta. Armazena a carta e seu respectivo naipe. Sendo as cartas representadas de 1 a 13. Logo as cartas A, J, Q e K são representadas, pelos números 1, 11, 12 e 13 respectivamente. As demais cartas seguem o padrão que conhecemos. Os nipes são representados por um caractere. Paus, copas, espadas e ouro são representados por P, C, E e O respectivamente. 
+
+\subsection{Funções}
+\hypertarget{embaralhar_8h_a6d427e3d4a2a4ca9b60e1e5251e7412d}{
+\index{embaralhar.h@{embaralhar.h}!cria@{cria}}
+\index{cria@{cria}!embaralhar.h@{embaralhar.h}}
+\subsubsection[{cria}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Baralho} cria (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{embaralhar_8h_a6d427e3d4a2a4ca9b60e1e5251e7412d}
+Cria um baralho como NULL. \hypertarget{embaralhar_8h_a7063c0087949c844bcf617bb0fe9ec1a}{
+\index{embaralhar.h@{embaralhar.h}!embaralhar@{embaralhar}}
+\index{embaralhar@{embaralhar}!embaralhar.h@{embaralhar.h}}
+\subsubsection[{embaralhar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Baralho} embaralhar (
+\begin{DoxyParamCaption}
+\item[{{\bf Baralho}}]{ B}
+\end{DoxyParamCaption}
+)}}
+\label{embaralhar_8h_a7063c0087949c844bcf617bb0fe9ec1a}
+Embaralha um baralho de 52 cartas. 
+\begin{DoxyParams}{Parâmetros}
+\item[{\em B}]-\/ Baralho a ser embaralhado. \end{DoxyParams}
+\hypertarget{embaralhar_8h_a80deac0aee3c981fa8c7556505a96823}{
+\index{embaralhar.h@{embaralhar.h}!imprime@{imprime}}
+\index{imprime@{imprime}!embaralhar.h@{embaralhar.h}}
+\subsubsection[{imprime}]{\setlength{\rightskip}{0pt plus 5cm}void imprime (
+\begin{DoxyParamCaption}
+\item[{{\bf Baralho}}]{ B}
+\end{DoxyParamCaption}
+)}}
+\label{embaralhar_8h_a80deac0aee3c981fa8c7556505a96823}
+\hypertarget{embaralhar_8h_af278e53e84d11de6cb995569d3f74681}{
+\index{embaralhar.h@{embaralhar.h}!insere\_\-Carta@{insere\_\-Carta}}
+\index{insere\_\-Carta@{insere\_\-Carta}!embaralhar.h@{embaralhar.h}}
+\subsubsection[{insere\_\-Carta}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Baralho} insere\_\-Carta (
+\begin{DoxyParamCaption}
+\item[{{\bf Baralho}}]{ B, }
+\item[{int}]{ carta, }
+\item[{int}]{ naipe}
+\end{DoxyParamCaption}
+)}}
+\label{embaralhar_8h_af278e53e84d11de6cb995569d3f74681}
+Insere uma determinada carta em um baralho. 
+\begin{DoxyParams}{Parâmetros}
+\item[{\em B}]-\/ Baralho onde a carta vai ser inserida. \item[{\em carta}]-\/ Número da carta a ser inserida. \item[{\em naipe}]-\/ Naipe da carta. \end{DoxyParams}
+\hypertarget{embaralhar_8h_acac98e14e97aca23de0535d38b0961d1}{
+\index{embaralhar.h@{embaralhar.h}!verifica\_\-Carta@{verifica\_\-Carta}}
+\index{verifica\_\-Carta@{verifica\_\-Carta}!embaralhar.h@{embaralhar.h}}
+\subsubsection[{verifica\_\-Carta}]{\setlength{\rightskip}{0pt plus 5cm}int verifica\_\-Carta (
+\begin{DoxyParamCaption}
+\item[{{\bf Baralho}}]{ B, }
+\item[{int}]{ carta, }
+\item[{int}]{ naipe}
+\end{DoxyParamCaption}
+)}}
+\label{embaralhar_8h_acac98e14e97aca23de0535d38b0961d1}
+Verifica se uma determinada carta está no baralho. 
+\begin{DoxyParams}{Parâmetros}
+\item[{\em B}]-\/ Baralho onde a carta vai ser pesquisada. \item[{\em carta}]-\/ Número da carta a ser pesquisada. \item[{\em naipe}]-\/ Naipe da carta. \end{DoxyParams}
