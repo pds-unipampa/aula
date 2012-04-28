@@ -1,0 +1,22 @@
+package jogocartas;
+
+import java.util.ArrayList;
+
+public class MonteDescarte {
+    private ArrayList<Carta> monte;
+
+    public MonteDescarte(){
+        monte=new ArrayList<Carta>();
+    }
+
+    public void insere(Carta carta){
+        monte.add(carta);
+    }
+   
+    public void mostra(){
+        for(Carta cart:monte){
+            System.out.println(cart.getNumero()+" "+cart.getNaipe());
+            System.out.println("fim");
+        }
+    }
+}

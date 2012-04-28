@@ -1,0 +1,103 @@
+package jogocartas;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Baralho {
+private ArrayList<Carta> cartas;
+
+    public Baralho(){
+    }
+    
+    public void criaBaralho(int numero){
+        if(numero%4!=0 || numero ==0){
+            System.err.println("O numero de cartas deve ser múltiplo de 4 devido ao númeor de naipes");
+        }
+
+        else{
+            ArrayList<String> naipes=new ArrayList<String>();
+            cartas=new ArrayList<Carta>();
+            naipes.add("ouro");
+            naipes.add("paus");
+            naipes.add("copas");
+            naipes.add("espada");
+
+            for(int x=0; x<naipes.size(); x++) {
+                for(int i=0;i<numero/4;i++){
+                    cartas.add(new Carta(i+1, naipes.get(x)));
+                }
+           }
+        }
+/**
+        for(Carta cart:cartas)
+            System.out.println(cart.getNumero()+" "+cart.getNaipe());
+        System.out.println("fim");
+**/
+    }
+    
+    public void embaralhar(){
+        Collections.shuffle(cartas);
+/**       
+        for(Carta cart:cartas)
+            System.out.println(cart.getNumero()+" "+cart.getNaipe());
+        System.out.println("fim");
+**/        
+    }
+
+    public void cortar(int valor){
+        if(valor<0){
+            System.err.println("Número de corte deve ser maior que zero");
+        }
+
+        if(cartas.size()<valor){
+            System.err.println("Número de corte deve ser menor que o número de cartas");
+        }
+
+        else{
+            ArrayList<Carta> temp = new ArrayList<Carta>();
+        
+            for(int i=valor;i<cartas.size();i++)
+                temp.add(cartas.get(i));
+
+            for(int i=0;i<valor;i++)
+                temp.add(cartas.get(i));
+        
+            Collections.copy(cartas, temp);
+        }
+/**
+        for(Carta cart:cartas)
+            System.out.println(cart.getNumero()+" "+cart.getNaipe());
+        System.out.println("fim");
+**/    
+    }
+   
+    public void retiraInicio(){
+        if(cartas.size()<1){
+            System.err.println("Número de cartas deve ser maior que zero");
+        }
+        else
+            cartas.remove(0);
+/**
+        for(Carta cart:cartas)
+            System.out.println(cart.getNumero()+" "+cart.getNaipe());
+        System.out.println("fim");
+**/    
+    }
+       
+    public void retiraFim(){
+        if(cartas.size()<1){
+            System.err.println("Número de cartas deve ser maior que zero");
+        }
+        else
+            cartas.remove(cartas.size()-1);
+
+        for(Carta cart:cartas)
+            System.out.println(cart.getNumero()+" "+cart.getNaipe());
+        System.out.println("fim");
+    
+    }
+    
+    public Carta getCarta(int x){
+        return cartas.get(x);
+    }
+}
