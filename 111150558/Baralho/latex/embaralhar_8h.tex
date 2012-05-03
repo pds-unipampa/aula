@@ -24,8 +24,6 @@ typedef \hyperlink{structnodo}{lista} $\ast$ \hyperlink{embaralhar_8h_a55f1cef7a
 int \hyperlink{embaralhar_8h_acac98e14e97aca23de0535d38b0961d1}{verifica\_\-Carta} (\hyperlink{structnodo}{Baralho} B, int carta, int naipe)
 \item 
 \hyperlink{structnodo}{Baralho} \hyperlink{embaralhar_8h_af278e53e84d11de6cb995569d3f74681}{insere\_\-Carta} (\hyperlink{structnodo}{Baralho} B, int carta, int naipe)
-\item 
-void \hyperlink{embaralhar_8h_a80deac0aee3c981fa8c7556505a96823}{imprime} (\hyperlink{structnodo}{Baralho} B)
 \end{DoxyCompactItemize}
 
 
@@ -68,15 +66,6 @@ Cria um baralho como NULL. \hypertarget{embaralhar_8h_a7063c0087949c844bcf617bb0
 Embaralha um baralho de 52 cartas. 
 \begin{DoxyParams}{Parâmetros}
 \item[{\em B}]-\/ Baralho a ser embaralhado. \end{DoxyParams}
-\hypertarget{embaralhar_8h_a80deac0aee3c981fa8c7556505a96823}{
-\index{embaralhar.h@{embaralhar.h}!imprime@{imprime}}
-\index{imprime@{imprime}!embaralhar.h@{embaralhar.h}}
-\subsubsection[{imprime}]{\setlength{\rightskip}{0pt plus 5cm}void imprime (
-\begin{DoxyParamCaption}
-\item[{{\bf Baralho}}]{ B}
-\end{DoxyParamCaption}
-)}}
-\label{embaralhar_8h_a80deac0aee3c981fa8c7556505a96823}
 \hypertarget{embaralhar_8h_af278e53e84d11de6cb995569d3f74681}{
 \index{embaralhar.h@{embaralhar.h}!insere\_\-Carta@{insere\_\-Carta}}
 \index{insere\_\-Carta@{insere\_\-Carta}!embaralhar.h@{embaralhar.h}}
@@ -88,7 +77,7 @@ Embaralha um baralho de 52 cartas.
 \end{DoxyParamCaption}
 )}}
 \label{embaralhar_8h_af278e53e84d11de6cb995569d3f74681}
-Insere uma determinada carta em um baralho. 
+Função interna. Utilizada apenas por outras funções. Insere uma determinada carta em um baralho. 
 \begin{DoxyParams}{Parâmetros}
 \item[{\em B}]-\/ Baralho onde a carta vai ser inserida. \item[{\em carta}]-\/ Número da carta a ser inserida. \item[{\em naipe}]-\/ Naipe da carta. \end{DoxyParams}
 \hypertarget{embaralhar_8h_acac98e14e97aca23de0535d38b0961d1}{
@@ -102,6 +91,6 @@ Insere uma determinada carta em um baralho.
 \end{DoxyParamCaption}
 )}}
 \label{embaralhar_8h_acac98e14e97aca23de0535d38b0961d1}
-Verifica se uma determinada carta está no baralho. 
+Função interna. Utilizada apenas por outras funções. Retorna 0 se a carta está no baralho e 1 se não está. 
 \begin{DoxyParams}{Parâmetros}
 \item[{\em B}]-\/ Baralho onde a carta vai ser pesquisada. \item[{\em carta}]-\/ Número da carta a ser pesquisada. \item[{\em naipe}]-\/ Naipe da carta. \end{DoxyParams}

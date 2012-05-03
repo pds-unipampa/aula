@@ -1,0 +1,70 @@
+\hypertarget{descarte_8h}{
+\section{Referência do Arquivo descarte.h}
+\label{descarte_8h}\index{descarte.h@{descarte.h}}
+}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structnodo}{Baralho} \hyperlink{descarte_8h_afb7bcec544cd6814429992faa58a4d35}{atualizaDescarte} (\hyperlink{structnodo}{Baralho} D)
+\item 
+\hyperlink{structnodo}{lista} \hyperlink{descarte_8h_ae868e6817465c707db38fee6a1ac0ad8}{mostraDescarte} (\hyperlink{structnodo}{Baralho} D, int pos)
+\item 
+\hyperlink{structnodo}{Baralho} \hyperlink{descarte_8h_a7639a5e1a5d758731fe19ad2a258621f}{insereCartaDescarte} (\hyperlink{structnodo}{Baralho} D, int carta, char naipe)
+\item 
+\hyperlink{structnodo}{lista} \hyperlink{descarte_8h_a1145f049a5b9cbb1b61842eb0a3948ee}{retiraDescarte} (\hyperlink{structnodo}{Baralho} $\ast$D, int pos)
+\end{DoxyCompactItemize}
+
+
+\subsection{Funções}
+\hypertarget{descarte_8h_afb7bcec544cd6814429992faa58a4d35}{
+\index{descarte.h@{descarte.h}!atualizaDescarte@{atualizaDescarte}}
+\index{atualizaDescarte@{atualizaDescarte}!descarte.h@{descarte.h}}
+\subsubsection[{atualizaDescarte}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Baralho} atualizaDescarte (
+\begin{DoxyParamCaption}
+\item[{{\bf Baralho}}]{ D}
+\end{DoxyParamCaption}
+)}}
+\label{descarte_8h_afb7bcec544cd6814429992faa58a4d35}
+Insere uma determinada carta no monte de descarte. 
+\begin{DoxyParams}{Parâmetros}
+\item[{\em D}]-\/ Baralho de descarte onde vai ser inserida a carta. \end{DoxyParams}
+\hypertarget{descarte_8h_a7639a5e1a5d758731fe19ad2a258621f}{
+\index{descarte.h@{descarte.h}!insereCartaDescarte@{insereCartaDescarte}}
+\index{insereCartaDescarte@{insereCartaDescarte}!descarte.h@{descarte.h}}
+\subsubsection[{insereCartaDescarte}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Baralho} insereCartaDescarte (
+\begin{DoxyParamCaption}
+\item[{{\bf Baralho}}]{ D, }
+\item[{int}]{ carta, }
+\item[{char}]{ naipe}
+\end{DoxyParamCaption}
+)}}
+\label{descarte_8h_a7639a5e1a5d758731fe19ad2a258621f}
+Função interna. É utilizada apenas em outras funções. 
+\begin{DoxyParams}{Parâmetros}
+\item[{\em D}]-\/ Baralho de descarte. \item[{\em carta}]-\/ número da carta que vai ser inserida. \item[{\em naipe}]-\/ naipe da carta que vai ser inserida. \end{DoxyParams}
+\hypertarget{descarte_8h_ae868e6817465c707db38fee6a1ac0ad8}{
+\index{descarte.h@{descarte.h}!mostraDescarte@{mostraDescarte}}
+\index{mostraDescarte@{mostraDescarte}!descarte.h@{descarte.h}}
+\subsubsection[{mostraDescarte}]{\setlength{\rightskip}{0pt plus 5cm}{\bf lista} mostraDescarte (
+\begin{DoxyParamCaption}
+\item[{{\bf Baralho}}]{ D, }
+\item[{int}]{ pos}
+\end{DoxyParamCaption}
+)}}
+\label{descarte_8h_ae868e6817465c707db38fee6a1ac0ad8}
+Retorna a carta que está em uma determinada posição do baralho de descarte. 
+\begin{DoxyParams}{Parâmetros}
+\item[{\em D}]-\/ Baralho de descarte. \item[{\em pos}]-\/ Posição da carta. \end{DoxyParams}
+\hypertarget{descarte_8h_a1145f049a5b9cbb1b61842eb0a3948ee}{
+\index{descarte.h@{descarte.h}!retiraDescarte@{retiraDescarte}}
+\index{retiraDescarte@{retiraDescarte}!descarte.h@{descarte.h}}
+\subsubsection[{retiraDescarte}]{\setlength{\rightskip}{0pt plus 5cm}{\bf lista} retiraDescarte (
+\begin{DoxyParamCaption}
+\item[{{\bf Baralho} $\ast$}]{ D, }
+\item[{int}]{ pos}
+\end{DoxyParamCaption}
+)}}
+\label{descarte_8h_a1145f049a5b9cbb1b61842eb0a3948ee}
+Remove uma carta do baralho de descarte e retorna a mesma. 
+\begin{DoxyParams}{Parâmetros}
+\item[{\em D}]-\/ Baralho de descarte. \item[{\em pos}]-\/ Posição do baralho em que vai ser removida a carta. \end{DoxyParams}

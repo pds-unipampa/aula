@@ -1,0 +1,1 @@
+/usr/bin/gcc  -fPIC   -shared -Wl,-soname,libcorta.so -o libcorta.so CMakeFiles/corta.dir/corta.c.o 

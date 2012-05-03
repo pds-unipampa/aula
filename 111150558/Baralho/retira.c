@@ -8,31 +8,47 @@
 #include "corta.h"
 
 lista retira_inicio (Baralho* B){
-        
+
         lista compra;
-        
+
         compra.carta = (*B)->carta;
         compra.naipe = (*B)->naipe;
-        
+
         (*B) = (*B)->prox;
-        
+
         return compra;
 }
 
-lista retira_final (Baralho* B){
-        
+lista retira_final (Baralho *B){
+
         lista compra;
-        Baralho aux = (*B);
-        
-        while (aux != NULL){
-        
-                compra.carta = aux->carta;
-                compra.naipe = aux->naipe;
-                
-                //falta destruir o ultimo nodo do baralho.              
-                
-                aux = aux->prox;
+        Baralho aux = cria();
+
+        while ((*B) != NULL){
+
+                compra.carta = (*B)->carta;
+                compra.naipe = (*B)->naipe;
+
+                if (((*B)->prox) == NULL){
+
+                    break;
+                }
+
+                insere_aux(&aux, ((*B)->carta), ((*B)->naipe));
+
+                (*B) = ((*B)->prox);
         }
-        
+
+        (*B) = aux;
+
         return compra;
+}
+
+void retiraInicio_insereFim(Baralho *B){
+
+    lista inicio;
+
+    inicio = retira_inicio(&(*B));
+
+    insere_aux(&(*B), inicio.carta, inicio.naipe);
 }

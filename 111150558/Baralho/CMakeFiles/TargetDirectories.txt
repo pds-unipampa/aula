@@ -1,0 +1,4 @@
+/home/cristiano/src/aula/111150558/Baralho/CMakeFiles/corta.dir
+/home/cristiano/src/aula/111150558/Baralho/CMakeFiles/descarte.dir
+/home/cristiano/src/aula/111150558/Baralho/CMakeFiles/embaralhar.dir
+/home/cristiano/src/aula/111150558/Baralho/CMakeFiles/retira.dir

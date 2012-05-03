@@ -5,7 +5,9 @@
  */
 Baralho cortar (Baralho B, int pos);
 
-/*!Insere cartas em um baralho auxiliar.
+
+/*!Função interna. Utilizada apenas por outras funções.
+ *Insere cartas em um baralho auxiliar.
  *@param A - Baralho a ser inserida a carta
  *@param carta - Numero da carta que vai ser inserida.
  *@param carta - Naipe da carta.

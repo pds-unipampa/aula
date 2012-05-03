@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Baralho: Referência do Arquivo descarte.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Gerado por Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&nbsp;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&nbsp;de&nbsp;Dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<h1>Referência do Arquivo descarte.c</h1>  </div>
+</div>
+<div class="contents">
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;malloc.h&gt;</code><br/>
+<code>#include &lt;time.h&gt;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="embaralhar_8h_source.html">embaralhar.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="retira_8h_source.html">retira.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="corta_8h_source.html">corta.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="descarte_8h_source.html">descarte.h</a>&quot;</code><br/>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnodo.html">Baralho</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="descarte_8c.html#a7639a5e1a5d758731fe19ad2a258621f">insereCartaDescarte</a> (<a class="el" href="structnodo.html">Baralho</a> D, int carta, char naipe)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnodo.html">Baralho</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="descarte_8c.html#afb7bcec544cd6814429992faa58a4d35">atualizaDescarte</a> (<a class="el" href="structnodo.html">Baralho</a> D)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnodo.html">lista</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="descarte_8c.html#ae868e6817465c707db38fee6a1ac0ad8">mostraDescarte</a> (<a class="el" href="structnodo.html">Baralho</a> D, int pos)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnodo.html">lista</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="descarte_8c.html#a1145f049a5b9cbb1b61842eb0a3948ee">retiraDescarte</a> (<a class="el" href="structnodo.html">Baralho</a> *D, int pos)</td></tr>
+</table>
+<hr/><h2>Funções</h2>
+<a class="anchor" id="afb7bcec544cd6814429992faa58a4d35"></a><!-- doxytag: member="descarte.c::atualizaDescarte" ref="afb7bcec544cd6814429992faa58a4d35" args="(Baralho D)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structnodo.html">Baralho</a> atualizaDescarte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnodo.html">Baralho</a>&nbsp;</td>
+          <td class="paramname"> <em>D</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Insere uma determinada carta no monte de descarte. </p>
+<dl><dt><b>Parâmetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>D</em>&nbsp;</td><td>- Baralho de descarte onde vai ser inserida a carta. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7639a5e1a5d758731fe19ad2a258621f"></a><!-- doxytag: member="descarte.c::insereCartaDescarte" ref="a7639a5e1a5d758731fe19ad2a258621f" args="(Baralho D, int carta, char naipe)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structnodo.html">Baralho</a> insereCartaDescarte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnodo.html">Baralho</a>&nbsp;</td>
+          <td class="paramname"> <em>D</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>carta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&nbsp;</td>
+          <td class="paramname"> <em>naipe</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Função interna. É utilizada apenas em outras funções. </p>
+<dl><dt><b>Parâmetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>D</em>&nbsp;</td><td>- Baralho de descarte. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>carta</em>&nbsp;</td><td>- número da carta que vai ser inserida. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>naipe</em>&nbsp;</td><td>- naipe da carta que vai ser inserida. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae868e6817465c707db38fee6a1ac0ad8"></a><!-- doxytag: member="descarte.c::mostraDescarte" ref="ae868e6817465c707db38fee6a1ac0ad8" args="(Baralho D, int pos)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structnodo.html">lista</a> mostraDescarte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnodo.html">Baralho</a>&nbsp;</td>
+          <td class="paramname"> <em>D</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>pos</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Retorna a carta que está em uma determinada posição do baralho de descarte. </p>
+<dl><dt><b>Parâmetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>D</em>&nbsp;</td><td>- Baralho de descarte. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pos</em>&nbsp;</td><td>- Posição da carta. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1145f049a5b9cbb1b61842eb0a3948ee"></a><!-- doxytag: member="descarte.c::retiraDescarte" ref="a1145f049a5b9cbb1b61842eb0a3948ee" args="(Baralho *D, int pos)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structnodo.html">lista</a> retiraDescarte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnodo.html">Baralho</a> *&nbsp;</td>
+          <td class="paramname"> <em>D</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>pos</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Remove uma carta do baralho de descarte e retorna a mesma. </p>
+<dl><dt><b>Parâmetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>D</em>&nbsp;</td><td>- Baralho de descarte. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>pos</em>&nbsp;</td><td>- Posição do baralho em que vai ser removida a carta. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Estruturas de Dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Definições de Tipos</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Gerado em Quinta, 3 de Maio de 2012 20:41:59 para Baralho por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

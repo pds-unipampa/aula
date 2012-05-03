@@ -11,7 +11,7 @@ typedef struct nodo {
     int carta;//!< armazena uma carta (seu respectivo número).
     char naipe;//!< armazena um nipe.
     struct nodo *prox;//!< apontador para o próximo nó.
-    
+
 }lista;
 
 typedef lista* Baralho;//!< Lista que representa um baralho.
@@ -27,23 +27,18 @@ Baralho cria(void);
  */
 Baralho embaralhar(Baralho B);
 
-/*!Verifica se uma determinada carta está no baralho.
+/*!Função interna. Utilizada apenas por outras funções.
+ *Retorna 0 se a carta está no baralho e 1 se não está.
  *@param B - Baralho onde a carta vai ser pesquisada.
  *@param carta - Número da carta a ser pesquisada.
  *@param naipe - Naipe da carta.
  */
 int verifica_Carta(Baralho B, int carta, int naipe);
 
-/*!Insere uma determinada carta em um baralho.
+/*!Função interna. Utilizada apenas por outras funções.
+ *Insere uma determinada carta em um baralho.
  *@param B - Baralho onde a carta vai ser inserida.
  *@param carta - Número da carta a ser inserida.
- *@param naipe - Naipe da carta. 
+ *@param naipe - Naipe da carta.
  */
 Baralho insere_Carta(Baralho B, int carta, int naipe);
-
-
-
-void imprime(Baralho B);
-    
-
-

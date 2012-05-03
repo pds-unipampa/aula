@@ -84,7 +84,7 @@
 {\info 
 {\title {\comment Baralho }Baralho}
 {\comment Gerado porDoxgyen. }
-{\creatim \yr2012\mo4\dy27\hr0\min40\sec46}
+{\creatim \yr2012\mo5\dy3\hr20\min41\sec59}
 }\pard\plain 
 \sectd\pgnlcrm
 {\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
@@ -119,7 +119,7 @@ Estruturas de Dados\par \pard\plain
 {
 \par
 \pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
-{\b {\b nodo} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABA \\*MERGEFORMAT}{\fldrslt pagenum}}
+{\b {\b nodo} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABL \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 \par}
 \pard\plain \sect\sbkpage
@@ -137,13 +137,17 @@ Lista de Arquivos\par \pard\plain
 \par
 {\b {\b corta.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAD \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
-{\b {\b embaralhar.c} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAG \\*MERGEFORMAT}{\fldrslt pagenum}}
+{\b {\b descarte.c} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAG \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
-{\b {\b embaralhar.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAM \\*MERGEFORMAT}{\fldrslt pagenum}}
+{\b {\b descarte.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAL \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
-{\b {\b retira.c} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAU \\*MERGEFORMAT}{\fldrslt pagenum}}
+{\b {\b embaralhar.c} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAQ \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
-{\b {\b retira.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAX \\*MERGEFORMAT}{\fldrslt pagenum}}
+{\b {\b embaralhar.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAW \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b retira.c} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b retira.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABH \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 \par}
 \pard\plain \sect\sbkpage
@@ -154,8 +158,8 @@ Estruturas{\tc \v Estruturas}
 Refer\'EAncia da Estrutura nodo\par \pard\plain 
 {\tc\tcl2 \v nodo}
 {\xe \v nodo}
-{\bkmkstart AAAAAAAABA}
-{\bkmkend AAAAAAAABA}
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
 \par
 {
 {\f2 #include <embaralhar.h>}}\par
@@ -204,8 +208,8 @@ Campos\par
 {\b 
 int {\b carta}}
 }\par
-{\bkmkstart AAAAAAAABB}
-{\bkmkend AAAAAAAABB}
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -219,8 +223,8 @@ armazena uma carta (seu respectivo n\'FAmero). }}\par
 {\b 
 char {\b naipe}}
 }\par
-{\bkmkstart AAAAAAAABC}
-{\bkmkend AAAAAAAABC}
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -234,8 +238,8 @@ armazena um nipe. }}\par
 {\b 
 struct {\b nodo}* {\b prox}}
 }\par
-{\bkmkstart AAAAAAAABD}
-{\bkmkend AAAAAAAABD}
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -311,7 +315,7 @@ void insere_aux ({\b Baralho} * {\i A}, int {\i carta}, char {\i naipe})}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Insere cartas em um baralho auxiliar. {\par
+Fun\'E7\'E3o interna. Utilizada apenas por outras fun\'E7\'F5es. Insere cartas em um baralho auxiliar. {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
 Par\'E2metros:\par}
 \pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i A} - Baralho a ser inserida a carta \par
@@ -372,7 +376,7 @@ void insere_aux ({\b Baralho} * {\i A}, int {\i carta}, char {\i naipe})}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Insere cartas em um baralho auxiliar. {\par
+Fun\'E7\'E3o interna. Utilizada apenas por outras fun\'E7\'F5es. Insere cartas em um baralho auxiliar. {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
 Par\'E2metros:\par}
 \pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i A} - Baralho a ser inserida a carta \par
@@ -385,11 +389,222 @@ Par\'E2metros:\par}
 \pard\plain \sect\sbkpage
 \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
 \pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Refer\'EAncia do Arquivo descarte.c\par \pard\plain 
+{\tc\tcl2 \v descarte.c}
+{\xe \v descarte.c}
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdio.h>}\par
+{\f2 #include <stdlib.h>}\par
+{\f2 #include <malloc.h>}\par
+{\f2 #include <time.h>}\par
+{\f2 #include <string.h>}\par
+{\f2 #include "embaralhar.h"}\par
+{\f2 #include "retira.h"}\par
+{\f2 #include "corta.h"}\par
+{\f2 #include "descarte.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fun\'E7\'F5es\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Baralho} {\b insereCartaDescarte} ({\b Baralho} D, int carta, char naipe)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Baralho} {\b atualizaDescarte} ({\b Baralho} D)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b lista} {\b mostraDescarte} ({\b Baralho} D, int pos)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b lista} {\b retiraDescarte} ({\b Baralho} *D, int pos)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fun\'E7\'F5es\par
+\pard\plain 
+{\xe \v atualizaDescarte\:descarte.c}
+{\xe \v descarte.c\:atualizaDescarte}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Baralho} atualizaDescarte ({\b Baralho} {\i D})}
+}\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Insere uma determinada carta no monte de descarte. {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Par\'E2metros:\par}
+\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i D} - Baralho de descarte onde vai ser inserida a carta. \par
+}
+}}
+{\xe \v insereCartaDescarte\:descarte.c}
+{\xe \v descarte.c\:insereCartaDescarte}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Baralho} insereCartaDescarte ({\b Baralho} {\i D}, int {\i carta}, char {\i naipe})}
+}\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Fun\'E7\'E3o interna. \'C9 utilizada apenas em outras fun\'E7\'F5es. {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Par\'E2metros:\par}
+\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i D} - Baralho de descarte. \par
+{\i carta} - n\'FAmero da carta que vai ser inserida. \par
+{\i naipe} - naipe da carta que vai ser inserida. \par
+}
+}}
+{\xe \v mostraDescarte\:descarte.c}
+{\xe \v descarte.c\:mostraDescarte}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b lista} mostraDescarte ({\b Baralho} {\i D}, int {\i pos})}
+}\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Retorna a carta que est\'E1 em uma determinada posi\'E7\'E3o do baralho de descarte. {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Par\'E2metros:\par}
+\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i D} - Baralho de descarte. \par
+{\i pos} - Posi\'E7\'E3o da carta. \par
+}
+}}
+{\xe \v retiraDescarte\:descarte.c}
+{\xe \v descarte.c\:retiraDescarte}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b lista} retiraDescarte ({\b Baralho} * {\i D}, int {\i pos})}
+}\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Remove uma carta do baralho de descarte e retorna a mesma. {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Par\'E2metros:\par}
+\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i D} - Baralho de descarte. \par
+{\i pos} - Posi\'E7\'E3o do baralho em que vai ser removida a carta. \par
+}
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Refer\'EAncia do Arquivo descarte.h\par \pard\plain 
+{\tc\tcl2 \v descarte.h}
+{\xe \v descarte.h}
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fun\'E7\'F5es\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Baralho} {\b atualizaDescarte} ({\b Baralho} D)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b lista} {\b mostraDescarte} ({\b Baralho} D, int pos)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Baralho} {\b insereCartaDescarte} ({\b Baralho} D, int carta, char naipe)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b lista} {\b retiraDescarte} ({\b Baralho} *D, int pos)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fun\'E7\'F5es\par
+\pard\plain 
+{\xe \v atualizaDescarte\:descarte.h}
+{\xe \v descarte.h\:atualizaDescarte}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Baralho} atualizaDescarte ({\b Baralho} {\i D})}
+}\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Insere uma determinada carta no monte de descarte. {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Par\'E2metros:\par}
+\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i D} - Baralho de descarte onde vai ser inserida a carta. \par
+}
+}}
+{\xe \v insereCartaDescarte\:descarte.h}
+{\xe \v descarte.h\:insereCartaDescarte}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Baralho} insereCartaDescarte ({\b Baralho} {\i D}, int {\i carta}, char {\i naipe})}
+}\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Fun\'E7\'E3o interna. \'C9 utilizada apenas em outras fun\'E7\'F5es. {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Par\'E2metros:\par}
+\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i D} - Baralho de descarte. \par
+{\i carta} - n\'FAmero da carta que vai ser inserida. \par
+{\i naipe} - naipe da carta que vai ser inserida. \par
+}
+}}
+{\xe \v mostraDescarte\:descarte.h}
+{\xe \v descarte.h\:mostraDescarte}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b lista} mostraDescarte ({\b Baralho} {\i D}, int {\i pos})}
+}\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Retorna a carta que est\'E1 em uma determinada posi\'E7\'E3o do baralho de descarte. {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Par\'E2metros:\par}
+\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i D} - Baralho de descarte. \par
+{\i pos} - Posi\'E7\'E3o da carta. \par
+}
+}}
+{\xe \v retiraDescarte\:descarte.h}
+{\xe \v descarte.h\:retiraDescarte}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b lista} retiraDescarte ({\b Baralho} * {\i D}, int {\i pos})}
+}\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Remove uma carta do baralho de descarte e retorna a mesma. {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Par\'E2metros:\par}
+\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i D} - Baralho de descarte. \par
+{\i pos} - Posi\'E7\'E3o do baralho em que vai ser removida a carta. \par
+}
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
 Refer\'EAncia do Arquivo embaralhar.c\par \pard\plain 
 {\tc\tcl2 \v embaralhar.c}
 {\xe \v embaralhar.c}
-{\bkmkstart AAAAAAAAAG}
-{\bkmkend AAAAAAAAAG}
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
 {
 \pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdio.h>}\par
 {\f2 #include <stdlib.h>}\par
@@ -424,8 +639,8 @@ Fun\'E7\'F5es\par
 {\b 
 {\b Baralho} cria (void)}
 }\par
-{\bkmkstart AAAAAAAAAH}
-{\bkmkend AAAAAAAAAH}
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -437,8 +652,8 @@ Cria um baralho como NULL. \par
 {\b 
 {\b Baralho} embaralhar ({\b Baralho} {\i B})}
 }\par
-{\bkmkstart AAAAAAAAAI}
-{\bkmkend AAAAAAAAAI}
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -454,8 +669,8 @@ Par\'E2metros:\par}
 {\b 
 void imprime ({\b Baralho} {\i B})}
 }\par
-{\bkmkstart AAAAAAAAAJ}
-{\bkmkend AAAAAAAAAJ}
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 }
@@ -465,8 +680,8 @@ void imprime ({\b Baralho} {\i B})}
 {\b 
 {\b Baralho} insereCarta ({\b Baralho} {\i B}, int {\i carta}, int {\i naipe})}
 }\par
-{\bkmkstart AAAAAAAAAK}
-{\bkmkend AAAAAAAAAK}
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 }
@@ -476,8 +691,8 @@ void imprime ({\b Baralho} {\i B})}
 {\b 
 int verificaCarta (int {\i carta}, int {\i naipe}, {\b Baralho} {\i B})}
 }\par
-{\bkmkstart AAAAAAAAAL}
-{\bkmkend AAAAAAAAAL}
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 }
@@ -489,8 +704,8 @@ int verificaCarta (int {\i carta}, int {\i naipe}, {\b Baralho} {\i B})}
 Refer\'EAncia do Arquivo embaralhar.h\par \pard\plain 
 {\tc\tcl2 \v embaralhar.h}
 {\xe \v embaralhar.h}
-{\bkmkstart AAAAAAAAAM}
-{\bkmkend AAAAAAAAAM}
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Estruturas de Dados\par
 \pard\plain 
@@ -527,8 +742,6 @@ Fun\'E7\'F5es\par
 int {\b verifica_Carta} ({\b Baralho} B, int carta, int naipe)\par
 \pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 {\b Baralho} {\b insere_Carta} ({\b Baralho} B, int carta, int naipe)\par
-\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\b imprime} ({\b Baralho} B)\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -540,8 +753,8 @@ Defini\'E7\'F5es dos tipos\par
 {\b 
 typedef {\b lista}* {\b Baralho}}
 }\par
-{\bkmkstart AAAAAAAAAN}
-{\bkmkend AAAAAAAAAN}
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 \par
@@ -555,8 +768,8 @@ Lista que representa um baralho. }}\par
 {\b 
 typedef struct {\b nodo} {\b lista}}
 }\par
-{\bkmkstart AAAAAAAAAO}
-{\bkmkend AAAAAAAAAO}
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -572,8 +785,8 @@ Fun\'E7\'F5es\par
 {\b 
 {\b Baralho} cria (void)}
 }\par
-{\bkmkstart AAAAAAAAAP}
-{\bkmkend AAAAAAAAAP}
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -585,8 +798,8 @@ Cria um baralho como NULL. \par
 {\b 
 {\b Baralho} embaralhar ({\b Baralho} {\i B})}
 }\par
-{\bkmkstart AAAAAAAAAQ}
-{\bkmkend AAAAAAAAAQ}
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -596,29 +809,18 @@ Par\'E2metros:\par}
 \pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i B} - Baralho a ser embaralhado. \par
 }
 }}
-{\xe \v imprime\:embaralhar.h}
-{\xe \v embaralhar.h\:imprime}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-void imprime ({\b Baralho} {\i B})}
-}\par
-{\bkmkstart AAAAAAAAAR}
-{\bkmkend AAAAAAAAAR}
-{
-\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-}
 {\xe \v insere_Carta\:embaralhar.h}
 {\xe \v embaralhar.h\:insere_Carta}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
 {\b Baralho} insere_Carta ({\b Baralho} {\i B}, int {\i carta}, int {\i naipe})}
 }\par
-{\bkmkstart AAAAAAAAAS}
-{\bkmkend AAAAAAAAAS}
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Insere uma determinada carta em um baralho. {\par
+Fun\'E7\'E3o interna. Utilizada apenas por outras fun\'E7\'F5es. Insere uma determinada carta em um baralho. {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
 Par\'E2metros:\par}
 \pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i B} - Baralho onde a carta vai ser inserida. \par
@@ -632,12 +834,12 @@ Par\'E2metros:\par}
 {\b 
 int verifica_Carta ({\b Baralho} {\i B}, int {\i carta}, int {\i naipe})}
 }\par
-{\bkmkstart AAAAAAAAAT}
-{\bkmkend AAAAAAAAAT}
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-Verifica se uma determinada carta est\'E1 no baralho. {\par
+Fun\'E7\'E3o interna. Utilizada apenas por outras fun\'E7\'F5es. Retorna 0 se a carta est\'E1 no baralho e 1 se n\'E3o est\'E1. {\par
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
 Par\'E2metros:\par}
 \pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i B} - Baralho onde a carta vai ser pesquisada. \par
@@ -653,8 +855,8 @@ Par\'E2metros:\par}
 Refer\'EAncia do Arquivo retira.c\par \pard\plain 
 {\tc\tcl2 \v retira.c}
 {\xe \v retira.c}
-{\bkmkstart AAAAAAAAAU}
-{\bkmkend AAAAAAAAAU}
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
 {
 \pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdio.h>}\par
 {\f2 #include <stdlib.h>}\par
@@ -674,6 +876,8 @@ Fun\'E7\'F5es\par
 {\b lista} {\b retira_inicio} ({\b Baralho} *B)\par
 \pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 {\b lista} {\b retira_final} ({\b Baralho} *B)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b retiraInicio_insereFim} ({\b Baralho} *B)\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -685,8 +889,8 @@ Fun\'E7\'F5es\par
 {\b 
 {\b lista} retira_final ({\b Baralho} * {\i B})}
 }\par
-{\bkmkstart AAAAAAAAAV}
-{\bkmkend AAAAAAAAAV}
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -702,8 +906,8 @@ Par\'E2metros:\par}
 {\b 
 {\b lista} retira_inicio ({\b Baralho} * {\i B})}
 }\par
-{\bkmkstart AAAAAAAAAW}
-{\bkmkend AAAAAAAAAW}
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -711,6 +915,23 @@ Retira a carta que est\'E1 no inicio do baralho. O retorno dessa fun\'E7\'E3o se
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
 Par\'E2metros:\par}
 \pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i B} - Baralho a ser retirada a carta. \par
+}
+}}
+{\xe \v retiraInicio_insereFim\:retira.c}
+{\xe \v retira.c\:retiraInicio_insereFim}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void retiraInicio_insereFim ({\b Baralho} * {\i B})}
+}\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Retira a carta que est\'E1 no inicio e insere no final do baralho. {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Par\'E2metros:\par}
+\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i B} - Baralho a ser realizada a fun\'E7\'E3o. \par
 }
 }}
 \par \pard\plain 
@@ -721,8 +942,8 @@ Par\'E2metros:\par}
 Refer\'EAncia do Arquivo retira.h\par \pard\plain 
 {\tc\tcl2 \v retira.h}
 {\xe \v retira.h}
-{\bkmkstart AAAAAAAAAX}
-{\bkmkend AAAAAAAAAX}
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
 Fun\'E7\'F5es\par
 \pard\plain 
@@ -732,6 +953,8 @@ Fun\'E7\'F5es\par
 {\b lista} {\b retira_inicio} ({\b Baralho} *B)\par
 \pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 {\b lista} {\b retira_final} ({\b Baralho} *B)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b retiraInicio_insereFim} ({\b Baralho} *B)\par
 }
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
@@ -743,8 +966,8 @@ Fun\'E7\'F5es\par
 {\b 
 {\b lista} retira_final ({\b Baralho} * {\i B})}
 }\par
-{\bkmkstart AAAAAAAAAY}
-{\bkmkend AAAAAAAAAY}
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -760,8 +983,8 @@ Par\'E2metros:\par}
 {\b 
 {\b lista} retira_inicio ({\b Baralho} * {\i B})}
 }\par
-{\bkmkstart AAAAAAAAAZ}
-{\bkmkend AAAAAAAAAZ}
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
 {
 \pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
@@ -769,6 +992,23 @@ Retira a carta que est\'E1 no inicio do baralho. O retorno dessa fun\'E7\'E3o se
 {\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
 Par\'E2metros:\par}
 \pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i B} - Baralho a ser retirada a carta. \par
+}
+}}
+{\xe \v retiraInicio_insereFim\:retira.h}
+{\xe \v retira.h\:retiraInicio_insereFim}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void retiraInicio_insereFim ({\b Baralho} * {\i B})}
+}\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Retira a carta que est\'E1 no inicio e insere no final do baralho. {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Par\'E2metros:\par}
+\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid {\i B} - Baralho a ser realizada a fun\'E7\'E3o. \par
 }
 }}
 
