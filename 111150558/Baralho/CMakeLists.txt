@@ -1,12 +1,11 @@
 project(Baralho)
 
-add_library(embaralhar SHARED embaralhar.c)
+SET (Baralho_SRC embaralhar.c corta.c descarte.c retira.c)
 
-add_library(corta SHARED corta.c)
+add_library(Baralho SHARED ${Baralho_SRC})
 
-add_library(descarte SHARED descarte.c)
 
-add_library(retira SHARED retira.c)
+
 
 
 

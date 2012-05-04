@@ -96,63 +96,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named corta
+# Target rules for targets named Baralho
 
 # Build rule for target.
-corta: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 corta
-.PHONY : corta
+Baralho: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Baralho
+.PHONY : Baralho
 
 # fast build rule for target.
-corta/fast:
-	$(MAKE) -f CMakeFiles/corta.dir/build.make CMakeFiles/corta.dir/build
-.PHONY : corta/fast
-
-#=============================================================================
-# Target rules for targets named descarte
-
-# Build rule for target.
-descarte: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 descarte
-.PHONY : descarte
-
-# fast build rule for target.
-descarte/fast:
-	$(MAKE) -f CMakeFiles/descarte.dir/build.make CMakeFiles/descarte.dir/build
-.PHONY : descarte/fast
-
-#=============================================================================
-# Target rules for targets named embaralhar
-
-# Build rule for target.
-embaralhar: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 embaralhar
-.PHONY : embaralhar
-
-# fast build rule for target.
-embaralhar/fast:
-	$(MAKE) -f CMakeFiles/embaralhar.dir/build.make CMakeFiles/embaralhar.dir/build
-.PHONY : embaralhar/fast
-
-#=============================================================================
-# Target rules for targets named retira
-
-# Build rule for target.
-retira: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 retira
-.PHONY : retira
-
-# fast build rule for target.
-retira/fast:
-	$(MAKE) -f CMakeFiles/retira.dir/build.make CMakeFiles/retira.dir/build
-.PHONY : retira/fast
+Baralho/fast:
+	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/build
+.PHONY : Baralho/fast
 
 corta.o: corta.c.o
 .PHONY : corta.o
 
 # target to build an object file
 corta.c.o:
-	$(MAKE) -f CMakeFiles/corta.dir/build.make CMakeFiles/corta.dir/corta.c.o
+	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/corta.c.o
 .PHONY : corta.c.o
 
 corta.i: corta.c.i
@@ -160,7 +121,7 @@ corta.i: corta.c.i
 
 # target to preprocess a source file
 corta.c.i:
-	$(MAKE) -f CMakeFiles/corta.dir/build.make CMakeFiles/corta.dir/corta.c.i
+	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/corta.c.i
 .PHONY : corta.c.i
 
 corta.s: corta.c.s
@@ -168,7 +129,7 @@ corta.s: corta.c.s
 
 # target to generate assembly for a file
 corta.c.s:
-	$(MAKE) -f CMakeFiles/corta.dir/build.make CMakeFiles/corta.dir/corta.c.s
+	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/corta.c.s
 .PHONY : corta.c.s
 
 descarte.o: descarte.c.o
@@ -176,7 +137,7 @@ descarte.o: descarte.c.o
 
 # target to build an object file
 descarte.c.o:
-	$(MAKE) -f CMakeFiles/descarte.dir/build.make CMakeFiles/descarte.dir/descarte.c.o
+	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/descarte.c.o
 .PHONY : descarte.c.o
 
 descarte.i: descarte.c.i
@@ -184,7 +145,7 @@ descarte.i: descarte.c.i
 
 # target to preprocess a source file
 descarte.c.i:
-	$(MAKE) -f CMakeFiles/descarte.dir/build.make CMakeFiles/descarte.dir/descarte.c.i
+	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/descarte.c.i
 .PHONY : descarte.c.i
 
 descarte.s: descarte.c.s
@@ -192,7 +153,7 @@ descarte.s: descarte.c.s
 
 # target to generate assembly for a file
 descarte.c.s:
-	$(MAKE) -f CMakeFiles/descarte.dir/build.make CMakeFiles/descarte.dir/descarte.c.s
+	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/descarte.c.s
 .PHONY : descarte.c.s
 
 embaralhar.o: embaralhar.c.o
@@ -200,7 +161,7 @@ embaralhar.o: embaralhar.c.o
 
 # target to build an object file
 embaralhar.c.o:
-	$(MAKE) -f CMakeFiles/embaralhar.dir/build.make CMakeFiles/embaralhar.dir/embaralhar.c.o
+	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/embaralhar.c.o
 .PHONY : embaralhar.c.o
 
 embaralhar.i: embaralhar.c.i
@@ -208,7 +169,7 @@ embaralhar.i: embaralhar.c.i
 
 # target to preprocess a source file
 embaralhar.c.i:
-	$(MAKE) -f CMakeFiles/embaralhar.dir/build.make CMakeFiles/embaralhar.dir/embaralhar.c.i
+	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/embaralhar.c.i
 .PHONY : embaralhar.c.i
 
 embaralhar.s: embaralhar.c.s
@@ -216,7 +177,7 @@ embaralhar.s: embaralhar.c.s
 
 # target to generate assembly for a file
 embaralhar.c.s:
-	$(MAKE) -f CMakeFiles/embaralhar.dir/build.make CMakeFiles/embaralhar.dir/embaralhar.c.s
+	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/embaralhar.c.s
 .PHONY : embaralhar.c.s
 
 retira.o: retira.c.o
@@ -224,7 +185,7 @@ retira.o: retira.c.o
 
 # target to build an object file
 retira.c.o:
-	$(MAKE) -f CMakeFiles/retira.dir/build.make CMakeFiles/retira.dir/retira.c.o
+	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/retira.c.o
 .PHONY : retira.c.o
 
 retira.i: retira.c.i
@@ -232,7 +193,7 @@ retira.i: retira.c.i
 
 # target to preprocess a source file
 retira.c.i:
-	$(MAKE) -f CMakeFiles/retira.dir/build.make CMakeFiles/retira.dir/retira.c.i
+	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/retira.c.i
 .PHONY : retira.c.i
 
 retira.s: retira.c.s
@@ -240,7 +201,7 @@ retira.s: retira.c.s
 
 # target to generate assembly for a file
 retira.c.s:
-	$(MAKE) -f CMakeFiles/retira.dir/build.make CMakeFiles/retira.dir/retira.c.s
+	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/retira.c.s
 .PHONY : retira.c.s
 
 # Help Target
@@ -249,12 +210,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... corta"
-	@echo "... descarte"
+	@echo "... Baralho"
 	@echo "... edit_cache"
-	@echo "... embaralhar"
 	@echo "... rebuild_cache"
-	@echo "... retira"
 	@echo "... corta.o"
 	@echo "... corta.i"
 	@echo "... corta.s"

@@ -70,14 +70,92 @@ CMakeFiles/embaralhar.dir/embaralhar.c.o.provides: CMakeFiles/embaralhar.dir/emb
 CMakeFiles/embaralhar.dir/embaralhar.c.o.provides.build: CMakeFiles/embaralhar.dir/embaralhar.c.o
 .PHONY : CMakeFiles/embaralhar.dir/embaralhar.c.o.provides.build
 
+CMakeFiles/embaralhar.dir/corta.c.o: CMakeFiles/embaralhar.dir/flags.make
+CMakeFiles/embaralhar.dir/corta.c.o: corta.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristiano/src/aula/111150558/Baralho/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/embaralhar.dir/corta.c.o"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/embaralhar.dir/corta.c.o   -c /home/cristiano/src/aula/111150558/Baralho/corta.c
+
+CMakeFiles/embaralhar.dir/corta.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/embaralhar.dir/corta.c.i"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/cristiano/src/aula/111150558/Baralho/corta.c > CMakeFiles/embaralhar.dir/corta.c.i
+
+CMakeFiles/embaralhar.dir/corta.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/embaralhar.dir/corta.c.s"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/cristiano/src/aula/111150558/Baralho/corta.c -o CMakeFiles/embaralhar.dir/corta.c.s
+
+CMakeFiles/embaralhar.dir/corta.c.o.requires:
+.PHONY : CMakeFiles/embaralhar.dir/corta.c.o.requires
+
+CMakeFiles/embaralhar.dir/corta.c.o.provides: CMakeFiles/embaralhar.dir/corta.c.o.requires
+	$(MAKE) -f CMakeFiles/embaralhar.dir/build.make CMakeFiles/embaralhar.dir/corta.c.o.provides.build
+.PHONY : CMakeFiles/embaralhar.dir/corta.c.o.provides
+
+CMakeFiles/embaralhar.dir/corta.c.o.provides.build: CMakeFiles/embaralhar.dir/corta.c.o
+.PHONY : CMakeFiles/embaralhar.dir/corta.c.o.provides.build
+
+CMakeFiles/embaralhar.dir/descarte.c.o: CMakeFiles/embaralhar.dir/flags.make
+CMakeFiles/embaralhar.dir/descarte.c.o: descarte.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristiano/src/aula/111150558/Baralho/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/embaralhar.dir/descarte.c.o"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/embaralhar.dir/descarte.c.o   -c /home/cristiano/src/aula/111150558/Baralho/descarte.c
+
+CMakeFiles/embaralhar.dir/descarte.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/embaralhar.dir/descarte.c.i"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/cristiano/src/aula/111150558/Baralho/descarte.c > CMakeFiles/embaralhar.dir/descarte.c.i
+
+CMakeFiles/embaralhar.dir/descarte.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/embaralhar.dir/descarte.c.s"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/cristiano/src/aula/111150558/Baralho/descarte.c -o CMakeFiles/embaralhar.dir/descarte.c.s
+
+CMakeFiles/embaralhar.dir/descarte.c.o.requires:
+.PHONY : CMakeFiles/embaralhar.dir/descarte.c.o.requires
+
+CMakeFiles/embaralhar.dir/descarte.c.o.provides: CMakeFiles/embaralhar.dir/descarte.c.o.requires
+	$(MAKE) -f CMakeFiles/embaralhar.dir/build.make CMakeFiles/embaralhar.dir/descarte.c.o.provides.build
+.PHONY : CMakeFiles/embaralhar.dir/descarte.c.o.provides
+
+CMakeFiles/embaralhar.dir/descarte.c.o.provides.build: CMakeFiles/embaralhar.dir/descarte.c.o
+.PHONY : CMakeFiles/embaralhar.dir/descarte.c.o.provides.build
+
+CMakeFiles/embaralhar.dir/retira.c.o: CMakeFiles/embaralhar.dir/flags.make
+CMakeFiles/embaralhar.dir/retira.c.o: retira.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristiano/src/aula/111150558/Baralho/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/embaralhar.dir/retira.c.o"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/embaralhar.dir/retira.c.o   -c /home/cristiano/src/aula/111150558/Baralho/retira.c
+
+CMakeFiles/embaralhar.dir/retira.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/embaralhar.dir/retira.c.i"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/cristiano/src/aula/111150558/Baralho/retira.c > CMakeFiles/embaralhar.dir/retira.c.i
+
+CMakeFiles/embaralhar.dir/retira.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/embaralhar.dir/retira.c.s"
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/cristiano/src/aula/111150558/Baralho/retira.c -o CMakeFiles/embaralhar.dir/retira.c.s
+
+CMakeFiles/embaralhar.dir/retira.c.o.requires:
+.PHONY : CMakeFiles/embaralhar.dir/retira.c.o.requires
+
+CMakeFiles/embaralhar.dir/retira.c.o.provides: CMakeFiles/embaralhar.dir/retira.c.o.requires
+	$(MAKE) -f CMakeFiles/embaralhar.dir/build.make CMakeFiles/embaralhar.dir/retira.c.o.provides.build
+.PHONY : CMakeFiles/embaralhar.dir/retira.c.o.provides
+
+CMakeFiles/embaralhar.dir/retira.c.o.provides.build: CMakeFiles/embaralhar.dir/retira.c.o
+.PHONY : CMakeFiles/embaralhar.dir/retira.c.o.provides.build
+
 # Object files for target embaralhar
 embaralhar_OBJECTS = \
-"CMakeFiles/embaralhar.dir/embaralhar.c.o"
+"CMakeFiles/embaralhar.dir/embaralhar.c.o" \
+"CMakeFiles/embaralhar.dir/corta.c.o" \
+"CMakeFiles/embaralhar.dir/descarte.c.o" \
+"CMakeFiles/embaralhar.dir/retira.c.o"
 
 # External object files for target embaralhar
 embaralhar_EXTERNAL_OBJECTS =
 
 libembaralhar.so: CMakeFiles/embaralhar.dir/embaralhar.c.o
+libembaralhar.so: CMakeFiles/embaralhar.dir/corta.c.o
+libembaralhar.so: CMakeFiles/embaralhar.dir/descarte.c.o
+libembaralhar.so: CMakeFiles/embaralhar.dir/retira.c.o
 libembaralhar.so: CMakeFiles/embaralhar.dir/build.make
 libembaralhar.so: CMakeFiles/embaralhar.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C shared library libembaralhar.so"
@@ -88,6 +166,9 @@ CMakeFiles/embaralhar.dir/build: libembaralhar.so
 .PHONY : CMakeFiles/embaralhar.dir/build
 
 CMakeFiles/embaralhar.dir/requires: CMakeFiles/embaralhar.dir/embaralhar.c.o.requires
+CMakeFiles/embaralhar.dir/requires: CMakeFiles/embaralhar.dir/corta.c.o.requires
+CMakeFiles/embaralhar.dir/requires: CMakeFiles/embaralhar.dir/descarte.c.o.requires
+CMakeFiles/embaralhar.dir/requires: CMakeFiles/embaralhar.dir/retira.c.o.requires
 .PHONY : CMakeFiles/embaralhar.dir/requires
 
 CMakeFiles/embaralhar.dir/clean:

@@ -1,5 +1,8 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/embaralhar.dir/embaralhar.c.o"
+  "CMakeFiles/embaralhar.dir/corta.c.o"
+  "CMakeFiles/embaralhar.dir/descarte.c.o"
+  "CMakeFiles/embaralhar.dir/retira.c.o"
   "libembaralhar.pdb"
   "libembaralhar.so"
 )

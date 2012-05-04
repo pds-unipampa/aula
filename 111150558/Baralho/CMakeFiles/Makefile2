@@ -50,143 +50,38 @@ CMAKE_SOURCE_DIR = /home/cristiano/src/aula/111150558/Baralho
 CMAKE_BINARY_DIR = /home/cristiano/src/aula/111150558/Baralho
 
 #=============================================================================
-# Target rules for target CMakeFiles/corta.dir
+# Target rules for target CMakeFiles/Baralho.dir
 
 # All Build rule for target.
-CMakeFiles/corta.dir/all:
-	$(MAKE) -f CMakeFiles/corta.dir/build.make CMakeFiles/corta.dir/depend
-	$(MAKE) -f CMakeFiles/corta.dir/build.make CMakeFiles/corta.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristiano/src/aula/111150558/Baralho/CMakeFiles  1
-	@echo "Built target corta"
-.PHONY : CMakeFiles/corta.dir/all
+CMakeFiles/Baralho.dir/all:
+	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/depend
+	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristiano/src/aula/111150558/Baralho/CMakeFiles  1 2 3 4
+	@echo "Built target Baralho"
+.PHONY : CMakeFiles/Baralho.dir/all
 
 # Include target in all.
-all: CMakeFiles/corta.dir/all
+all: CMakeFiles/Baralho.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/corta.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristiano/src/aula/111150558/Baralho/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/corta.dir/all
+CMakeFiles/Baralho.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristiano/src/aula/111150558/Baralho/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Baralho.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristiano/src/aula/111150558/Baralho/CMakeFiles 0
-.PHONY : CMakeFiles/corta.dir/rule
+.PHONY : CMakeFiles/Baralho.dir/rule
 
 # Convenience name for target.
-corta: CMakeFiles/corta.dir/rule
-.PHONY : corta
+Baralho: CMakeFiles/Baralho.dir/rule
+.PHONY : Baralho
 
 # clean rule for target.
-CMakeFiles/corta.dir/clean:
-	$(MAKE) -f CMakeFiles/corta.dir/build.make CMakeFiles/corta.dir/clean
-.PHONY : CMakeFiles/corta.dir/clean
+CMakeFiles/Baralho.dir/clean:
+	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/clean
+.PHONY : CMakeFiles/Baralho.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/corta.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/descarte.dir
-
-# All Build rule for target.
-CMakeFiles/descarte.dir/all:
-	$(MAKE) -f CMakeFiles/descarte.dir/build.make CMakeFiles/descarte.dir/depend
-	$(MAKE) -f CMakeFiles/descarte.dir/build.make CMakeFiles/descarte.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristiano/src/aula/111150558/Baralho/CMakeFiles  2
-	@echo "Built target descarte"
-.PHONY : CMakeFiles/descarte.dir/all
-
-# Include target in all.
-all: CMakeFiles/descarte.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/descarte.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristiano/src/aula/111150558/Baralho/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/descarte.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristiano/src/aula/111150558/Baralho/CMakeFiles 0
-.PHONY : CMakeFiles/descarte.dir/rule
-
-# Convenience name for target.
-descarte: CMakeFiles/descarte.dir/rule
-.PHONY : descarte
-
-# clean rule for target.
-CMakeFiles/descarte.dir/clean:
-	$(MAKE) -f CMakeFiles/descarte.dir/build.make CMakeFiles/descarte.dir/clean
-.PHONY : CMakeFiles/descarte.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/descarte.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/embaralhar.dir
-
-# All Build rule for target.
-CMakeFiles/embaralhar.dir/all:
-	$(MAKE) -f CMakeFiles/embaralhar.dir/build.make CMakeFiles/embaralhar.dir/depend
-	$(MAKE) -f CMakeFiles/embaralhar.dir/build.make CMakeFiles/embaralhar.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristiano/src/aula/111150558/Baralho/CMakeFiles  3
-	@echo "Built target embaralhar"
-.PHONY : CMakeFiles/embaralhar.dir/all
-
-# Include target in all.
-all: CMakeFiles/embaralhar.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/embaralhar.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristiano/src/aula/111150558/Baralho/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/embaralhar.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristiano/src/aula/111150558/Baralho/CMakeFiles 0
-.PHONY : CMakeFiles/embaralhar.dir/rule
-
-# Convenience name for target.
-embaralhar: CMakeFiles/embaralhar.dir/rule
-.PHONY : embaralhar
-
-# clean rule for target.
-CMakeFiles/embaralhar.dir/clean:
-	$(MAKE) -f CMakeFiles/embaralhar.dir/build.make CMakeFiles/embaralhar.dir/clean
-.PHONY : CMakeFiles/embaralhar.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/embaralhar.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/retira.dir
-
-# All Build rule for target.
-CMakeFiles/retira.dir/all:
-	$(MAKE) -f CMakeFiles/retira.dir/build.make CMakeFiles/retira.dir/depend
-	$(MAKE) -f CMakeFiles/retira.dir/build.make CMakeFiles/retira.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristiano/src/aula/111150558/Baralho/CMakeFiles  4
-	@echo "Built target retira"
-.PHONY : CMakeFiles/retira.dir/all
-
-# Include target in all.
-all: CMakeFiles/retira.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/retira.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristiano/src/aula/111150558/Baralho/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/retira.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristiano/src/aula/111150558/Baralho/CMakeFiles 0
-.PHONY : CMakeFiles/retira.dir/rule
-
-# Convenience name for target.
-retira: CMakeFiles/retira.dir/rule
-.PHONY : retira
-
-# clean rule for target.
-CMakeFiles/retira.dir/clean:
-	$(MAKE) -f CMakeFiles/retira.dir/build.make CMakeFiles/retira.dir/clean
-.PHONY : CMakeFiles/retira.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/retira.dir/clean
+clean: CMakeFiles/Baralho.dir/clean
 .PHONY : clean
 
 #=============================================================================

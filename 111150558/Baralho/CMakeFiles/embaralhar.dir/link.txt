@@ -1,1 +1,1 @@
-/usr/bin/gcc  -fPIC   -shared -Wl,-soname,libembaralhar.so -o libembaralhar.so CMakeFiles/embaralhar.dir/embaralhar.c.o 
+/usr/bin/gcc  -fPIC   -shared -Wl,-soname,libembaralhar.so -o libembaralhar.so CMakeFiles/embaralhar.dir/embaralhar.c.o CMakeFiles/embaralhar.dir/corta.c.o CMakeFiles/embaralhar.dir/descarte.c.o CMakeFiles/embaralhar.dir/retira.c.o 

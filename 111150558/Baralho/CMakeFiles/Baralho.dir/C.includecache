@@ -48,6 +48,20 @@ descarte.h
 
 /home/cristiano/src/aula/111150558/Baralho/descarte.h
 
+/home/cristiano/src/aula/111150558/Baralho/embaralhar.c
+stdio.h
+-
+stdlib.h
+-
+malloc.h
+-
+time.h
+-
+string.h
+-
+embaralhar.h
+/home/cristiano/src/aula/111150558/Baralho/embaralhar.h
+
 /home/cristiano/src/aula/111150558/Baralho/embaralhar.h
 
 /home/cristiano/src/aula/111150558/Baralho/retira.c

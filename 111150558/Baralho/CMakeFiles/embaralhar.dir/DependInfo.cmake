@@ -4,7 +4,10 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
+  "/home/cristiano/src/aula/111150558/Baralho/corta.c" "/home/cristiano/src/aula/111150558/Baralho/CMakeFiles/embaralhar.dir/corta.c.o"
+  "/home/cristiano/src/aula/111150558/Baralho/descarte.c" "/home/cristiano/src/aula/111150558/Baralho/CMakeFiles/embaralhar.dir/descarte.c.o"
   "/home/cristiano/src/aula/111150558/Baralho/embaralhar.c" "/home/cristiano/src/aula/111150558/Baralho/CMakeFiles/embaralhar.dir/embaralhar.c.o"
+  "/home/cristiano/src/aula/111150558/Baralho/retira.c" "/home/cristiano/src/aula/111150558/Baralho/CMakeFiles/embaralhar.dir/retira.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 
