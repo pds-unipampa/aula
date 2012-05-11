@@ -48,26 +48,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
 <h1>embaralhar.h</h1>  </div>
 </div>
 <div class="contents">
-<a href="embaralhar_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*DECLARAÇÃO DO NÓ E DA LISTA DE CARTAS*/</span>
-<a name="l00009"></a><a class="code" href="structnodo.html">00009</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structnodo.html">nodo</a> {
-<a name="l00010"></a>00010 
-<a name="l00011"></a><a class="code" href="structnodo.html#a0d153279003388933e082f40da4a3702">00011</a>     <span class="keywordtype">int</span> <a class="code" href="structnodo.html#a0d153279003388933e082f40da4a3702" title="armazena uma carta (seu respectivo número).">carta</a>;
-<a name="l00012"></a><a class="code" href="structnodo.html#aba763958bee1abb2961d0d2e82f8cdfb">00012</a>     <span class="keywordtype">char</span> <a class="code" href="structnodo.html#aba763958bee1abb2961d0d2e82f8cdfb" title="armazena um nipe.">naipe</a>;
-<a name="l00013"></a><a class="code" href="structnodo.html#a486ad5c9b955ff42eaf8fbf3330e4c75">00013</a>     <span class="keyword">struct </span><a class="code" href="structnodo.html">nodo</a> *<a class="code" href="structnodo.html#a486ad5c9b955ff42eaf8fbf3330e4c75" title="apontador para o próximo nó.">prox</a>;
-<a name="l00014"></a>00014 
-<a name="l00015"></a>00015 }<a class="code" href="structnodo.html">lista</a>;
-<a name="l00016"></a>00016 
-<a name="l00017"></a><a class="code" href="embaralhar_8h.html#a55f1cef7a68d15235c49fa7ca22afed3">00017</a> <span class="keyword">typedef</span> <a class="code" href="structnodo.html">lista</a>* <a class="code" href="structnodo.html">Baralho</a>;
-<a name="l00018"></a>00018 
+<a href="embaralhar_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00006"></a>00006 <span class="comment">/*DECLARAÇÃO DO NÓ E DA LISTA DE CARTAS*/</span>
+<a name="l00014"></a><a class="code" href="structnodo.html">00014</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structnodo.html">nodo</a> {
+<a name="l00015"></a>00015 
+<a name="l00016"></a><a class="code" href="structnodo.html#a0d153279003388933e082f40da4a3702">00016</a>     <span class="keywordtype">int</span> <a class="code" href="structnodo.html#a0d153279003388933e082f40da4a3702" title="armazena uma carta (seu respectivo número).">carta</a>;
+<a name="l00017"></a><a class="code" href="structnodo.html#aba763958bee1abb2961d0d2e82f8cdfb">00017</a>     <span class="keywordtype">char</span> <a class="code" href="structnodo.html#aba763958bee1abb2961d0d2e82f8cdfb" title="armazena um nipe.">naipe</a>;
+<a name="l00018"></a><a class="code" href="structnodo.html#a486ad5c9b955ff42eaf8fbf3330e4c75">00018</a>     <span class="keyword">struct </span><a class="code" href="structnodo.html">nodo</a> *<a class="code" href="structnodo.html#a486ad5c9b955ff42eaf8fbf3330e4c75" title="apontador para o próximo nó.">prox</a>;
 <a name="l00019"></a>00019 
-<a name="l00020"></a>00020 
-<a name="l00023"></a>00023 <a class="code" href="structnodo.html">Baralho</a> <a class="code" href="embaralhar_8c.html#a6d427e3d4a2a4ca9b60e1e5251e7412d">cria</a>(<span class="keywordtype">void</span>);
+<a name="l00020"></a>00020 }<a class="code" href="structnodo.html">lista</a>;
+<a name="l00021"></a>00021 
+<a name="l00022"></a><a class="code" href="embaralhar_8h.html#a55f1cef7a68d15235c49fa7ca22afed3">00022</a> <span class="keyword">typedef</span> <a class="code" href="structnodo.html">lista</a>* <a class="code" href="structnodo.html">Baralho</a>;
+<a name="l00023"></a>00023 
 <a name="l00024"></a>00024 
-<a name="l00028"></a>00028 <a class="code" href="structnodo.html">Baralho</a> <a class="code" href="embaralhar_8c.html#a7063c0087949c844bcf617bb0fe9ec1a">embaralhar</a>(<a class="code" href="structnodo.html">Baralho</a> B);
+<a name="l00025"></a>00025 
+<a name="l00028"></a>00028 <a class="code" href="structnodo.html">Baralho</a> <a class="code" href="embaralhar_8c.html#a6d427e3d4a2a4ca9b60e1e5251e7412d">cria</a>(<span class="keywordtype">void</span>);
 <a name="l00029"></a>00029 
-<a name="l00036"></a>00036 <span class="keywordtype">int</span> <a class="code" href="embaralhar_8h.html#acac98e14e97aca23de0535d38b0961d1">verifica_Carta</a>(<a class="code" href="structnodo.html">Baralho</a> B, <span class="keywordtype">int</span> <a class="code" href="structnodo.html#a0d153279003388933e082f40da4a3702" title="armazena uma carta (seu respectivo número).">carta</a>, <span class="keywordtype">int</span> <a class="code" href="structnodo.html#aba763958bee1abb2961d0d2e82f8cdfb" title="armazena um nipe.">naipe</a>);
-<a name="l00037"></a>00037 
-<a name="l00044"></a>00044 <a class="code" href="structnodo.html">Baralho</a> <a class="code" href="embaralhar_8h.html#af278e53e84d11de6cb995569d3f74681">insere_Carta</a>(<a class="code" href="structnodo.html">Baralho</a> B, <span class="keywordtype">int</span> <a class="code" href="structnodo.html#a0d153279003388933e082f40da4a3702" title="armazena uma carta (seu respectivo número).">carta</a>, <span class="keywordtype">int</span> <a class="code" href="structnodo.html#aba763958bee1abb2961d0d2e82f8cdfb" title="armazena um nipe.">naipe</a>);
+<a name="l00033"></a>00033 <a class="code" href="structnodo.html">Baralho</a> <a class="code" href="embaralhar_8c.html#a7063c0087949c844bcf617bb0fe9ec1a">embaralhar</a>(<a class="code" href="structnodo.html">Baralho</a> B);
+<a name="l00034"></a>00034 
+<a name="l00041"></a>00041 <span class="keywordtype">int</span> <a class="code" href="embaralhar_8h.html#acac98e14e97aca23de0535d38b0961d1">verifica_Carta</a>(<a class="code" href="structnodo.html">Baralho</a> B, <span class="keywordtype">int</span> <a class="code" href="structnodo.html#a0d153279003388933e082f40da4a3702" title="armazena uma carta (seu respectivo número).">carta</a>, <span class="keywordtype">int</span> <a class="code" href="structnodo.html#aba763958bee1abb2961d0d2e82f8cdfb" title="armazena um nipe.">naipe</a>);
+<a name="l00042"></a>00042 
+<a name="l00049"></a>00049 <a class="code" href="structnodo.html">Baralho</a> <a class="code" href="embaralhar_8h.html#af278e53e84d11de6cb995569d3f74681">insere_Carta</a>(<a class="code" href="structnodo.html">Baralho</a> B, <span class="keywordtype">int</span> <a class="code" href="structnodo.html#a0d153279003388933e082f40da4a3702" title="armazena uma carta (seu respectivo número).">carta</a>, <span class="keywordtype">int</span> <a class="code" href="structnodo.html#aba763958bee1abb2961d0d2e82f8cdfb" title="armazena um nipe.">naipe</a>);
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->
@@ -84,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Busca');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Gerado em Quinta, 3 de Maio de 2012 20:41:59 para Baralho por&nbsp;
+<hr class="footer"/><address class="footer"><small>Gerado em Quinta, 10 de Maio de 2012 20:58:55 para Baralho por&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

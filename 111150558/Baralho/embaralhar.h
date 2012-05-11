@@ -1,3 +1,12 @@
+/* Copyright (C) 2012 Cristiano Ribeiro, Evair Severo. All rights reserved.
+ * 
+ * This program and the accompanying materials are made available under
+ * the terms of the Common Public License v1.0 which accompanies this distribution,
+ * and is available at http://www.eclipse.org/legal/cpl-v10.html
+ * 
+ * $Id: IAppVersion.java,v 1.1.1.1 2004/05/09 16:57:28 vlad_r Exp $
+ */
+
 /*DECLARAÇÃO DO NÓ E DA LISTA DE CARTAS*/
 /*!Estrutura que representa uma carta.
  * Armazena a carta e seu respectivo naipe.
