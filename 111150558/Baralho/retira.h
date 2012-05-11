@@ -1,10 +1,36 @@
-/* Copyright (C) 2012 Cristiano Ribeiro, Evair Severo. All rights reserved.
- * 
- * This program and the accompanying materials are made available under
- * the terms of the Common Public License v1.0 which accompanies this distribution,
- * and is available at http://www.eclipse.org/legal/cpl-v10.html
- * 
- * $Id: IAppVersion.java,v 1.1.1.1 2004/05/09 16:57:28 vlad_r Exp $
+/*!
+ *
+ *  This file is part of Baralho.
+ *
+ *  Copyright 2012  Cristiano Ribeiro <cristiano.daitx@gmail.com>
+ *
+ *  Copyright 2012  Evair Severo <evairsevero@gmail.com>
+ *
+ *    
+ *
+ *
+ *  This library is free software; you can redistribute it and/or
+ *	
+ *  modify it under the terms of the GNU Lesser General Public
+ *
+ *  License as published by the Free Software Foundation; either
+ *	
+ *  version 2.1 of the License, or (at your option) any later version.
+ *	
+ *	
+ *  This library is distributed in the hope that it will be useful,
+ *	
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *	
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *	
+ *  Lesser General Public License for more details.
+ *	
+ *	
+ *  You should have received a copy of the GNU Lesser General Public
+ *	
+ *  License along with this library.  If not, see <http://www.gnu.org/licenses/>.
+ *	
  */
 
 /*!Retira a carta que está no inicio do baralho.
