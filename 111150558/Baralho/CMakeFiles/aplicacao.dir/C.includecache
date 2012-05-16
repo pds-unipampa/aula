@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/cristiano/src/aula/111150558/Baralho/corta.c
+/home/cristiano/src/aula/111150558/Baralho/aplicacao.c
 stdio.h
 -
 stdlib.h
@@ -23,8 +23,12 @@ retira.h
 /home/cristiano/src/aula/111150558/Baralho/retira.h
 corta.h
 /home/cristiano/src/aula/111150558/Baralho/corta.h
+descarte.h
+/home/cristiano/src/aula/111150558/Baralho/descarte.h
 
 /home/cristiano/src/aula/111150558/Baralho/corta.h
+
+/home/cristiano/src/aula/111150558/Baralho/descarte.h
 
 /home/cristiano/src/aula/111150558/Baralho/embaralhar.h
 
