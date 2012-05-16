@@ -1,0 +1,8 @@
+Para a construção do trabalho escolheu-se a GPL que é a licença com maior utilização por parte de projetos de software livre, em grande parte devido à sua adoção para o projeto GNU e o sistema operacional GNU/Linux.
+Em termos gerais, a GPL baseia-se em 4 liberdades:
+1.	A liberdade de executar o programa, para qualquer propósito (liberdade nº 0);
+2.	A liberdade de estudar como o programa funciona e adaptá-lo para as suas necessidades (liberdade nº 1). O acesso ao código-fonte é um pré-requisito para esta liberdade.
+3.	A liberdade de redistribuir cópias de modo que você possa ajudar ao seu próximo (liberdade nº 2).
+4.	A liberdade de aperfeiçoar o programa, e liberar os seus aperfeiçoamentos, de modo que toda a comunidade se beneficie deles (liberdade nº 3). O acesso ao código-fonte é um pré-requisito para esta liberdade.
+Com a garantia destas liberdades, a GPL permite que os programas sejam distribuídos e reaproveitados, mantendo, porém, os direitos do autor por forma a não permitir que essa informação seja usada de uma maneira que limite as liberdades originais. A licença não permite, por exemplo, que o código seja apoderado por outra pessoa, ou que sejam impostos sobre ele restrições que impeçam que seja distribuído da mesma maneira que foi adquirido.
+A GPL está redigida em inglês e atualmente nenhuma tradução é aceita como válida pela Free Software Foundation, com o argumento de que há o risco de introdução de erros de tradução que poderiam deturpar o sentido da licença. Deste modo, qualquer tradução da GPL é não-oficial e meramente informativa, mantendo-se a obrigatoriedade de distribuir o texto oficial em inglês com os programas.
