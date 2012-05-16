@@ -105,6 +105,22 @@ public class Baralho {
             this.comparacao = comparacao;
             initialize(sequencia);
         }
+        
+        /**
+         * Configura a forma de comparação das cartas do baralho.
+         * @param cc Forma de comparação das cartas.
+         */
+        public void setComparacao(ComparaCartas cc){
+            
+            for(Carta c: montePrincipal.listaCartas()){
+                c.setComparaCartas(cc);
+            }
+            
+            for(Carta c: monteDescarte.listaCartas()){
+                c.setComparaCartas(cc);
+            }
+            
+        }
 
 	/**
          * Embaralha as cartas do baralho.
@@ -136,7 +152,7 @@ public class Baralho {
             
             List<Carta> corte = new LinkedList<Carta>();
             
-            for (int i = (fim-1); i>=ini; i--){
+            for (int i = Math.abs(fim-1); i>=ini; i--){
                 corte.add(montePrincipal.obtemCarta(i));
                 montePrincipal.removeCarta(i);
             }
