@@ -1,0 +1,5 @@
+Como não estava especificado no enunciado do trabalho não sei se precisaria fazer um sistema de construção para a aplicação que vai apoiar na utilização do trabalho.
+Contanto eu não fiz, porem na pasta códigos fonte/ApiCartasTeste se encontra o projeto que utilizei para testar. e Dentro dessa pasta encontrasse o main que utiliza todas as funcionalidades básicas também.
+
+
+Lembrando que para utilizar a biblioteca, deve-se importar a mesma para o seu projeto na sua IDE de programação.

@@ -1,2 +1,2 @@
-Trabalho 2 realizado para disciplina 
-commit 2
+O projeto consiste em desenvolver uma API para manipulação básica de cartas de um baralho em java. A API deve apoiar o usuário afim de que o mesmo consiga fazer algumas operações no baralho sem precisar ver o código das mesmas em especifico. 
+    A biblioteca deve ser capaz de manipular 52 cartas de um baralho tradicional, além disso, ela deve omitir do programador/usuário como os algoritmos e funções/métodos são implementados. Quem for utilizar deve apenas se preocupar em mandar embaralhar as cartas, cortar, pegar cartas do monte ou do descarte, adicionar ao descarte e com essas ações fazer um jogo.
