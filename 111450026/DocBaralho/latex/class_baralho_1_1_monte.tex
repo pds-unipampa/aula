@@ -1,0 +1,211 @@
+\hypertarget{class_baralho_1_1_monte}{
+\section{\-Baralho.\-Monte \-Class \-Reference}
+\label{class_baralho_1_1_monte}\index{\-Baralho.\-Monte@{\-Baralho.\-Monte}}
+}
+\-Inheritance diagram for \-Baralho.\-Monte\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_baralho_1_1_monte}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_baralho_1_1_monte_a9c0e60ff3e5adee7c73311dc639b726d}{initialize} (\-Linked\-List$<$ \hyperlink{class_baralho_1_1_carta}{\-Carta} $>$ cartas)
+\item 
+boolean \hyperlink{class_baralho_1_1_monte_a62727fc8f2a5df78acf7ed256907d18d}{add\-Carta} (\hyperlink{class_baralho_1_1_carta}{\-Carta} carta)
+\item 
+void \hyperlink{class_baralho_1_1_monte_a54573fe9edbac3f8d9fca1fe1199debb}{add\-Carta} (\hyperlink{class_baralho_1_1_carta}{\-Carta} carta, int pos)  throws Index\-Out\-Of\-Bounds\-Exception
+\item 
+void \hyperlink{class_baralho_1_1_monte_a64abc4bdca4718cb5e615154c562cf85}{remove\-Carta} (\hyperlink{class_baralho_1_1_carta}{\-Carta} carta)  throws Carta\-Inexistente\-Exception
+\item 
+void \hyperlink{class_baralho_1_1_monte_a81b0e1160db4914f5b1ba51fc068b1b9}{remove\-Carta} (int pos)  throws Carta\-Inexistente\-Exception 
+\item 
+\-Linked\-List$<$ \hyperlink{class_baralho_1_1_carta}{\-Carta} $>$ \hyperlink{class_baralho_1_1_monte_a586ca35231a6c8a8634600df898f5ccc}{lista\-Cartas} ()
+\item 
+\hyperlink{class_baralho_1_1_carta}{\-Carta} \hyperlink{class_baralho_1_1_monte_adeda515ad018d4975fbf054a37ab0f36}{obtem\-Carta} (int pos)  throws Carta\-Inexistente\-Exception
+\item 
+\hyperlink{class_baralho_1_1_carta}{\-Carta} \hyperlink{class_baralho_1_1_monte_ad724ab32986fbbc07e3d492aecfa2037}{obtem\-Carta} (\hyperlink{class_baralho_1_1_carta}{\-Carta} carta)  throws Carta\-Inexistente\-Exception 
+\item 
+void \hyperlink{class_baralho_1_1_monte_abd353fab5c3bfe77a070aafe7d905bec}{esvazia\-Monte} ()
+\item 
+int \hyperlink{class_baralho_1_1_monte_a8768f18eb0e16b7a2be665360ad4afb5}{tamanho} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Classe abstrata que representa um monte do baralho. \-As posições das cartas do monte são consideradas de baixo para cima. \begin{DoxyAuthor}{\-Author}
+\-Rafael 
+\end{DoxyAuthor}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_baralho_1_1_monte_a62727fc8f2a5df78acf7ed256907d18d}{
+\index{\-Baralho\-::\-Monte@{\-Baralho\-::\-Monte}!add\-Carta@{add\-Carta}}
+\index{add\-Carta@{add\-Carta}!Baralho::Monte@{\-Baralho\-::\-Monte}}
+\subsubsection[{add\-Carta}]{\setlength{\rightskip}{0pt plus 5cm}boolean \-Baralho.\-Monte.\-add\-Carta (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Carta}}]{carta}
+\end{DoxyParamCaption}
+)}}
+\label{class_baralho_1_1_monte_a62727fc8f2a5df78acf7ed256907d18d}
+\-Adiciona uma carta ao monte. 
+\begin{DoxyParams}{\-Parameters}
+{\em carta} & -\/ \hyperlink{class_baralho_1_1_carta}{\-Carta} a ser adicionda. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+true se a carta foi adicionada ou false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{class_baralho_1_1_monte_a54573fe9edbac3f8d9fca1fe1199debb}{
+\index{\-Baralho\-::\-Monte@{\-Baralho\-::\-Monte}!add\-Carta@{add\-Carta}}
+\index{add\-Carta@{add\-Carta}!Baralho::Monte@{\-Baralho\-::\-Monte}}
+\subsubsection[{add\-Carta}]{\setlength{\rightskip}{0pt plus 5cm}void \-Baralho.\-Monte.\-add\-Carta (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Carta}}]{carta, }
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)  throws \-Index\-Out\-Of\-Bounds\-Exception}}
+\label{class_baralho_1_1_monte_a54573fe9edbac3f8d9fca1fe1199debb}
+\-Adiciona uma carta em uma posição específica do monte. 
+\begin{DoxyParams}{\-Parameters}
+{\em carta} & -\/ \hyperlink{class_baralho_1_1_carta}{\-Carta} a ser adicionada. \\
+\hline
+{\em pos} & -\/ \-Posição onde a carta será inserida. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{\-Exceptions}
+{\em \-Index\-Out\-Of\-Bounds\-Exception} & -\/ caso a posição em que a carta for inserida for fora dos limites do monte (menor que 0 ou maior que o tamanho do baralho). \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_baralho_1_1_monte_abd353fab5c3bfe77a070aafe7d905bec}{
+\index{\-Baralho\-::\-Monte@{\-Baralho\-::\-Monte}!esvazia\-Monte@{esvazia\-Monte}}
+\index{esvazia\-Monte@{esvazia\-Monte}!Baralho::Monte@{\-Baralho\-::\-Monte}}
+\subsubsection[{esvazia\-Monte}]{\setlength{\rightskip}{0pt plus 5cm}void \-Baralho.\-Monte.\-esvazia\-Monte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_baralho_1_1_monte_abd353fab5c3bfe77a070aafe7d905bec}
+\-Retira todas as cartas do monte. \hypertarget{class_baralho_1_1_monte_a9c0e60ff3e5adee7c73311dc639b726d}{
+\index{\-Baralho\-::\-Monte@{\-Baralho\-::\-Monte}!initialize@{initialize}}
+\index{initialize@{initialize}!Baralho::Monte@{\-Baralho\-::\-Monte}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void \-Baralho.\-Monte.\-initialize (
+\begin{DoxyParamCaption}
+\item[{\-Linked\-List$<$ {\bf \-Carta} $>$}]{cartas}
+\end{DoxyParamCaption}
+)}}
+\label{class_baralho_1_1_monte_a9c0e60ff3e5adee7c73311dc639b726d}
+\-Inicializa o monte. \-As cartas que haviam nele são excluídas. 
+\begin{DoxyParams}{\-Parameters}
+{\em cartas} & -\/ \-Cartas do monte. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_baralho_1_1_monte_a586ca35231a6c8a8634600df898f5ccc}{
+\index{\-Baralho\-::\-Monte@{\-Baralho\-::\-Monte}!lista\-Cartas@{lista\-Cartas}}
+\index{lista\-Cartas@{lista\-Cartas}!Baralho::Monte@{\-Baralho\-::\-Monte}}
+\subsubsection[{lista\-Cartas}]{\setlength{\rightskip}{0pt plus 5cm}\-Linked\-List$<${\bf \-Carta}$>$ \-Baralho.\-Monte.\-lista\-Cartas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_baralho_1_1_monte_a586ca35231a6c8a8634600df898f5ccc}
+\-Retorna as cartas do monte. \begin{DoxyReturn}{\-Returns}
+-\/ cartas do monte. 
+\end{DoxyReturn}
+\hypertarget{class_baralho_1_1_monte_adeda515ad018d4975fbf054a37ab0f36}{
+\index{\-Baralho\-::\-Monte@{\-Baralho\-::\-Monte}!obtem\-Carta@{obtem\-Carta}}
+\index{obtem\-Carta@{obtem\-Carta}!Baralho::Monte@{\-Baralho\-::\-Monte}}
+\subsubsection[{obtem\-Carta}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Carta} \-Baralho.\-Monte.\-obtem\-Carta (
+\begin{DoxyParamCaption}
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)  throws {\bf \-Carta\-Inexistente\-Exception}}}
+\label{class_baralho_1_1_monte_adeda515ad018d4975fbf054a37ab0f36}
+\-Retorna a carta de uma posição do monte. 
+\begin{DoxyParams}{\-Parameters}
+{\em pos} & -\/ posição da carta no monte. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-A carta, se ela constar no monte, ou null, caso contrário. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{\-Exceptions}
+{\em \-Carta\-Inexistente\-Exception} & -\/ \-Caso a posição especificada não aponte para uma carta do monte. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_baralho_1_1_monte_ad724ab32986fbbc07e3d492aecfa2037}{
+\index{\-Baralho\-::\-Monte@{\-Baralho\-::\-Monte}!obtem\-Carta@{obtem\-Carta}}
+\index{obtem\-Carta@{obtem\-Carta}!Baralho::Monte@{\-Baralho\-::\-Monte}}
+\subsubsection[{obtem\-Carta}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Carta} \-Baralho.\-Monte.\-obtem\-Carta (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Carta}}]{carta}
+\end{DoxyParamCaption}
+)  throws {\bf \-Carta\-Inexistente\-Exception} }}
+\label{class_baralho_1_1_monte_ad724ab32986fbbc07e3d492aecfa2037}
+\-Retorna uma carta do monte. 
+\begin{DoxyParams}{\-Parameters}
+{\em carta} & -\/ \-A carta que se deseja obter do monte. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-A carta que se deseja, se ela constar no monte, ou null, caso contrário. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{\-Exceptions}
+{\em \-Carta\-Inexistente\-Exception} & -\/ \-Caso a carta especificada não conste no monte. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_baralho_1_1_monte_a64abc4bdca4718cb5e615154c562cf85}{
+\index{\-Baralho\-::\-Monte@{\-Baralho\-::\-Monte}!remove\-Carta@{remove\-Carta}}
+\index{remove\-Carta@{remove\-Carta}!Baralho::Monte@{\-Baralho\-::\-Monte}}
+\subsubsection[{remove\-Carta}]{\setlength{\rightskip}{0pt plus 5cm}void \-Baralho.\-Monte.\-remove\-Carta (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Carta}}]{carta}
+\end{DoxyParamCaption}
+)  throws {\bf \-Carta\-Inexistente\-Exception}}}
+\label{class_baralho_1_1_monte_a64abc4bdca4718cb5e615154c562cf85}
+\-Remove uma carta do monte. 
+\begin{DoxyParams}{\-Parameters}
+{\em carta} & -\/ \hyperlink{class_baralho_1_1_carta}{\-Carta} a ser removida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+true se a carta foi removida ou false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{class_baralho_1_1_monte_a81b0e1160db4914f5b1ba51fc068b1b9}{
+\index{\-Baralho\-::\-Monte@{\-Baralho\-::\-Monte}!remove\-Carta@{remove\-Carta}}
+\index{remove\-Carta@{remove\-Carta}!Baralho::Monte@{\-Baralho\-::\-Monte}}
+\subsubsection[{remove\-Carta}]{\setlength{\rightskip}{0pt plus 5cm}void \-Baralho.\-Monte.\-remove\-Carta (
+\begin{DoxyParamCaption}
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)  throws {\bf \-Carta\-Inexistente\-Exception} }}
+\label{class_baralho_1_1_monte_a81b0e1160db4914f5b1ba51fc068b1b9}
+\-Remove uma carta do monte. 
+\begin{DoxyParams}{\-Parameters}
+{\em pos} & -\/ posição da carta que irá ser removida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+true se a carta foi removida ou false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{class_baralho_1_1_monte_a8768f18eb0e16b7a2be665360ad4afb5}{
+\index{\-Baralho\-::\-Monte@{\-Baralho\-::\-Monte}!tamanho@{tamanho}}
+\index{tamanho@{tamanho}!Baralho::Monte@{\-Baralho\-::\-Monte}}
+\subsubsection[{tamanho}]{\setlength{\rightskip}{0pt plus 5cm}int \-Baralho.\-Monte.\-tamanho (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_baralho_1_1_monte_a8768f18eb0e16b7a2be665360ad4afb5}
+\-Retorna o tamanho do monte. \begin{DoxyReturn}{\-Returns}
+tamanho do monte. 
+\end{DoxyReturn}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+aula/111450026/\-Baralho/\-Baralho/\hyperlink{_monte_8java}{\-Monte.\-java}\end{DoxyCompactItemize}
