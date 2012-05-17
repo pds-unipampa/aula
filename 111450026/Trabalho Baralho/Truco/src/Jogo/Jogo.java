@@ -25,7 +25,7 @@ public class Jogo {
     Scanner scn = new Scanner(System.in);
     
     /**
-     * Configura os jogadors, inicia o baralho de truco e começa o jogo.
+     * Configura os jogadores, inicia o baralho de truco e começa o jogo.
      * @param j1 Jogador 1
      * @param j2 Jogador 2
      */
@@ -112,8 +112,8 @@ public class Jogo {
     }
     
     /**
-     * Informa randomicamente qual jogadors deve cortar o baralho e solicita que ele corte.
-     * Enquanto o corte não válido, continua solicitando que ele informe o corte.
+     * Informa randomicamente qual jogador deve cortar o baralho e solicita que ele corte.
+     * Enquanto o corte não for válido, continua solicitando que ele informe o corte.
      */
     private void solicitaCorte(){
         int x = (int)Math.floor(Math.random() * 2);
@@ -204,6 +204,7 @@ public class Jogo {
         do{
             try{
                 Carta c = j.jogarCarta(leEntrada());
+                baralho.descartar(c);
                 v = true;
                 return c;
             }catch(IndexOutOfBoundsException iooe){
