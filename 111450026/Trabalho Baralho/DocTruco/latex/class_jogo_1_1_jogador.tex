@@ -1,0 +1,149 @@
+\hypertarget{class_jogo_1_1_jogador}{
+\section{Jogo.Jogador Class Reference}
+\label{class_jogo_1_1_jogador}\index{Jogo::Jogador@{Jogo::Jogador}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_jogo_1_1_jogador_aba392674ff42987abf090dd991095dbb}{Jogador} (String nome)
+\item 
+void \hyperlink{class_jogo_1_1_jogador_a7ae51483d75a9c7cad565388156d1c5d}{setNome} (String nome)
+\item 
+String \hyperlink{class_jogo_1_1_jogador_a6f8ba8cac4fcfe8cc21b9839a6628690}{getNome} ()
+\item 
+Carta \hyperlink{class_jogo_1_1_jogador_ad0c46e37fd89e6727dd00bbf4750ac5b}{jogarCarta} (int pos)  throws IndexOutOfBoundsException
+\item 
+int \hyperlink{class_jogo_1_1_jogador_a52ccd5124c9c5900dded54b12019fbda}{getPontosMao} ()
+\item 
+void \hyperlink{class_jogo_1_1_jogador_aa73fb134eeb0bb6f77d2083836ad5ea0}{imprimeCartas} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_jogo_1_1_jogador_af81fa31e4eae39bb4d2a808281305ec0}{addCarta} (Carta c)
+\item 
+void \hyperlink{class_jogo_1_1_jogador_a4207d04ef9ce96274fadda312df7fa63}{addPontosMao} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que representa um jogador de truco. Há poucas funcionalidades. \begin{DoxyAuthor}{Author}
+Rafael 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_jogo_1_1_jogador_aba392674ff42987abf090dd991095dbb}{
+\index{Jogo::Jogador@{Jogo::Jogador}!Jogador@{Jogador}}
+\index{Jogador@{Jogador}!Jogo::Jogador@{Jogo::Jogador}}
+\subsubsection[{Jogador}]{\setlength{\rightskip}{0pt plus 5cm}Jogo.Jogador.Jogador (
+\begin{DoxyParamCaption}
+\item[{String}]{nome}
+\end{DoxyParamCaption}
+)}}
+\label{class_jogo_1_1_jogador_aba392674ff42987abf090dd991095dbb}
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & Nome do jogador. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_jogo_1_1_jogador_af81fa31e4eae39bb4d2a808281305ec0}{
+\index{Jogo::Jogador@{Jogo::Jogador}!addCarta@{addCarta}}
+\index{addCarta@{addCarta}!Jogo::Jogador@{Jogo::Jogador}}
+\subsubsection[{addCarta}]{\setlength{\rightskip}{0pt plus 5cm}void Jogo.Jogador.addCarta (
+\begin{DoxyParamCaption}
+\item[{Carta}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_jogo_1_1_jogador_af81fa31e4eae39bb4d2a808281305ec0}
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Carta à ser adicionada para o jogador. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_jogo_1_1_jogador_a4207d04ef9ce96274fadda312df7fa63}{
+\index{Jogo::Jogador@{Jogo::Jogador}!addPontosMao@{addPontosMao}}
+\index{addPontosMao@{addPontosMao}!Jogo::Jogador@{Jogo::Jogador}}
+\subsubsection[{addPontosMao}]{\setlength{\rightskip}{0pt plus 5cm}void Jogo.Jogador.addPontosMao (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_jogo_1_1_jogador_a4207d04ef9ce96274fadda312df7fa63}
+Adiciona um ponto conquistado numa mão do jogo. \hypertarget{class_jogo_1_1_jogador_a6f8ba8cac4fcfe8cc21b9839a6628690}{
+\index{Jogo::Jogador@{Jogo::Jogador}!getNome@{getNome}}
+\index{getNome@{getNome}!Jogo::Jogador@{Jogo::Jogador}}
+\subsubsection[{getNome}]{\setlength{\rightskip}{0pt plus 5cm}String Jogo.Jogador.getNome (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_jogo_1_1_jogador_a6f8ba8cac4fcfe8cc21b9839a6628690}
+\begin{DoxyReturn}{Returns}
+Nome do jogador. 
+\end{DoxyReturn}
+\hypertarget{class_jogo_1_1_jogador_a52ccd5124c9c5900dded54b12019fbda}{
+\index{Jogo::Jogador@{Jogo::Jogador}!getPontosMao@{getPontosMao}}
+\index{getPontosMao@{getPontosMao}!Jogo::Jogador@{Jogo::Jogador}}
+\subsubsection[{getPontosMao}]{\setlength{\rightskip}{0pt plus 5cm}int Jogo.Jogador.getPontosMao (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_jogo_1_1_jogador_a52ccd5124c9c5900dded54b12019fbda}
+\begin{DoxyReturn}{Returns}
+Quantidade de pontos conquistados em mãos de jogo. 
+\end{DoxyReturn}
+\hypertarget{class_jogo_1_1_jogador_aa73fb134eeb0bb6f77d2083836ad5ea0}{
+\index{Jogo::Jogador@{Jogo::Jogador}!imprimeCartas@{imprimeCartas}}
+\index{imprimeCartas@{imprimeCartas}!Jogo::Jogador@{Jogo::Jogador}}
+\subsubsection[{imprimeCartas}]{\setlength{\rightskip}{0pt plus 5cm}void Jogo.Jogador.imprimeCartas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_jogo_1_1_jogador_aa73fb134eeb0bb6f77d2083836ad5ea0}
+Mostra na tela as cartas do jogador. \hypertarget{class_jogo_1_1_jogador_ad0c46e37fd89e6727dd00bbf4750ac5b}{
+\index{Jogo::Jogador@{Jogo::Jogador}!jogarCarta@{jogarCarta}}
+\index{jogarCarta@{jogarCarta}!Jogo::Jogador@{Jogo::Jogador}}
+\subsubsection[{jogarCarta}]{\setlength{\rightskip}{0pt plus 5cm}Carta Jogo.Jogador.jogarCarta (
+\begin{DoxyParamCaption}
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)  throws IndexOutOfBoundsException}}
+\label{class_jogo_1_1_jogador_ad0c46e37fd89e6727dd00bbf4750ac5b}
+Retira uma carta do jogador. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & Posição de onde a carta será retirada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Carta -\/ Carta retirada. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IndexOutOfBoundsException} & Caso a posição especificada não seja válida. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_jogo_1_1_jogador_a7ae51483d75a9c7cad565388156d1c5d}{
+\index{Jogo::Jogador@{Jogo::Jogador}!setNome@{setNome}}
+\index{setNome@{setNome}!Jogo::Jogador@{Jogo::Jogador}}
+\subsubsection[{setNome}]{\setlength{\rightskip}{0pt plus 5cm}void Jogo.Jogador.setNome (
+\begin{DoxyParamCaption}
+\item[{String}]{nome}
+\end{DoxyParamCaption}
+)}}
+\label{class_jogo_1_1_jogador_a7ae51483d75a9c7cad565388156d1c5d}
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & Nome do jogador \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+aula/111450026/Trabalho Baralho/Truco/src/Jogo/Jogador.java\end{DoxyCompactItemize}

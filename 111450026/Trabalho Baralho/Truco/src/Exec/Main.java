@@ -23,9 +23,9 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Monte principal = new MonteComum();
+       /* Monte principal = new MonteComum();
         MonteDescarte descarte = new MonteDescarte();
-        ComparacaoTruco ct = new ComparacaoTruco(new Carta(4, Naipe.COPAS));
+        ComparacaoTruco ct = new ComparacaoTruco(new Carta(4, Naipe.COPAS));*/
         /*Monte principal = new MonteComum();
         MonteDescarte descarte = new MonteDescarte();
         
@@ -79,7 +79,7 @@ public class Main {
         
         System.out.println(a);*/
         
-        Scanner scn = new Scanner(System.in);
+       /* Scanner scn = new Scanner(System.in);
         
         System.out.println("Informe o nome do jogador 1: ");
         Jogador j1 = new Jogador(scn.nextLine());
@@ -87,6 +87,8 @@ public class Main {
         System.out.println("Informe o nome do jogador 2: ");
         Jogador j2 = new Jogador(scn.nextLine());
         
-        Jogo j = new Jogo(j1,j2);
+        Jogo j = new Jogo(j1,j2);*/
+
+        System.out.println("Hello World");
     }
 }
