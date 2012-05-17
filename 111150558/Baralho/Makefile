@@ -108,6 +108,43 @@ Baralho/fast:
 	$(MAKE) -f CMakeFiles/Baralho.dir/build.make CMakeFiles/Baralho.dir/build
 .PHONY : Baralho/fast
 
+#=============================================================================
+# Target rules for targets named aplicacao
+
+# Build rule for target.
+aplicacao: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aplicacao
+.PHONY : aplicacao
+
+# fast build rule for target.
+aplicacao/fast:
+	$(MAKE) -f CMakeFiles/aplicacao.dir/build.make CMakeFiles/aplicacao.dir/build
+.PHONY : aplicacao/fast
+
+aplicacao.o: aplicacao.c.o
+.PHONY : aplicacao.o
+
+# target to build an object file
+aplicacao.c.o:
+	$(MAKE) -f CMakeFiles/aplicacao.dir/build.make CMakeFiles/aplicacao.dir/aplicacao.c.o
+.PHONY : aplicacao.c.o
+
+aplicacao.i: aplicacao.c.i
+.PHONY : aplicacao.i
+
+# target to preprocess a source file
+aplicacao.c.i:
+	$(MAKE) -f CMakeFiles/aplicacao.dir/build.make CMakeFiles/aplicacao.dir/aplicacao.c.i
+.PHONY : aplicacao.c.i
+
+aplicacao.s: aplicacao.c.s
+.PHONY : aplicacao.s
+
+# target to generate assembly for a file
+aplicacao.c.s:
+	$(MAKE) -f CMakeFiles/aplicacao.dir/build.make CMakeFiles/aplicacao.dir/aplicacao.c.s
+.PHONY : aplicacao.c.s
+
 corta.o: corta.c.o
 .PHONY : corta.o
 
@@ -211,8 +248,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... Baralho"
+	@echo "... aplicacao"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... aplicacao.o"
+	@echo "... aplicacao.i"
+	@echo "... aplicacao.s"
 	@echo "... corta.o"
 	@echo "... corta.i"
 	@echo "... corta.s"

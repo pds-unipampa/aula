@@ -1,0 +1,1 @@
+/usr/bin/gcc     CMakeFiles/aplicacao.dir/aplicacao.c.o  -o aplicacao -rdynamic libBaralho.so -Wl,-rpath,/home/cristiano/src/aula/111150558/Baralho 
