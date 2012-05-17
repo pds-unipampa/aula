@@ -1,0 +1,1 @@
+Está biblioteca está licenciada pela GNU LGPL versão 3
