@@ -1,13 +1,17 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 14
+/svn/!svn/act/
 K 25
 svn:wc:ra_dav:version-url
-V 32
-/svn/!svn/ver/8/trunk/JogoCartas
+V 33
+/svn/!svn/ver/15/trunk/JogoCartas
 END
 build.xml
 K 25
 svn:wc:ra_dav:version-url
-V 42
-/svn/!svn/ver/3/trunk/JogoCartas/build.xml
+V 43
+/svn/!svn/ver/11/trunk/JogoCartas/build.xml
 END
 manifest.mf
 K 25

@@ -1,15 +1,15 @@
 10
 
 dir
-8
+14
 https://libcartas.googlecode.com/svn/trunk/JogoCartas/nbproject
 https://libcartas.googlecode.com/svn
 
 
 
-2012-04-20T01:21:42.136842Z
-3
-brdonsb@gmail.com
+2012-05-10T18:36:48.117921Z
+12
+renanmarceluchoa@gmail.com
 has-props
 
 svn:special svn:externals svn:needs-lock
@@ -32,11 +32,11 @@ file
 
 
 
-2012-04-26T07:40:01.000000Z
-eead979a489c6ea9bf754ff17e6413b5
-2012-04-20T01:21:42.136842Z
-3
-brdonsb@gmail.com
+2012-05-10T00:03:35.000000Z
+5712fa98dcd9fc36c3cffe7ab5a306f8
+2012-05-10T18:31:38.703931Z
+11
+renanmarceluchoa@gmail.com
 
 
 
@@ -58,7 +58,30 @@ brdonsb@gmail.com
 
 
 
-55903
+55900
+
+build.xml
+file
+
+
+
+add
+
+e00e29834111d256610b146924ff6437
+
+
+
+
+
+
+
+
+
+
+
+copied
+https://libcartas.googlecode.com/svn/trunk/JogoCartas/build.xml
+14
 
 genfiles.properties
 file
@@ -66,11 +89,11 @@ file
 
 
 
-2012-04-26T07:40:01.000000Z
-cebc453c7d3724968d440a94a5d66ca6
-2012-04-20T01:21:42.136842Z
-3
-brdonsb@gmail.com
+2012-05-10T00:03:35.000000Z
+8f3da43590675932d2ac0bab7a0caed1
+2012-05-10T18:31:38.703931Z
+11
+renanmarceluchoa@gmail.com
 
 
 
@@ -96,20 +119,15 @@ brdonsb@gmail.com
 
 project.properties
 file
+15
 
 
 
-
-2012-04-26T07:40:01.000000Z
-11289de0f945518106d1947435f57b9c
-2012-04-20T01:21:42.136842Z
-3
-brdonsb@gmail.com
-
-
-
-
-
+2012-05-10T18:44:24.000000Z
+2976d5cc7733d8ac88d4987785b04073
+2012-05-10T18:54:43.937932Z
+15
+renanmarceluchoa@gmail.com
 
 
 
@@ -126,7 +144,12 @@ brdonsb@gmail.com
 
 
 
-2266
+
+
+
+
+
+2309
 
 project.xml
 file
@@ -134,11 +157,11 @@ file
 
 
 
-2012-04-26T07:40:01.000000Z
-f6a653d4c98a7e1854696c34d10bf3ba
-2012-04-20T01:21:42.136842Z
-3
-brdonsb@gmail.com
+2012-05-10T00:03:34.000000Z
+602a4d0150cb117253a2f3be8aef8ffc
+2012-05-10T18:31:38.703931Z
+11
+renanmarceluchoa@gmail.com
 
 
 
@@ -160,5 +183,5 @@ brdonsb@gmail.com
 
 
 
-503
+502
 
