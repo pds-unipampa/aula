@@ -1,0 +1,173 @@
+\hypertarget{baralho_8h}{\section{Referência do Arquivo baralho.\-h}
+\label{baralho_8h}\index{baralho.\-h@{baralho.\-h}}
+}
+\subsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbaralho}{baralho}
+\end{DoxyCompactItemize}
+\subsection*{Definições de Tipos}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structbaralho}{baralho} \hyperlink{baralho_8h_a211eda7ee920a9ca89a3f8322ed184ec}{Lista\-\_\-\-Baralho}
+\item 
+typedef \hyperlink{baralho_8h_a211eda7ee920a9ca89a3f8322ed184ec}{Lista\-\_\-\-Baralho} $\ast$ \hyperlink{baralho_8h_afe3afdeddadd8ffb6eb3a99878ab1c27}{comeco\-\_\-baralho}
+\begin{DoxyCompactList}\small\item\em Ponteiro que se refere ao comeco do baralho, ou seja, o baralho. \end{DoxyCompactList}\item 
+typedef \hyperlink{baralho_8h_a211eda7ee920a9ca89a3f8322ed184ec}{Lista\-\_\-\-Baralho} $\ast$ \hyperlink{baralho_8h_a42e6dae3871bbc0e16962ab1f4ae720b}{monte}
+\begin{DoxyCompactList}\small\item\em Ponteiro que se refere ao comeco do monte, ou seja, o monte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{baralho_8h_a211eda7ee920a9ca89a3f8322ed184ec}{Lista\-\_\-\-Baralho} $\ast$ \hyperlink{baralho_8h_a03f84cbfdbb6baa2d1ee4a7318479bc5}{Cria\-\_\-\-Lista} (\hyperlink{baralho_8h_afe3afdeddadd8ffb6eb3a99878ab1c27}{comeco\-\_\-baralho} $\ast$l, \hyperlink{baralho_8h_afe3afdeddadd8ffb6eb3a99878ab1c27}{comeco\-\_\-baralho} $\ast$h)
+\item 
+\hyperlink{baralho_8h_a211eda7ee920a9ca89a3f8322ed184ec}{Lista\-\_\-\-Baralho} $\ast$ \hyperlink{baralho_8h_a21b7f973d2c0fdd1c0d86934791ed6fa}{cria\-\_\-baralho} (\hyperlink{baralho_8h_afe3afdeddadd8ffb6eb3a99878ab1c27}{comeco\-\_\-baralho} $\ast$l, int i, int k)
+\item 
+\hyperlink{baralho_8h_a211eda7ee920a9ca89a3f8322ed184ec}{Lista\-\_\-\-Baralho} $\ast$ \hyperlink{baralho_8h_adee2d2e33a5fe61f4e6a8129a02c4c7f}{embaralha} (\hyperlink{baralho_8h_afe3afdeddadd8ffb6eb3a99878ab1c27}{comeco\-\_\-baralho} $\ast$l)
+\item 
+\hyperlink{baralho_8h_a211eda7ee920a9ca89a3f8322ed184ec}{Lista\-\_\-\-Baralho} $\ast$ \hyperlink{baralho_8h_a277ee207504a930908e041634b042c1a}{embaralhando} (\hyperlink{baralho_8h_a211eda7ee920a9ca89a3f8322ed184ec}{Lista\-\_\-\-Baralho} $\ast$lista2, \hyperlink{baralho_8h_a211eda7ee920a9ca89a3f8322ed184ec}{Lista\-\_\-\-Baralho} $\ast$nodo)
+\item 
+\hyperlink{baralho_8h_a211eda7ee920a9ca89a3f8322ed184ec}{Lista\-\_\-\-Baralho} $\ast$ \hyperlink{baralho_8h_a3b51985ec0bc9e8cd8a1cd6ca744cc74}{cortar} (\hyperlink{baralho_8h_afe3afdeddadd8ffb6eb3a99878ab1c27}{comeco\-\_\-baralho} $\ast$l)
+\item 
+\hyperlink{baralho_8h_a211eda7ee920a9ca89a3f8322ed184ec}{Lista\-\_\-\-Baralho} $\ast$ \hyperlink{baralho_8h_adb2d0ddb39cc16f25fbcf973d45b4374}{retira\-\_\-carta} (\hyperlink{baralho_8h_afe3afdeddadd8ffb6eb3a99878ab1c27}{comeco\-\_\-baralho} $\ast$l, \hyperlink{baralho_8h_a42e6dae3871bbc0e16962ab1f4ae720b}{monte} $\ast$h)
+\item 
+\hyperlink{baralho_8h_a211eda7ee920a9ca89a3f8322ed184ec}{Lista\-\_\-\-Baralho} $\ast$ \hyperlink{baralho_8h_a4528d48dc9491fca0155471009f12bf5}{passa\-\_\-final} (\hyperlink{baralho_8h_afe3afdeddadd8ffb6eb3a99878ab1c27}{comeco\-\_\-baralho} $\ast$l)
+\item 
+void \hyperlink{baralho_8h_ae799ad3eef615a9726e47c9d4cfd51bb}{imprimi} (\hyperlink{baralho_8h_afe3afdeddadd8ffb6eb3a99878ab1c27}{comeco\-\_\-baralho} $\ast$lista, \hyperlink{baralho_8h_afe3afdeddadd8ffb6eb3a99878ab1c27}{comeco\-\_\-baralho} $\ast$resto)
+\end{DoxyCompactItemize}
+
+
+\subsection{Definições dos tipos}
+\hypertarget{baralho_8h_afe3afdeddadd8ffb6eb3a99878ab1c27}{\index{baralho.\-h@{baralho.\-h}!comeco\-\_\-baralho@{comeco\-\_\-baralho}}
+\index{comeco\-\_\-baralho@{comeco\-\_\-baralho}!baralho.h@{baralho.\-h}}
+\subsubsection[{comeco\-\_\-baralho}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Lista\-\_\-\-Baralho}$\ast$ {\bf comeco\-\_\-baralho}}}\label{baralho_8h_afe3afdeddadd8ffb6eb3a99878ab1c27}
+
+
+Ponteiro que se refere ao comeco do baralho, ou seja, o baralho. 
+
+\hypertarget{baralho_8h_a211eda7ee920a9ca89a3f8322ed184ec}{\index{baralho.\-h@{baralho.\-h}!Lista\-\_\-\-Baralho@{Lista\-\_\-\-Baralho}}
+\index{Lista\-\_\-\-Baralho@{Lista\-\_\-\-Baralho}!baralho.h@{baralho.\-h}}
+\subsubsection[{Lista\-\_\-\-Baralho}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf baralho} {\bf Lista\-\_\-\-Baralho}}}\label{baralho_8h_a211eda7ee920a9ca89a3f8322ed184ec}
+Estrutura que define um tipo carta de um baralho convencional $\ast$eh composta por inteiro numero que indica o numero da carta (de 1 a 13), $\ast$uma string naipe que se refere ao naipe da carta (basto,copas,ouro e espada) $\ast$uma estrutura auxiliar de mesmo tipo que sera um ponteiro. \hypertarget{baralho_8h_a42e6dae3871bbc0e16962ab1f4ae720b}{\index{baralho.\-h@{baralho.\-h}!monte@{monte}}
+\index{monte@{monte}!baralho.h@{baralho.\-h}}
+\subsubsection[{monte}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Lista\-\_\-\-Baralho}$\ast$ {\bf monte}}}\label{baralho_8h_a42e6dae3871bbc0e16962ab1f4ae720b}
+
+
+Ponteiro que se refere ao comeco do monte, ou seja, o monte. 
+
+
+
+\subsection{Funções}
+\hypertarget{baralho_8h_a3b51985ec0bc9e8cd8a1cd6ca744cc74}{\index{baralho.\-h@{baralho.\-h}!cortar@{cortar}}
+\index{cortar@{cortar}!baralho.h@{baralho.\-h}}
+\subsubsection[{cortar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lista\-\_\-\-Baralho}$\ast$ {\bf cortar} (
+\begin{DoxyParamCaption}
+\item[{{\bf comeco\-\_\-baralho} $\ast$}]{l}
+\end{DoxyParamCaption}
+)}}\label{baralho_8h_a3b51985ec0bc9e8cd8a1cd6ca744cc74}
+Corta a lista baralho em alguma posicao. 
+\begin{DoxyParams}{Parâmetros}
+{\em $\ast$l} & -\/ ponteiro indicando inicio de lista. \\
+\hline
+\end{DoxyParams}
+\hypertarget{baralho_8h_a21b7f973d2c0fdd1c0d86934791ed6fa}{\index{baralho.\-h@{baralho.\-h}!cria\-\_\-baralho@{cria\-\_\-baralho}}
+\index{cria\-\_\-baralho@{cria\-\_\-baralho}!baralho.h@{baralho.\-h}}
+\subsubsection[{cria\-\_\-baralho}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lista\-\_\-\-Baralho}$\ast$ {\bf cria\-\_\-baralho} (
+\begin{DoxyParamCaption}
+\item[{{\bf comeco\-\_\-baralho} $\ast$}]{l, }
+\item[{int}]{i, }
+\item[{int}]{k}
+\end{DoxyParamCaption}
+)}}\label{baralho_8h_a21b7f973d2c0fdd1c0d86934791ed6fa}
+Aloca os nodos na lista conforme esta funcao eh chamada na funcao \hyperlink{baralho_8c_a03f84cbfdbb6baa2d1ee4a7318479bc5}{Cria\-\_\-\-Lista()} $\ast$especifica os tipos de cada nodo como o numero,naipe e ponteiro prox $\ast$e aloca na lista que no fim das chamdas sera o baralho 
+\begin{DoxyParams}{Parâmetros}
+{\em $\ast$l} & -\/ ponteiro indicando a lista. \\
+\hline
+{\em i} & -\/ indica o naipe da carta. \\
+\hline
+{\em k} & -\/ indica o numero da carta. \\
+\hline
+\end{DoxyParams}
+\hypertarget{baralho_8h_a03f84cbfdbb6baa2d1ee4a7318479bc5}{\index{baralho.\-h@{baralho.\-h}!Cria\-\_\-\-Lista@{Cria\-\_\-\-Lista}}
+\index{Cria\-\_\-\-Lista@{Cria\-\_\-\-Lista}!baralho.h@{baralho.\-h}}
+\subsubsection[{Cria\-\_\-\-Lista}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lista\-\_\-\-Baralho}$\ast$ {\bf Cria\-\_\-\-Lista} (
+\begin{DoxyParamCaption}
+\item[{{\bf comeco\-\_\-baralho} $\ast$}]{l, }
+\item[{{\bf comeco\-\_\-baralho} $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{baralho_8h_a03f84cbfdbb6baa2d1ee4a7318479bc5}
+Cria o ponteiro de baralho e do monte apontando N\-U\-L\-L $\ast$chama funcao \hyperlink{baralho_8c_a21b7f973d2c0fdd1c0d86934791ed6fa}{cria\-\_\-baralho()} enviando os parametros que definirao o numero e naipe da carta, $\ast$chama a funcao \hyperlink{baralho_8c_a21b7f973d2c0fdd1c0d86934791ed6fa}{cria\-\_\-baralho()} 52(tamanho de um baralho) vezes. 
+\begin{DoxyParams}{Parâmetros}
+{\em $\ast$l} & -\/ ponteiro que indica a lista a ser criada. \\
+\hline
+{\em $\ast$h} & -\/ ponteiro que sera igualado a N\-U\-L\-L. \\
+\hline
+\end{DoxyParams}
+\hypertarget{baralho_8h_adee2d2e33a5fe61f4e6a8129a02c4c7f}{\index{baralho.\-h@{baralho.\-h}!embaralha@{embaralha}}
+\index{embaralha@{embaralha}!baralho.h@{baralho.\-h}}
+\subsubsection[{embaralha}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lista\-\_\-\-Baralho}$\ast$ {\bf embaralha} (
+\begin{DoxyParamCaption}
+\item[{{\bf comeco\-\_\-baralho} $\ast$}]{l}
+\end{DoxyParamCaption}
+)}}\label{baralho_8h_adee2d2e33a5fe61f4e6a8129a02c4c7f}
+Percorre a lista criada na funcao cria\-\_\-baralho ate o nodo desejado $\ast$faz a lista perder a refencia com o nodo e chama a funcao \hyperlink{baralho_8c_adee2d2e33a5fe61f4e6a8129a02c4c7f}{embaralha()} $\ast$enviando de parametro o nodo. $\ast$cria outro ponteiro para lista(lista2) que tambem sera enviada como parametro para a funcao \hyperlink{baralho_8c_adee2d2e33a5fe61f4e6a8129a02c4c7f}{embaralha()} 
+\begin{DoxyParams}{Parâmetros}
+{\em $\ast$l} & -\/ ponteiro indicando o inicio da lista. \\
+\hline
+\end{DoxyParams}
+\hypertarget{baralho_8h_a277ee207504a930908e041634b042c1a}{\index{baralho.\-h@{baralho.\-h}!embaralhando@{embaralhando}}
+\index{embaralhando@{embaralhando}!baralho.h@{baralho.\-h}}
+\subsubsection[{embaralhando}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lista\-\_\-\-Baralho}$\ast$ {\bf embaralhando} (
+\begin{DoxyParamCaption}
+\item[{{\bf Lista\-\_\-\-Baralho} $\ast$}]{lista2, }
+\item[{{\bf Lista\-\_\-\-Baralho} $\ast$}]{nodo}
+\end{DoxyParamCaption}
+)}}\label{baralho_8h_a277ee207504a930908e041634b042c1a}
+redireciona os ponteiro da lista para outro ponteiro do inicio de lista 
+\begin{DoxyParams}{Parâmetros}
+{\em $\ast$lista2} & -\/ ponteiro indicando o inicio da outra lista. \\
+\hline
+{\em $\ast$nodo} & -\/ ponteiro indicando nodo sem refencia em nehuma lista. \\
+\hline
+\end{DoxyParams}
+\hypertarget{baralho_8h_ae799ad3eef615a9726e47c9d4cfd51bb}{\index{baralho.\-h@{baralho.\-h}!imprimi@{imprimi}}
+\index{imprimi@{imprimi}!baralho.h@{baralho.\-h}}
+\subsubsection[{imprimi}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf imprimi} (
+\begin{DoxyParamCaption}
+\item[{{\bf comeco\-\_\-baralho} $\ast$}]{lista, }
+\item[{{\bf comeco\-\_\-baralho} $\ast$}]{resto}
+\end{DoxyParamCaption}
+)}}\label{baralho_8h_ae799ad3eef615a9726e47c9d4cfd51bb}
+Imprime as listas do baralho e o baralho do monte 
+\begin{DoxyParams}{Parâmetros}
+{\em $\ast$lista} & -\/ ponteiro indicando o inicio da lista do baralho \\
+\hline
+{\em $\ast$resto} & -\/ ponteiro indicando o inicio da lista do monte \\
+\hline
+\end{DoxyParams}
+\hypertarget{baralho_8h_a4528d48dc9491fca0155471009f12bf5}{\index{baralho.\-h@{baralho.\-h}!passa\-\_\-final@{passa\-\_\-final}}
+\index{passa\-\_\-final@{passa\-\_\-final}!baralho.h@{baralho.\-h}}
+\subsubsection[{passa\-\_\-final}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lista\-\_\-\-Baralho}$\ast$ {\bf passa\-\_\-final} (
+\begin{DoxyParamCaption}
+\item[{{\bf comeco\-\_\-baralho} $\ast$}]{l}
+\end{DoxyParamCaption}
+)}}\label{baralho_8h_a4528d48dc9491fca0155471009f12bf5}
+Passa uma carta do inicio da lista do baralho para o final. 
+\begin{DoxyParams}{Parâmetros}
+{\em $\ast$l} & -\/ ponteiro para inicio da lista. \\
+\hline
+\end{DoxyParams}
+\hypertarget{baralho_8h_adb2d0ddb39cc16f25fbcf973d45b4374}{\index{baralho.\-h@{baralho.\-h}!retira\-\_\-carta@{retira\-\_\-carta}}
+\index{retira\-\_\-carta@{retira\-\_\-carta}!baralho.h@{baralho.\-h}}
+\subsubsection[{retira\-\_\-carta}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lista\-\_\-\-Baralho}$\ast$ {\bf retira\-\_\-carta} (
+\begin{DoxyParamCaption}
+\item[{{\bf comeco\-\_\-baralho} $\ast$}]{l, }
+\item[{{\bf monte} $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{baralho_8h_adb2d0ddb39cc16f25fbcf973d45b4374}
+retira uma carta da lista do baralho e coloca na lista do baralho do monte. 
+\begin{DoxyParams}{Parâmetros}
+{\em $\ast$l} & -\/ ponteiro indicando inicio da lista. \\
+\hline
+{\em $\ast$h} & -\/ ponteiro indicando inicio da lista do monte. \\
+\hline
+\end{DoxyParams}

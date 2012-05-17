@@ -1,0 +1,2 @@
+C:/Users/EZEQUIEL/Desktop/baralho/build/CMakeFiles/App.dir
+C:/Users/EZEQUIEL/Desktop/baralho/build/CMakeFiles/baralho.dir

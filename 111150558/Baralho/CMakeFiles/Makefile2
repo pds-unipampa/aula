@@ -85,6 +85,41 @@ clean: CMakeFiles/Baralho.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/aplicacao.dir
+
+# All Build rule for target.
+CMakeFiles/aplicacao.dir/all: CMakeFiles/Baralho.dir/all
+	$(MAKE) -f CMakeFiles/aplicacao.dir/build.make CMakeFiles/aplicacao.dir/depend
+	$(MAKE) -f CMakeFiles/aplicacao.dir/build.make CMakeFiles/aplicacao.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristiano/src/aula/111150558/Baralho/CMakeFiles  5
+	@echo "Built target aplicacao"
+.PHONY : CMakeFiles/aplicacao.dir/all
+
+# Include target in all.
+all: CMakeFiles/aplicacao.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/aplicacao.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristiano/src/aula/111150558/Baralho/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/aplicacao.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristiano/src/aula/111150558/Baralho/CMakeFiles 0
+.PHONY : CMakeFiles/aplicacao.dir/rule
+
+# Convenience name for target.
+aplicacao: CMakeFiles/aplicacao.dir/rule
+.PHONY : aplicacao
+
+# clean rule for target.
+CMakeFiles/aplicacao.dir/clean:
+	$(MAKE) -f CMakeFiles/aplicacao.dir/build.make CMakeFiles/aplicacao.dir/clean
+.PHONY : CMakeFiles/aplicacao.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/aplicacao.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

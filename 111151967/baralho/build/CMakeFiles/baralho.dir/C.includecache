@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/EZEQUIEL/Desktop/baralho/baralho.c
+stdlib.h
+-
+stdio.h
+-
+baralho.h
+C:/Users/EZEQUIEL/Desktop/baralho/baralho.h
+time.h
+-
+string.h
+-
+
+C:/Users/EZEQUIEL/Desktop/baralho/baralho.h
+

@@ -14,7 +14,7 @@ Baralho cortar(Baralho B, int pos){
         Baralho aux2 = cria();
         Baralho cortado = cria();
 
-        for (i=0; i<pos; i++){
+        for (i=0; i<=pos; i++){
 
                 insere_aux(&aux2, (aux->carta), (aux->naipe));
 
