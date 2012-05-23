@@ -60,19 +60,17 @@ lista retiraDescarte (Baralho* D, int pos){
     lista carta;
     Baralho aux = cria();
 
-    for (i=1; i<pos; i++){
+    for (i=0; i<pos; i++){
 
         insere_aux(&aux, (*D)->carta, (*D)->naipe);
 
         (*D)=(*D)->prox;
     }
 
-    carta.carta = (*D)->prox->carta;
-    carta.naipe = (*D)->prox->naipe;
+    carta.carta = (*D)->carta;
+    carta.naipe = (*D)->naipe;
 
-    insere_aux(&aux, (*D)->carta, (*D)->naipe);
-
-    (*D)=(*D)->prox->prox;
+    (*D)=(*D)->prox;
 
     while ((*D)!=NULL){
 
