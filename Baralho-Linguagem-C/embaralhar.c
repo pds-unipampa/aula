@@ -83,3 +83,12 @@ Baralho cria(void){
 
     return NULL;
 }
+
+int conta(Baralho A){
+    lista *aux = A;
+    int cont = 0;
+    while(aux->prox != NULL){
+        cont++;
+    }
+    return cont;
+}
