@@ -48,7 +48,7 @@ lista mostraDescarte(Baralho D, int pos);
  *@param carta - número da carta que vai ser inserida.
  *@param naipe - naipe da carta que vai ser inserida.
  */
-static Baralho insereCartaDescarte(Baralho D, int carta, char naipe);
+Baralho insereCartaDescarte(Baralho D, int carta, char naipe);
 
 /*!Remove uma carta do baralho de descarte e retorna a mesma.
  *@param D - Baralho de descarte.
