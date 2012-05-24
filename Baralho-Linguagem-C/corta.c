@@ -37,7 +37,7 @@ Baralho cortar(Baralho B, int pos){
         return cortado;
 }
 
-static void insere_aux(Baralho *A, int carta, char naipe){
+void insere_aux(Baralho *A, int carta, char naipe){
 
         lista* novo = (lista*) malloc(sizeof(lista));
 
