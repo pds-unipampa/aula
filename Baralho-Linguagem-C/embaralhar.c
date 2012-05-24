@@ -92,3 +92,12 @@ int conta(Baralho A){
     }
     return cont;
 }
+
+void libera(Baralho *B){
+    Baralho *temp;
+    while(*B != NULL){
+        temp = (*B)->prox;
+        free(*B);
+        *B = temp;
+    }
+}

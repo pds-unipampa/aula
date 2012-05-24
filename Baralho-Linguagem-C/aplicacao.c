@@ -24,7 +24,6 @@ Baralho transfereDescarte(Baralho B, Baralho D){
 }
 
 main(){
-
     char nome1[20];
     char nome2[20];
     char escolha[10];
@@ -134,4 +133,8 @@ main(){
 
     printf("\n O VENCEDOR FOI O JOGADOR 2 (%s)\n", nome2);
 
+    libera(&B);
+    libera(&player1);
+    libera(&player2);
+    libera(&D);
 }

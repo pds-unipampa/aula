@@ -80,3 +80,9 @@ static int verifica_Carta(Baralho B, int carta, int naipe);
  *@param naipe - Naipe da carta.
  */
 static Baralho insere_Carta(Baralho B, int carta, int naipe);
+
+/*!Libera um baralho, desalocando a memoria de carta por carta.
+ *@param B - Baralho que sera desalocado.
+ */
+void libera(Baralho *B);
+
