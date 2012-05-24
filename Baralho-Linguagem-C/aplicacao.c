@@ -28,7 +28,7 @@ main(){
     char nome2[20];
     char escolha[10];
     int jogador = 1, vencedor;
-    int numcartas1 = 0, numcartas2 = 0;
+    int numcartas1, numcartas2;
     Baralho B = cria();
     Baralho player1 = cria();
     Baralho player2 = cria();
@@ -95,21 +95,9 @@ main(){
        }
     }
 
-    Baralho aux = player1;
 
-    while (aux != NULL){
-
-            numcartas1 ++;
-            aux = aux->prox;
-    }
-
-    aux = player2;
-
-    while (aux != NULL){
-
-            numcartas2 ++;
-            aux = aux->prox;
-    }
+    numcartas1 = conta(player1);
+    numcartas2 = conta(player2);
 
     printf("\n\nFIM DE JOGO!\n");
     printf("\n\nJOGADOR 1 - %s: %d cartas\n", nome1, numcartas1);
