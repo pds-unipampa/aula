@@ -34,8 +34,10 @@
  */
 /*!Insere uma determinada carta no monte de descarte.
  *@param D - Baralho de descarte onde vai ser inserida a carta.
+ *@param carta - Número da carta que vai ser inserida.
+ *@param naipe - naipe da carta que vai ser inserida.
  */
-Baralho atualizaDescarte (Baralho D);
+Baralho atualizaDescarte (Baralho D, int carta, char naipe);
 
 /*!Retorna a carta que está em uma determinada posição do baralho de descarte.
  *@param D - Baralho de descarte.

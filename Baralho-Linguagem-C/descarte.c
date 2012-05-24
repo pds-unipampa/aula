@@ -19,18 +19,7 @@ Baralho insereCartaDescarte(Baralho D, int carta, char naipe){
         return aux;
 }
 
-Baralho atualizaDescarte (Baralho D){
-
-    int carta;
-    char naipe;
-
-    printf("\nEntre com o número da carta (1 a 13): ");
-    scanf("%d", &carta);
-    getchar();
-
-    printf("\nEntre com o naipe da carta (O, C, P ou E): ");
-    scanf("%c", &naipe);
-    getchar();
+Baralho atualizaDescarte (Baralho D, int carta, char naipe){
 
     D = insereCartaDescarte(D, carta, naipe);
 
@@ -69,6 +58,7 @@ lista retiraDescarte (Baralho* D, int pos){
 
     carta.carta = (*D)->carta;
     carta.naipe = (*D)->naipe;
+
 
     (*D)=(*D)->prox;
 
