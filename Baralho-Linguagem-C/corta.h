@@ -47,4 +47,4 @@ Baralho cortar (Baralho B, int pos);
  *@param carta - Numero da carta que vai ser inserida.
  *@param carta - Naipe da carta.
  */
-void insere_aux(Baralho* A, int carta, char naipe);
+static void insere_aux(Baralho* A, int carta, char naipe);

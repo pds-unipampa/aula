@@ -71,7 +71,7 @@ Baralho embaralhar(Baralho B);
  *@param carta - Número da carta a ser pesquisada.
  *@param naipe - Naipe da carta.
  */
-int verifica_Carta(Baralho B, int carta, int naipe);
+static int verifica_Carta(Baralho B, int carta, int naipe);
 
 /*!Função interna. Utilizada apenas por outras funções.
  *Insere uma determinada carta em um baralho.
@@ -79,4 +79,4 @@ int verifica_Carta(Baralho B, int carta, int naipe);
  *@param carta - Número da carta a ser inserida.
  *@param naipe - Naipe da carta.
  */
-Baralho insere_Carta(Baralho B, int carta, int naipe);
+static Baralho insere_Carta(Baralho B, int carta, int naipe);

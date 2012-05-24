@@ -5,7 +5,7 @@
 #include <string.h>
 #include "embaralhar.h"
 
-int verificaCarta(int carta, int naipe, Baralho B){
+static int verificaCarta(int carta, int naipe, Baralho B){
 
         Baralho aux = B;
 
@@ -27,7 +27,7 @@ int verificaCarta(int carta, int naipe, Baralho B){
         return 1;
 }
 
-Baralho insereCarta(Baralho B, int carta, int naipe){
+static Baralho insereCarta(Baralho B, int carta, int naipe){
 
         char n [4] = {'C', 'P', 'O', 'E'};
         lista *aux =(lista*) malloc(sizeof (lista));
