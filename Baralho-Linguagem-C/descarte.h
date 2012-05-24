@@ -32,12 +32,8 @@
  *  License along with this library.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-/*!Insere uma determinada carta no monte de descarte.
- *@param D - Baralho de descarte onde vai ser inserida a carta.
- *@param carta - Número da carta que vai ser inserida.
- *@param naipe - naipe da carta que vai ser inserida.
- */
-Baralho atualizaDescarte (Baralho D, int carta, char naipe);
+
+
 
 /*!Retorna a carta que está em uma determinada posição do baralho de descarte.
  *@param D - Baralho de descarte.
@@ -45,9 +41,9 @@ Baralho atualizaDescarte (Baralho D, int carta, char naipe);
  */
 lista mostraDescarte(Baralho D, int pos);
 
-/*!Função interna. É utilizada apenas em outras funções.
- *@param D - Baralho de descarte.
- *@param carta - número da carta que vai ser inserida.
+/*!Insere uma determinada carta no monte de descarte.
+ *@param D - Baralho de descarte onde vai ser inserida a carta.
+ *@param carta - Número da carta que vai ser inserida.
  *@param naipe - naipe da carta que vai ser inserida.
  */
 Baralho insereCartaDescarte(Baralho D, int carta, char naipe);

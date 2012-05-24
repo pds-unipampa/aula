@@ -19,13 +19,6 @@ Baralho insereCartaDescarte(Baralho D, int carta, char naipe){
         return aux;
 }
 
-Baralho atualizaDescarte (Baralho D, int carta, char naipe){
-
-    D = insereCartaDescarte(D, carta, naipe);
-
-    return D;
-}
-
 lista mostraDescarte(Baralho D, int pos){
 
     lista retorno;
