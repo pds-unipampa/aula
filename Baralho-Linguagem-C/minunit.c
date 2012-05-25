@@ -137,6 +137,23 @@ static char * test_insereCartaDescarte() {
     return 0;
 }
 
+/*!Testa a função que retorna uma carta de uma determinada posicao do monte de descarte. No teste foi usada a posicao 0*/
+static char * test_mostraDescarte() {
+
+    Baralho D = NULL;
+    lista carta;
+
+    D = insereCartaDescarte(D, 5, 'O');
+    D = insereCartaDescarte(D, 7, 'C');
+    D = insereCartaDescarte(D, 1, 'P');
+
+    carta = mostraDescarte(D, 0);
+
+    mu_assert("FUNCAO mostraDescarte - Erro!", (carta.carta != NULL) && (carta.naipe != NULL));
+
+    return 0;
+}
+
 /*!Aqui são chamados os testes*/
 static char * testes() {
 
@@ -146,6 +163,7 @@ static char * testes() {
     mu_run_test(test_retiraInicio_insereFim);
     mu_run_test(test_cortar);
     mu_run_test(test_insereCartaDescarte);
+	mu_run_test(test_mostraDescarte);
 
     return 0;
 }
