@@ -159,6 +159,23 @@ static char * test_mostraDescarte() {
     return 0;
 }
 
+/*!Testa a função que retira uma carta em uma determinada posicao do monte de descarte. No teste foi usada a posicao 0*/
+static char * test_retiraDescarte() {
+
+    Baralho D = NULL;
+    lista carta;
+
+    D = insereCartaDescarte(D, 5, 'O');
+    D = insereCartaDescarte(D, 7, 'C');
+    D = insereCartaDescarte(D, 1, 'P');
+
+    carta = retiraDescarte(&D, 0);
+
+    mu_assert("FUNCAO retiraDescarte - Erro! A carta nao foi retirada do monte de descarte.", tamanho_baralho(D)==2);
+
+    return 0;
+}
+
 /*!Aqui são chamados os testes*/
 static char * testes() {
 
@@ -169,6 +186,7 @@ static char * testes() {
     mu_run_test(test_cortar);
     mu_run_test(test_insereCartaDescarte);
 	mu_run_test(test_mostraDescarte);
+	mu_run_test(test_retiraDescarte);
 
     return 0;
 }
