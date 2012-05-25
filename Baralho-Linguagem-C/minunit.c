@@ -40,15 +40,32 @@ static char * test_retira_final() {
 
     Baralho B = embaralhar(0);
     Baralho aux = B;
+    lista penult;
     lista carta;
+
+    while (aux->prox != NULL){
+
+        if (aux->prox->prox == NULL){
+
+            penult.carta = aux->carta;
+            penult.naipe = aux->naipe;
+        }
+
+        aux = aux->prox;
+    }
+
+    carta = retira_final(&B);
+
+    mu_assert("FUNCAO retira_final - Erro! A carta que foi retirada nao estava no final!", (carta.carta == aux->carta) && (carta.naipe == aux->naipe));
+
+    aux = B;
 
     while (aux->prox != NULL){
 
         aux = aux->prox;
     }
 
-    carta = retira_final(&B);
-    mu_assert("FUNCAO retira_final - Erro! A carta que foi retirada nao estava no final!", (carta.carta == aux->carta) && (carta.naipe == aux->naipe));
+    mu_assert("FUNCAO retira_final - Erro! A penultima carta do baralho antes da remoção nao é a ultima carta do baralho atual", (penult.carta == aux->carta) && (penult.naipe == aux->naipe));
     mu_assert("FUNCAO retira_final - Erro! A carta do final foi supostamente retirada mas o baralho continua com 52 cartas.", tamanho_baralho(B) == 51);
     return 0;
 }
