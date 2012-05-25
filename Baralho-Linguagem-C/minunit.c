@@ -76,10 +76,15 @@ static char * test_retira_inicio() {
     Baralho B = embaralhar(0);
     Baralho aux = B;
     lista carta;
+    lista segundaCarta;
+
+    segundaCarta.carta = B->prox->carta;
+    segundaCarta.naipe = B->prox->naipe;
 
     carta = retira_inicio(&B);
 
     mu_assert("FUNCAO retira_inicio - Erro! A carta que foi retirada nao estava no inicio.", (carta.carta == aux->carta) && (carta.naipe == aux->naipe));
+    mu_assert("FUNCAO retira_inicio - Erro! A segunda carta do baralho antes da remoção não é a primeira no baralho atual.", (segundaCarta.carta == B->carta) && (segundaCarta.naipe == B->naipe));
     mu_assert("FUNCAO retira_inicio - Erro! A carta do inicio foi supostamente retirada mas o baralho continua com 52 cartas.", tamanho_baralho(B) == 51);
     return 0;
 }
