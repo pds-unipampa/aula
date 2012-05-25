@@ -39,18 +39,6 @@ static Baralho insereCarta(Baralho B, int carta, int naipe){
         return aux;
 }
 
-void imprime(Baralho B){
-
-        Baralho aux = B;
-
-        while (aux!= NULL){
-
-                printf(" %d %c\n", aux->carta, aux->naipe);
-
-                aux = aux->prox;
-        }
-}
-
 Baralho embaralhar(Baralho B){
 
         int cont = 0, carta, naipe, verifica;

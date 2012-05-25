@@ -23,6 +23,21 @@ Baralho transfereDescarte(Baralho B, Baralho D){
         return B;
 }
 
+/*!Imprime as cartas de um baralho.
+ *@param B - Baralho que vai ser imprimido.
+ */
+void imprime(Baralho B){
+
+        Baralho aux = B;
+
+        while (aux!= NULL){
+
+                printf(" %d %c\n", aux->carta, aux->naipe);
+
+                aux = aux->prox;
+        }
+}
+
 main(){
     char nome1[20];
     char nome2[20];
