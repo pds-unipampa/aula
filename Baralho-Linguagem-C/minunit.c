@@ -28,13 +28,38 @@ int tamanho_baralho(Baralho B){
 static char * test_embaralhar() {
 
     Baralho B = embaralhar(0);
+    Baralho aux = B;
+    int cartas[10];
+    char naipes [10];
+    int i, cont=0;
 
     mu_assert("FUNCAO embaralhar - Erro ao embaralhar. O baralho ficou nulo.", B != NULL);
     mu_assert("FUNCAO embaralhar - Erro ao embaralhar. O baralho nao contem 52 cartas.", tamanho_baralho(B) == 52);
 
+    for (i=0; i<5; i++){
+
+        cartas[i]=aux->carta;
+        naipes[i]=aux->naipe;
+
+        aux=aux->prox;
+    }
+
     B = embaralhar(B);
 
     mu_assert("FUNCAO embaralhar - Erro ao embaralhar. Depois de outra embaralhada o baralho nao ficou com 52 cartas", tamanho_baralho(B) == 52);
+
+    aux=B;
+
+    for (i=0; i<10; i++){
+
+        if ((cartas[i]==aux->carta) && (naipes[i]==aux->naipe)){
+
+            cont++;
+        }
+        aux=aux->prox;
+    }
+
+    mu_assert("FUNCAO embaralhar - Erro ao embaralhar. As cartas nao foram embaralhadas corretamente", cont<7);
 
     return 0;
 }

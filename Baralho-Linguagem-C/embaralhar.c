@@ -45,9 +45,11 @@ Baralho embaralhar(Baralho B){
 
         srand(time(NULL));
 
-        free(B);
+        libera(&B);
 
         B=NULL;
+
+        sleep(1/2);
 
         while (cont<52){
 
