@@ -32,6 +32,10 @@ static char * test_embaralhar() {
     mu_assert("FUNCAO embaralhar - Erro ao embaralhar. O baralho ficou nulo.", B != NULL);
     mu_assert("FUNCAO embaralhar - Erro ao embaralhar. O baralho nao contem 52 cartas.", tamanho_baralho(B) == 52);
 
+    B = embaralhar(B);
+
+    mu_assert("FUNCAO embaralhar - Erro ao embaralhar. Depois de outra embaralhada o baralho nao ficou com 52 cartas", tamanho_baralho(B) == 52);
+
     return 0;
 }
 
