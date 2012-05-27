@@ -137,6 +137,7 @@ static char * test_retiraInicio_insereFim(){
     mu_assert("FUNCAO retiraInicio_insereFim - Erro! A carta do inicio foi supostamente retirada e inserida no fim mas o baralho nao contem 52 cartas.", tamanho_baralho(B) == 52);
     return 0;
 }
+
 /*!Testa a função que corta um determinado baralho em uma determinada posição. No teste foi usada a posicao 5.*/
 static char * test_cortar(){
 
@@ -160,6 +161,8 @@ static char * test_cortar(){
 	carta_final = retira_final(&aux);
 
 	mu_assert("FUNCAO cortar - Erro! O baralho nao foi cortado corretamente.", (carta_posicao.carta == carta_final.carta) && (carta_posicao.naipe == carta_final.naipe));
+    mu_assert("FUNCAO cortar - Erro! O barlaho nao permaneceu com as 52 cartas.", tamanho_baralho(B)==52);
+
     return 0;
 }
 
@@ -188,6 +191,7 @@ static char * test_mostraDescarte() {
     carta = mostraDescarte(D, 0);
 
     mu_assert("FUNCAO mostraDescarte - Erro!", (carta.carta != NULL) && (carta.naipe != NULL));
+    mu_assert("FUNCAO mostraDescarte - Erro! O tamanho do baralho foi modificado", tamanho_baralho(D) == 3);
 
     return 0;
 }
