@@ -124,15 +124,19 @@ static char * test_retiraInicio_insereFim(){
 	Baralho B = embaralhar(0);
 	Baralho aux = B;
 	lista carta;
+	lista segundaCarta;
+
+	segundaCarta.carta = B->prox->carta;
+    segundaCarta.naipe = B->prox->naipe;
 
 	retiraInicio_insereFim(&B);
 	carta = retira_final(&aux);
 
 	mu_assert("FUNCAO retiraInicio_insereFim - Erro! A carta nao foi retirada do inicio e inserida no fim.", (carta.carta == aux->carta) && (carta.naipe == aux->naipe));
+    mu_assert("FUNCAO retira_inicio_insereFim - Erro! A segunda carta do baralho antes da remoção e inserção no fim não é a primeira no baralho atual.", (segundaCarta.carta == B->carta) && (segundaCarta.naipe == B->naipe));
     mu_assert("FUNCAO retiraInicio_insereFim - Erro! A carta do inicio foi supostamente retirada e inserida no fim mas o baralho nao contem 52 cartas.", tamanho_baralho(B) == 52);
     return 0;
 }
-
 /*!Testa a função que corta um determinado baralho em uma determinada posição. No teste foi usada a posicao 5.*/
 static char * test_cortar(){
 
