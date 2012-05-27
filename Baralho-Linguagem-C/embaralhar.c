@@ -29,11 +29,10 @@ static int verificaCarta(int carta, int naipe, Baralho B){
 
 static Baralho insereCarta(Baralho B, int carta, int naipe){
 
-        char n [4] = {'C', 'P', 'O', 'E'};
         lista *aux =(lista*) malloc(sizeof (lista));
 
         aux->carta = carta;
-        aux->naipe = n[naipe];
+        aux->naipe = naipe;
         aux->prox = B;
 
         return aux;

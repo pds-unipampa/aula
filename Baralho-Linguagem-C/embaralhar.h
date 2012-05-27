@@ -41,10 +41,18 @@
  * As demais cartas seguem o padrão que conhecemos.
  * Os nipes são representados por um caractere. Paus, copas, espadas e ouro são representados por P, C, E e O respectivamente.
 */
+
+enum Naipe{
+    Copas = 0,
+    Espadas,
+    Ouros,
+    Paus
+};
+
 typedef struct nodo {
 
     int carta;//!< armazena uma carta (seu respectivo número).
-    char naipe;//!< armazena um nipe.
+    enum Naipe naipe;//!< armazena um nipe.
     struct nodo *prox;//!< apontador para o próximo nó.
 
 }lista;

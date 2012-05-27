@@ -8,7 +8,7 @@
 #include "corta.h"
 #include "descarte.h"
 
-Baralho insereCartaDescarte(Baralho D, int carta, char naipe){
+Baralho insereCartaDescarte(Baralho D, int carta, int naipe){
 
         lista *aux =(lista*) malloc(sizeof (lista));
 
