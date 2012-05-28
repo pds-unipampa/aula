@@ -9,7 +9,7 @@ static int verificaCarta(Baralho B, int carta, int naipe){
 
         Baralho aux = B;
 
-        char n [4] = {'C', 'P', 'O', 'E'};
+        char *n[] = {Copas, Espadas, Ouros, Paus};
 
         while (aux != NULL){
 
@@ -48,7 +48,7 @@ Baralho embaralhar(Baralho B){
 
         B=NULL;
 
-        sleep(1/2);
+        sleep(1);
 
         while (cont<52){
 

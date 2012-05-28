@@ -30,9 +30,11 @@ void imprime(Baralho B){
 
         Baralho aux = B;
 
+        char *strings[4] = { "Copas", "Espadas", "Ouros", "Paus" };
+
         while (aux!= NULL){
 
-                printf(" %d %c\n", aux->carta, aux->naipe);
+                printf(" %d de %s\n", aux->carta, strings[aux->naipe]);
 
                 aux = aux->prox;
         }
@@ -49,6 +51,7 @@ int main(){
     Baralho player2 = cria();
     Baralho D = cria();
     lista C;
+    char *strings[4] = { "Copas", "Espadas", "Ouros", "Paus" };
 
     printf("\nInsira o nome do Jogador 1 : ");
     gets(nome1);
@@ -72,9 +75,9 @@ int main(){
 
         if ( ((!(strcmp(escolha,"par"))) && (((B->carta)%2) == 0)) || ((!(strcmp(escolha,"impar"))) && (((B->carta)%2) != 0)) ){
 
-                if (jogador == 1){
+                if(jogador == 1){
 
-                    printf("\nBoa escolha!! Carta: %d - %c\n", B->carta, B->naipe);
+                    printf("\nBoa escolha!! Carta: %d de %s\n", B->carta, strings[B->naipe]);
                     C = retiraInicio(&B);
                     insereAux(&player1, C.carta, C.naipe);
                     player1 = transfereDescarte(player1, D);
@@ -84,7 +87,7 @@ int main(){
                 }
                 else{
 
-                    printf("\nBoa escolha!! Carta: %d - %c\n", B->carta, B->naipe);
+                    printf("\nBoa escolha!! Carta: %d de %s\n", B->carta, strings[B->naipe]);
                     C = retiraInicio(&B);
                     insereAux(&player2, C.carta, C.naipe);
                     player2 = transfereDescarte(player2, D);
@@ -95,7 +98,7 @@ int main(){
 
         else{
 
-             printf("\nQue azar!! Carta: %d - %c\n", B->carta, B->naipe);
+             printf("\nQue azar!! Carta: %d de %s\n", B->carta, strings[B->naipe]);
              C = retiraInicio(&B);
              D = insereCartaDescarte(D, C.carta, C.naipe);
 
@@ -140,6 +143,6 @@ int main(){
     liberaBaralho(&player1);
     liberaBaralho(&player2);
     liberaBaralho(&D);
-    
+
     return 0;
 }
