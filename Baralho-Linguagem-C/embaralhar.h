@@ -68,7 +68,7 @@ typedef lista* Baralho;//!< Lista que representa um baralho.
 /*!Conta o numero de cartas existente em um baralho
  *@param A - baralho a ser contado
 */
-int conta(Baralho A);
+int contaBaralho(Baralho A);
 
 /*!Cria um baralho como NULL.
  */
@@ -85,7 +85,7 @@ Baralho embaralhar(Baralho B);
  *@param carta - Número da carta a ser pesquisada.
  *@param naipe - Naipe da carta.
  */
-static int verifica_Carta(Baralho B, int carta, int naipe);
+static int verificaCarta(Baralho B, int carta, int naipe);
 
 /*!Função interna. Utilizada apenas por outras funções.
  *Insere uma determinada carta em um baralho.
@@ -93,10 +93,10 @@ static int verifica_Carta(Baralho B, int carta, int naipe);
  *@param carta - Número da carta a ser inserida.
  *@param naipe - Naipe da carta.
  */
-static Baralho insere_Carta(Baralho B, int carta, int naipe);
+static Baralho insereCarta(Baralho B, int carta, int naipe);
 
 /*!Libera um baralho, desalocando a memoria de carta por carta.
  *@param B - Baralho que sera desalocado.
  */
-void libera(Baralho *B);
+void liberaBaralho(Baralho *B);
 

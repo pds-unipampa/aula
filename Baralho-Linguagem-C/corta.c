@@ -16,7 +16,7 @@ Baralho cortar(Baralho B, int pos){
 
         for (i=0; i<=pos; i++){
 
-                insere_aux(&aux2, (aux->carta), (aux->naipe));
+                insereAux(&aux2, (aux->carta), (aux->naipe));
 
 
                 aux = aux->prox;
@@ -24,20 +24,20 @@ Baralho cortar(Baralho B, int pos){
 
         while (aux != NULL){
 
-                 insere_aux(&cortado, (aux->carta), (aux->naipe));
+                 insereAux(&cortado, (aux->carta), (aux->naipe));
                  aux = aux->prox;
         }
 
         while (aux2 != NULL){
 
-                 insere_aux(&cortado, (aux2->carta), (aux2->naipe));
+                 insereAux(&cortado, (aux2->carta), (aux2->naipe));
                  aux2 = aux2->prox;
         }
 
         return cortado;
 }
 
-void insere_aux(Baralho *A, int carta, int naipe){
+void insereAux(Baralho *A, int carta, int naipe){
 
         lista* novo = (lista*) malloc(sizeof(lista));
 

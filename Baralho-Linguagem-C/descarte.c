@@ -44,7 +44,7 @@ lista retiraDescarte (Baralho* D, int pos){
 
     for (i=0; i<pos; i++){
 
-        insere_aux(&aux, (*D)->carta, (*D)->naipe);
+        insereAux(&aux, (*D)->carta, (*D)->naipe);
 
         (*D)=(*D)->prox;
     }
@@ -57,7 +57,7 @@ lista retiraDescarte (Baralho* D, int pos){
 
     while ((*D)!=NULL){
 
-        insere_aux(&aux, (*D)->carta, (*D)->naipe);
+        insereAux(&aux, (*D)->carta, (*D)->naipe);
 
         (*D)=(*D)->prox;
     }

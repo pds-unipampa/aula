@@ -5,7 +5,7 @@
 #include <string.h>
 #include "embaralhar.h"
 
-static int verificaCarta(int carta, int naipe, Baralho B){
+static int verificaCarta(Baralho B, int carta, int naipe){
 
         Baralho aux = B;
 
@@ -44,7 +44,7 @@ Baralho embaralhar(Baralho B){
 
         srand(time(NULL));
 
-        libera(&B);
+        liberaBaralho(&B);
 
         B=NULL;
 
@@ -55,7 +55,7 @@ Baralho embaralhar(Baralho B){
                 carta = rand()%(13)+1;
                 naipe = rand()%4;
 
-                verifica = verificaCarta(carta, naipe, B);
+                verifica = verificaCarta(B, carta, naipe);
 
                 if (verifica == 1){
 
@@ -86,7 +86,7 @@ int conta(Baralho A){
     return cont;
 }
 
-void libera(Baralho *B){
+void liberaBaralho(Baralho *B){
     Baralho *temp;
     while(*B != NULL){
         temp = (*B)->prox;
