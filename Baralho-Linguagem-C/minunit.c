@@ -169,9 +169,9 @@ static char * test_cortar(){
 static char * test_insereCartaDescarte() {
 
     Baralho D = NULL;
-    D = insereCartaDescarte(D, 5, 'P');
-    D = insereCartaDescarte(D, 1, 'C');
-    D = insereCartaDescarte(D, 2, 'O');
+    D = insereCartaDescarte(D, 5, Copas);
+    D = insereCartaDescarte(D, 1, Ouros);
+    D = insereCartaDescarte(D, 2, Espadas);
 
     mu_assert("FUNCAO atualizaDescarte - Erro! A carta nao foi inserida no monte de descarte.", tamanho_baralho(D)==3);
 
@@ -184,9 +184,9 @@ static char * test_mostraDescarte() {
     Baralho D = NULL;
     lista carta;
 
-    D = insereCartaDescarte(D, 5, 'O');
-    D = insereCartaDescarte(D, 7, 'C');
-    D = insereCartaDescarte(D, 1, 'P');
+    D = insereCartaDescarte(D, 5, Copas);
+    D = insereCartaDescarte(D, 7, Ouros);
+    D = insereCartaDescarte(D, 1, Espadas);
 
     carta = mostraDescarte(D, 0);
 
@@ -202,9 +202,9 @@ static char * test_retiraDescarte() {
     Baralho D = NULL;
     lista carta;
 
-    D = insereCartaDescarte(D, 5, 'O');
-    D = insereCartaDescarte(D, 7, 'C');
-    D = insereCartaDescarte(D, 1, 'P');
+    D = insereCartaDescarte(D, 5, Copas);
+    D = insereCartaDescarte(D, 7, Ouros);
+    D = insereCartaDescarte(D, 1, Espadas);
 
     carta = retiraDescarte(&D, 0);
 

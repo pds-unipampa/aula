@@ -33,15 +33,13 @@
  *
  */
 
-/*DECLARAÇÃO DO NÓ E DA LISTA DE CARTAS*/
-/*!Estrutura que representa uma carta.
- * Armazena a carta e seu respectivo naipe.
- * Sendo as cartas representadas de 1 a 13.
- * Logo as cartas A, J, Q e K são representadas, pelos números 1, 11, 12 e 13 respectivamente.
- * As demais cartas seguem o padrão que conhecemos.
- * Os nipes são representados por um caractere. Paus, copas, espadas e ouro são representados por P, C, E e O respectivamente.
-*/
 
+/*!Estrutura que representa os naipes.
+ * Copas = 0
+ * Espadas = 1
+ * Ouros = 2
+ * Paus = 3
+*/
 enum Naipe{
     Copas = 0,
     Espadas,
@@ -49,6 +47,14 @@ enum Naipe{
     Paus
 };
 
+
+/*!Estrutura que representa uma carta.
+ * Armazena a carta e seu respectivo naipe.
+ * Sendo as cartas representadas de 1 a 13.
+ * Logo as cartas A, J, Q e K são representadas, pelos números 1, 11, 12 e 13 respectivamente.
+ * As demais cartas seguem o padrão que conhecemos.
+ * Os nipes são representados pela estrutura enum.
+*/
 typedef struct nodo {
 
     int carta;//!< armazena uma carta (seu respectivo número).
