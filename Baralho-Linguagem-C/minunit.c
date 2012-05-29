@@ -201,14 +201,20 @@ static char * test_retiraDescarte() {
 
     Baralho D = NULL;
     lista carta;
+    lista segundaCarta;
 
     D = insereCartaDescarte(D, 5, Copas);
     D = insereCartaDescarte(D, 7, Ouros);
     D = insereCartaDescarte(D, 1, Espadas);
 
+    segundaCarta.carta = D->prox->carta;
+    segundaCarta.naipe = D->prox->naipe;
+
     carta = retiraDescarte(&D, 0);
 
     mu_assert("FUNCAO retiraDescarte - Erro! A carta nao foi retirada do monte de descarte.", tamanho_baralho(D)==2);
+    mu_assert("FUNCAO retiraDescarte - Erro! A carta nao foi retirada da posição correta.", segundaCarta.carta == D->carta && segundaCarta.naipe == D->naipe);
+
 
     return 0;
 }
