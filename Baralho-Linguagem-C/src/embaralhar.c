@@ -41,14 +41,14 @@ static Baralho insereCarta(Baralho B, int carta, int naipe){
 Baralho embaralhar(Baralho B){
 
         int cont = 0, carta, naipe, verifica;
-
-        srand(time(NULL));
+		clock_t tempo;
+        srand(time(NULL)+tempo);
 
         liberaBaralho(&B);
 
         B=NULL;
 
-        sleep(1);
+        
 
         while (cont<52){
 

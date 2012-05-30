@@ -3,10 +3,10 @@
 #include <malloc.h>
 #include <time.h>
 #include <string.h>
-#include "embaralhar.h"
-#include "retira.h"
-#include "corta.h"
-#include "descarte.h"
+#include <embaralhar.h>
+#include <retira.h>
+#include <corta.h>
+#include <descarte.h>
 
 /*!Adiciona as cartas contidas no baralho de descarte em outro determinado baralho.
  * Retorna esse determinado baralho após a operação.
