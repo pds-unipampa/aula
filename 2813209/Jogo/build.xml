@@ -70,7 +70,7 @@
 		<jar destfile="testejogobaralho.jar">
                    <manifest>
 			<attribute name="Class-Path" value="lib/bibliotecaBaralho.jar"/>
-                     	<attribute name="Main-Class" value="Exec.Main" />
+                     	<attribute name="Main-Class" value="testejogobaralho.TesteJogo" />
 			
                    </manifest> 
 			<fileset dir="${Jogo.build.dir}"/>

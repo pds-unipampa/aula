@@ -30,8 +30,8 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 package testejogobaralho;
 
-import bibliotecabaralho.Cartas;
-import bibliotecabaralho.ListaCartas;
+import bibliotecaBaralho.Cartas;
+import bibliotecaBaralho.ListaCartas;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
@@ -305,13 +305,14 @@ public class TesteJogo extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
+//        java.awt.EventQueue.invokeLater(new Runnable() {
 
-            @Override
-            public void run() {
-                new TesteJogo().setVisible(true);
-            }
-        });
+//            @Override
+//            public void run() {
+		TesteJogo teste = new TesteJogo();
+		teste.setVisible(true);
+//            }
+//        });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
