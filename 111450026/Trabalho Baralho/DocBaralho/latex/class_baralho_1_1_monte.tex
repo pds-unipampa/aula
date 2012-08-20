@@ -1,0 +1,211 @@
+\hypertarget{class_baralho_1_1_monte}{
+\section{Baralho.Monte Class Reference}
+\label{class_baralho_1_1_monte}\index{Baralho::Monte@{Baralho::Monte}}
+}
+Inheritance diagram for Baralho.Monte:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_baralho_1_1_monte}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_baralho_1_1_monte_a9c0e60ff3e5adee7c73311dc639b726d}{initialize} (LinkedList$<$ \hyperlink{class_baralho_1_1_carta}{Carta} $>$ cartas)
+\item 
+boolean \hyperlink{class_baralho_1_1_monte_a62727fc8f2a5df78acf7ed256907d18d}{addCarta} (\hyperlink{class_baralho_1_1_carta}{Carta} carta)
+\item 
+void \hyperlink{class_baralho_1_1_monte_a54573fe9edbac3f8d9fca1fe1199debb}{addCarta} (\hyperlink{class_baralho_1_1_carta}{Carta} carta, int pos)  throws IndexOutOfBoundsException
+\item 
+void \hyperlink{class_baralho_1_1_monte_a64abc4bdca4718cb5e615154c562cf85}{removeCarta} (\hyperlink{class_baralho_1_1_carta}{Carta} carta)  throws CartaInexistenteException
+\item 
+void \hyperlink{class_baralho_1_1_monte_a81b0e1160db4914f5b1ba51fc068b1b9}{removeCarta} (int pos)  throws CartaInexistenteException 
+\item 
+LinkedList$<$ \hyperlink{class_baralho_1_1_carta}{Carta} $>$ \hyperlink{class_baralho_1_1_monte_a586ca35231a6c8a8634600df898f5ccc}{listaCartas} ()
+\item 
+\hyperlink{class_baralho_1_1_carta}{Carta} \hyperlink{class_baralho_1_1_monte_adeda515ad018d4975fbf054a37ab0f36}{obtemCarta} (int pos)  throws CartaInexistenteException
+\item 
+\hyperlink{class_baralho_1_1_carta}{Carta} \hyperlink{class_baralho_1_1_monte_ad724ab32986fbbc07e3d492aecfa2037}{obtemCarta} (\hyperlink{class_baralho_1_1_carta}{Carta} carta)  throws CartaInexistenteException 
+\item 
+void \hyperlink{class_baralho_1_1_monte_abd353fab5c3bfe77a070aafe7d905bec}{esvaziaMonte} ()
+\item 
+int \hyperlink{class_baralho_1_1_monte_a8768f18eb0e16b7a2be665360ad4afb5}{tamanho} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe abstrata que representa um monte do baralho. As posições das cartas do monte são consideradas de baixo para cima. \begin{DoxyAuthor}{Author}
+Rafael 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_baralho_1_1_monte_a62727fc8f2a5df78acf7ed256907d18d}{
+\index{Baralho::Monte@{Baralho::Monte}!addCarta@{addCarta}}
+\index{addCarta@{addCarta}!Baralho::Monte@{Baralho::Monte}}
+\subsubsection[{addCarta}]{\setlength{\rightskip}{0pt plus 5cm}boolean Baralho.Monte.addCarta (
+\begin{DoxyParamCaption}
+\item[{{\bf Carta}}]{carta}
+\end{DoxyParamCaption}
+)}}
+\label{class_baralho_1_1_monte_a62727fc8f2a5df78acf7ed256907d18d}
+Adiciona uma carta ao monte. 
+\begin{DoxyParams}{Parameters}
+{\em carta} & -\/ \hyperlink{class_baralho_1_1_carta}{Carta} a ser adicionda. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a carta foi adicionada ou false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{class_baralho_1_1_monte_a54573fe9edbac3f8d9fca1fe1199debb}{
+\index{Baralho::Monte@{Baralho::Monte}!addCarta@{addCarta}}
+\index{addCarta@{addCarta}!Baralho::Monte@{Baralho::Monte}}
+\subsubsection[{addCarta}]{\setlength{\rightskip}{0pt plus 5cm}void Baralho.Monte.addCarta (
+\begin{DoxyParamCaption}
+\item[{{\bf Carta}}]{carta, }
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)  throws IndexOutOfBoundsException}}
+\label{class_baralho_1_1_monte_a54573fe9edbac3f8d9fca1fe1199debb}
+Adiciona uma carta em uma posição específica do monte. 
+\begin{DoxyParams}{Parameters}
+{\em carta} & -\/ \hyperlink{class_baralho_1_1_carta}{Carta} a ser adicionada. \\
+\hline
+{\em pos} & -\/ Posição onde a carta será inserida. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IndexOutOfBoundsException} & -\/ caso a posição em que a carta for inserida for fora dos limites do monte (menor que 0 ou maior que o tamanho do baralho). \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_baralho_1_1_monte_abd353fab5c3bfe77a070aafe7d905bec}{
+\index{Baralho::Monte@{Baralho::Monte}!esvaziaMonte@{esvaziaMonte}}
+\index{esvaziaMonte@{esvaziaMonte}!Baralho::Monte@{Baralho::Monte}}
+\subsubsection[{esvaziaMonte}]{\setlength{\rightskip}{0pt plus 5cm}void Baralho.Monte.esvaziaMonte (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_baralho_1_1_monte_abd353fab5c3bfe77a070aafe7d905bec}
+Retira todas as cartas do monte. \hypertarget{class_baralho_1_1_monte_a9c0e60ff3e5adee7c73311dc639b726d}{
+\index{Baralho::Monte@{Baralho::Monte}!initialize@{initialize}}
+\index{initialize@{initialize}!Baralho::Monte@{Baralho::Monte}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void Baralho.Monte.initialize (
+\begin{DoxyParamCaption}
+\item[{LinkedList$<$ {\bf Carta} $>$}]{cartas}
+\end{DoxyParamCaption}
+)}}
+\label{class_baralho_1_1_monte_a9c0e60ff3e5adee7c73311dc639b726d}
+Inicializa o monte. As cartas que haviam nele são excluídas. 
+\begin{DoxyParams}{Parameters}
+{\em cartas} & -\/ Cartas do monte. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_baralho_1_1_monte_a586ca35231a6c8a8634600df898f5ccc}{
+\index{Baralho::Monte@{Baralho::Monte}!listaCartas@{listaCartas}}
+\index{listaCartas@{listaCartas}!Baralho::Monte@{Baralho::Monte}}
+\subsubsection[{listaCartas}]{\setlength{\rightskip}{0pt plus 5cm}LinkedList$<${\bf Carta}$>$ Baralho.Monte.listaCartas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_baralho_1_1_monte_a586ca35231a6c8a8634600df898f5ccc}
+Retorna as cartas do monte. \begin{DoxyReturn}{Returns}
+-\/ cartas do monte. 
+\end{DoxyReturn}
+\hypertarget{class_baralho_1_1_monte_ad724ab32986fbbc07e3d492aecfa2037}{
+\index{Baralho::Monte@{Baralho::Monte}!obtemCarta@{obtemCarta}}
+\index{obtemCarta@{obtemCarta}!Baralho::Monte@{Baralho::Monte}}
+\subsubsection[{obtemCarta}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Carta} Baralho.Monte.obtemCarta (
+\begin{DoxyParamCaption}
+\item[{{\bf Carta}}]{carta}
+\end{DoxyParamCaption}
+)  throws {\bf CartaInexistenteException} }}
+\label{class_baralho_1_1_monte_ad724ab32986fbbc07e3d492aecfa2037}
+Retorna uma carta do monte. 
+\begin{DoxyParams}{Parameters}
+{\em carta} & -\/ A carta que se deseja obter do monte. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A carta que se deseja, se ela constar no monte, ou null, caso contrário. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em CartaInexistenteException} & -\/ Caso a carta especificada não conste no monte. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_baralho_1_1_monte_adeda515ad018d4975fbf054a37ab0f36}{
+\index{Baralho::Monte@{Baralho::Monte}!obtemCarta@{obtemCarta}}
+\index{obtemCarta@{obtemCarta}!Baralho::Monte@{Baralho::Monte}}
+\subsubsection[{obtemCarta}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Carta} Baralho.Monte.obtemCarta (
+\begin{DoxyParamCaption}
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)  throws {\bf CartaInexistenteException}}}
+\label{class_baralho_1_1_monte_adeda515ad018d4975fbf054a37ab0f36}
+Retorna a carta de uma posição do monte. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & -\/ posição da carta no monte. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A carta, se ela constar no monte, ou null, caso contrário. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em CartaInexistenteException} & -\/ Caso a posição especificada não aponte para uma carta do monte. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_baralho_1_1_monte_a64abc4bdca4718cb5e615154c562cf85}{
+\index{Baralho::Monte@{Baralho::Monte}!removeCarta@{removeCarta}}
+\index{removeCarta@{removeCarta}!Baralho::Monte@{Baralho::Monte}}
+\subsubsection[{removeCarta}]{\setlength{\rightskip}{0pt plus 5cm}void Baralho.Monte.removeCarta (
+\begin{DoxyParamCaption}
+\item[{{\bf Carta}}]{carta}
+\end{DoxyParamCaption}
+)  throws {\bf CartaInexistenteException}}}
+\label{class_baralho_1_1_monte_a64abc4bdca4718cb5e615154c562cf85}
+Remove uma carta do monte. 
+\begin{DoxyParams}{Parameters}
+{\em carta} & -\/ \hyperlink{class_baralho_1_1_carta}{Carta} a ser removida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a carta foi removida ou false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{class_baralho_1_1_monte_a81b0e1160db4914f5b1ba51fc068b1b9}{
+\index{Baralho::Monte@{Baralho::Monte}!removeCarta@{removeCarta}}
+\index{removeCarta@{removeCarta}!Baralho::Monte@{Baralho::Monte}}
+\subsubsection[{removeCarta}]{\setlength{\rightskip}{0pt plus 5cm}void Baralho.Monte.removeCarta (
+\begin{DoxyParamCaption}
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)  throws {\bf CartaInexistenteException} }}
+\label{class_baralho_1_1_monte_a81b0e1160db4914f5b1ba51fc068b1b9}
+Remove uma carta do monte. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & -\/ posição da carta que irá ser removida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a carta foi removida ou false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{class_baralho_1_1_monte_a8768f18eb0e16b7a2be665360ad4afb5}{
+\index{Baralho::Monte@{Baralho::Monte}!tamanho@{tamanho}}
+\index{tamanho@{tamanho}!Baralho::Monte@{Baralho::Monte}}
+\subsubsection[{tamanho}]{\setlength{\rightskip}{0pt plus 5cm}int Baralho.Monte.tamanho (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_baralho_1_1_monte_a8768f18eb0e16b7a2be665360ad4afb5}
+Retorna o tamanho do monte. \begin{DoxyReturn}{Returns}
+tamanho do monte. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+aula/111450026/Trabalho Baralho/Baralho/src/Baralho/\hyperlink{_monte_8java}{Monte.java}\end{DoxyCompactItemize}

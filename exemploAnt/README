@@ -1,0 +1,19 @@
+Rafael Fernando dos Santos
+2012
+
+Modificado para exemplo em aula por Wagner Reck
+
+Licença: GPL
+Mais informações: Conferir arquivo COPYING.
+
+-->Baralho<--
+
+Este projeto consiste em uma biblioteca com funções básicas de um baralho comum.As cartas do baralho vão do A (ás) ao K (rei ou king) totalizando 52 cartas. O baralho não apresenta os curingas.
+
+A documentação que descreve as funções apresentadas pela biblioteca segue no diretório DocBaralho. Há documentação em HTML, LATEX e RTF.
+
+->Construção
+
+Para a construção da biblioteca utilize o "Apache Ant".
+
+Comando para o terminal: ant

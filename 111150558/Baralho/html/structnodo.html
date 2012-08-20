@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Baralho: Referência da Estrutura nodo</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Gerado por Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&nbsp;Principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&nbsp;de&nbsp;Dados</span></a></li>
+      <li><a href="files.html"><span>Arquivos</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&nbsp;de&nbsp;Dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&nbsp;das&nbsp;Estruturas&nbsp;de&nbsp;Dados</span></a></li>
+      <li><a href="functions.html"><span>Campos&nbsp;de&nbsp;Dados</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Campos de Dados</a>  </div>
+  <div class="headertitle">
+<h1>Referência da Estrutura nodo</h1>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="nodo" -->
+<p><code>#include &lt;<a class="el" href="embaralhar_8h_source.html">embaralhar.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+Campos de Dados</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnodo.html#a0d153279003388933e082f40da4a3702">carta</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">armazena uma carta (seu respectivo número).  <a href="#a0d153279003388933e082f40da4a3702"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnodo.html#aba763958bee1abb2961d0d2e82f8cdfb">naipe</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">armazena um nipe.  <a href="#aba763958bee1abb2961d0d2e82f8cdfb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structnodo.html">nodo</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnodo.html#a486ad5c9b955ff42eaf8fbf3330e4c75">prox</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">apontador para o próximo nó.  <a href="#a486ad5c9b955ff42eaf8fbf3330e4c75"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Descrição Detalhada</h2>
+<p>This file is part of Baralho.</p>
+<p>Copyright 2012 Cristiano Ribeiro &lt;<a href="mailto:cristiano.daitx@gmail.com">cristiano.daitx@gmail.com</a>&gt;</p>
+<p>Copyright 2012 Evair Severo &lt;<a href="mailto:evairsevero@gmail.com">evairsevero@gmail.com</a>&gt;</p>
+<p>This library is free software; you can redistribute it and/or</p>
+<p>modify it under the terms of the GNU Lesser General Public</p>
+<p>License as published by the Free Software Foundation; either</p>
+<p>version 2.1 of the License, or (at your option) any later version.</p>
+<p>This library is distributed in the hope that it will be useful,</p>
+<p>but WITHOUT ANY WARRANTY; without even the implied warranty of</p>
+<p>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</p>
+<p>Lesser General Public License for more details.</p>
+<p>You should have received a copy of the GNU Lesser General Public</p>
+<p>License along with this library. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</p>
+<p>Estrutura que representa uma carta. Armazena a carta e seu respectivo naipe. Sendo as cartas representadas de 1 a 13. Logo as cartas A, J, Q e K são representadas, pelos números 1, 11, 12 e 13 respectivamente. As demais cartas seguem o padrão que conhecemos. Os nipes são representados por um caractere. Paus, copas, espadas e ouro são representados por P, C, E e O respectivamente. </p>
+<hr/><h2>Campos</h2>
+<a class="anchor" id="a0d153279003388933e082f40da4a3702"></a><!-- doxytag: member="nodo::carta" ref="a0d153279003388933e082f40da4a3702" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structnodo.html#a0d153279003388933e082f40da4a3702">carta</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>armazena uma carta (seu respectivo número). </p>
+
+</div>
+</div>
+<a class="anchor" id="aba763958bee1abb2961d0d2e82f8cdfb"></a><!-- doxytag: member="nodo::naipe" ref="aba763958bee1abb2961d0d2e82f8cdfb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char <a class="el" href="structnodo.html#aba763958bee1abb2961d0d2e82f8cdfb">naipe</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>armazena um nipe. </p>
+
+</div>
+</div>
+<a class="anchor" id="a486ad5c9b955ff42eaf8fbf3330e4c75"></a><!-- doxytag: member="nodo::prox" ref="a486ad5c9b955ff42eaf8fbf3330e4c75" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structnodo.html">nodo</a>* <a class="el" href="structnodo.html#a486ad5c9b955ff42eaf8fbf3330e4c75">prox</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>apontador para o próximo nó. </p>
+
+</div>
+</div>
+<hr/>A documentação para esta estrutura foi gerada a partir do seguinte arquivo:<ul>
+<li><a class="el" href="embaralhar_8h_source.html">embaralhar.h</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Estruturas de Dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Definições de Tipos</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Gerado em Quinta, 10 de Maio de 2012 21:54:14 para Baralho por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

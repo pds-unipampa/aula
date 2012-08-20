@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1337136070 source:c:\users\ezequiel\desktop\baralho bugado\main.c
+	<stdio.h>
+	<stdlib.h>
+	"baralho.h"
+
+1337134361 c:\users\ezequiel\desktop\baralho bugado\baralho.h
+
+1337136213 source:c:\users\ezequiel\desktop\baralho bugado\baralho.c
+	<stdlib.h>
+	<stdio.h>
+	"baralho.h"
+	<time.h>
+	<string.h>
+
+1337143230 source:c:\users\ezequiel\desktop\baralho\baralho.c
+	<stdlib.h>
+	<stdio.h>
+	"baralho.h"
+	<time.h>
+	<string.h>
+
+1337144211 c:\users\ezequiel\desktop\baralho\baralho.h
+
+1337136070 source:c:\users\ezequiel\desktop\baralho\aplicacao.c
+	<stdio.h>
+	<stdlib.h>
+	"baralho.h"
+

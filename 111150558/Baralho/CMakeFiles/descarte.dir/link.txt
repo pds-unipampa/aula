@@ -1,0 +1,1 @@
+/usr/bin/gcc  -fPIC   -shared -Wl,-soname,libdescarte.so -o libdescarte.so CMakeFiles/descarte.dir/descarte.c.o 

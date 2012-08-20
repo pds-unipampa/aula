@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Baralho: Código-Fonte de embaralhar.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Gerado por Doxygen 1.7.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&nbsp;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&nbsp;de&nbsp;Dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>embaralhar.h</h1>  </div>
+</div>
+<div class="contents">
+<a href="embaralhar_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00036"></a>00036 <span class="comment">/*DECLARAÇÃO DO NÓ E DA LISTA DE CARTAS*/</span>
+<a name="l00044"></a><a class="code" href="structnodo.html">00044</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structnodo.html">nodo</a> {
+<a name="l00045"></a>00045 
+<a name="l00046"></a><a class="code" href="structnodo.html#a0d153279003388933e082f40da4a3702">00046</a>     <span class="keywordtype">int</span> <a class="code" href="structnodo.html#a0d153279003388933e082f40da4a3702" title="armazena uma carta (seu respectivo número).">carta</a>;
+<a name="l00047"></a><a class="code" href="structnodo.html#aba763958bee1abb2961d0d2e82f8cdfb">00047</a>     <span class="keywordtype">char</span> <a class="code" href="structnodo.html#aba763958bee1abb2961d0d2e82f8cdfb" title="armazena um nipe.">naipe</a>;
+<a name="l00048"></a><a class="code" href="structnodo.html#a486ad5c9b955ff42eaf8fbf3330e4c75">00048</a>     <span class="keyword">struct </span><a class="code" href="structnodo.html">nodo</a> *<a class="code" href="structnodo.html#a486ad5c9b955ff42eaf8fbf3330e4c75" title="apontador para o próximo nó.">prox</a>;
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050 }<a class="code" href="structnodo.html">lista</a>;
+<a name="l00051"></a>00051 
+<a name="l00052"></a><a class="code" href="embaralhar_8h.html#a55f1cef7a68d15235c49fa7ca22afed3">00052</a> <span class="keyword">typedef</span> <a class="code" href="structnodo.html">lista</a>* <a class="code" href="structnodo.html">Baralho</a>;
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055 
+<a name="l00058"></a>00058 <a class="code" href="structnodo.html">Baralho</a> <a class="code" href="embaralhar_8c.html#a6d427e3d4a2a4ca9b60e1e5251e7412d">cria</a>(<span class="keywordtype">void</span>);
+<a name="l00059"></a>00059 
+<a name="l00063"></a>00063 <a class="code" href="structnodo.html">Baralho</a> <a class="code" href="embaralhar_8c.html#a7063c0087949c844bcf617bb0fe9ec1a">embaralhar</a>(<a class="code" href="structnodo.html">Baralho</a> B);
+<a name="l00064"></a>00064 
+<a name="l00071"></a>00071 <span class="keywordtype">int</span> <a class="code" href="embaralhar_8h.html#acac98e14e97aca23de0535d38b0961d1">verifica_Carta</a>(<a class="code" href="structnodo.html">Baralho</a> B, <span class="keywordtype">int</span> <a class="code" href="structnodo.html#a0d153279003388933e082f40da4a3702" title="armazena uma carta (seu respectivo número).">carta</a>, <span class="keywordtype">int</span> <a class="code" href="structnodo.html#aba763958bee1abb2961d0d2e82f8cdfb" title="armazena um nipe.">naipe</a>);
+<a name="l00072"></a>00072 
+<a name="l00079"></a>00079 <a class="code" href="structnodo.html">Baralho</a> <a class="code" href="embaralhar_8h.html#af278e53e84d11de6cb995569d3f74681">insere_Carta</a>(<a class="code" href="structnodo.html">Baralho</a> B, <span class="keywordtype">int</span> <a class="code" href="structnodo.html#a0d153279003388933e082f40da4a3702" title="armazena uma carta (seu respectivo número).">carta</a>, <span class="keywordtype">int</span> <a class="code" href="structnodo.html#aba763958bee1abb2961d0d2e82f8cdfb" title="armazena um nipe.">naipe</a>);
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Estruturas de Dados</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Definições de Tipos</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Gerado em Quinta, 10 de Maio de 2012 21:54:14 para Baralho por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
+</body>
+</html>

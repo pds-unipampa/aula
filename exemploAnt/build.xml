@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Modelo de projeto build.xml para trabalho Baralho-->
+<!-- Contribuições:                     -->
+<!-- 	Nasser Rahman                   -->
+<!-- 	Giovanni Pereira Garcia         -->
+<!-- 	Maicon Alves                    -->
+<!-- 	Ricardo Machado                 -->
+<!--    Wagner Reck - Suporte a lib/app -->
+
+
+
+
+<project name="baralho" default="example" basedir=".">
+	<description>Constroi uma biblioteca de cartas e uma aplicação de exemplo.</description>
+
+
+<!-- Define algumas variáveis que serão utilizadas -->
+	<property name="Truco.src.dir" value="example"/> <!-- Onde estão os fontes da aplicação -->
+	<property name="Baralho.src.dir" value="src/"/>  <!-- Onde estão os fontes da Lib -->
+	<property name="Truco.build.dir" value="build/truco/classes"/> <!-- Onde será Compilada a Aplicação -->
+	<property name="Baralho.build.dir" value="build/lib/classes"/> <!-- Onde será compilada a Lib -->
+	<property name="lib.dir" value="lib/"/>  <!-- Onde será gerada a lib -->
+
+	<path id="classpath"> <!-- inclui a biblioteca criada no classpath -->
+        	<fileset dir="${lib.dir}" includes="**/*.jar"/>
+	</path>
+
+<!-- Alvo que cria os diretorios -->	
+	<target name="init">
+		<mkdir dir="${Truco.build.dir}"/>
+		<mkdir dir="${Baralho.build.dir}"/>
+		<mkdir dir="${lib.dir}"/>
+	</target>
+	
+
+
+<!-- Compila as classes da biblioteca e salva os arquivos .class na pasta definida na variável Baralho.build.dir-->
+	<target name="compileLib" depends="init" description="Compila os fontes">
+		<javac srcdir="${Baralho.src.dir}" destdir="${Baralho.build.dir}">
+			<classpath>
+				<pathelement location="${Baralho.build.dir}" />
+			
+			</classpath>
+		</javac>
+	</target>
+
+<!-- Compila as classes da aplicação de exemplo e salva os arquivos .class na pasta definida na variável Truco.build.dir-->
+	<target name="compileExample" depends="geraLib" description="Compila o exemplo">
+		<javac srcdir="${Truco.src.dir}" destdir="${Truco.build.dir}" classpathref="classpath"> <!-- usa o classpath com a lib já cosntruida -->
+			<classpath>
+				<pathelement location="${Truco.build.dir}" />
+                        
+			</classpath>
+		</javac>
+	</target>
+
+
+
+
+<!-- Alvo padrão, pra gerar um arquivo .jar-->
+
+	<target name="geraLib" depends="compileLib" description="Gera Biblioteca baralho">
+
+		<jar destfile="${lib.dir}/libBaralho.jar">
+       			<fileset dir="${Baralho.build.dir}"/>
+		</jar>
+	</target>	
+
+<!-- Constroi uma aplicação de exemplo. -->
+	<target name="example" depends="compileExample" description="Gera aplicação de exemplo.">
+
+		<jar destfile="exampleBaralho.jar">
+                   <manifest>
+			<attribute name="Class-Path" value="lib/libBaralho.jar"/>
+                     	<attribute name="Main-Class" value="Exec.Main" />
+			
+                   </manifest> 
+			<fileset dir="${Truco.build.dir}"/>
+		</jar>
+	</target>	
+
+</project>

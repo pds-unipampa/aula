@@ -1,0 +1,14 @@
+Esse projeto visa realizar um biblioteca para a manipulação de um baralho
+tradicional de 52 cartas, onde implementam-se as seguintes funcionalidades:
+
+Construir baralho: a construção do baralho será implementada utilizando-se um LinkedList, que será preenchido com 52 objetos da classe Carta por meio do construtor da classe Baralho.
+
+Embaralhar: é realizado trocando-se as posições das cartas no LinkedList, por meio da funções Math.randon e Collections.swap.
+
+Cortar em duas partes: utiliza-se um segundo LinkedList para receber as Cartas que são retiradas do Baralho construido, até a posição escolhida, e depois são readicionadas ao fim do baralho, juntando-se novamente as duas partes em um único baralho final.
+
+Retirar uma carta do inicio e do final.
+
+Passar uma carta do inicio para o final (sem mostrar que carta é).
+
+Criação de um monte de descarte do qual podemos ver qualquer carta sem removê-la (no monte de compra uma carta só pode ser vista se for removida dele).

@@ -1,0 +1,75 @@
+\hypertarget{corta_8c}{
+\section{Referência do Arquivo corta.c}
+\label{corta_8c}\index{corta.c@{corta.c}}
+}
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$malloc.h$>$}\par
+{\ttfamily \#include $<$time.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include \char`\"{}embaralhar.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}retira.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}corta.h\char`\"{}}\par
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structnodo}{Baralho} \hyperlink{corta_8c_ad6c1ede7439c49b9380e26032060b3cc}{cortar} (\hyperlink{structnodo}{Baralho} B, int pos)
+\item 
+void \hyperlink{corta_8c_a2a27d98e3838f3a5282d83ca3ed54f2d}{insere\_\-aux} (\hyperlink{structnodo}{Baralho} $\ast$A, int carta, char naipe)
+\end{DoxyCompactItemize}
+
+
+\subsection{Funções}
+\hypertarget{corta_8c_ad6c1ede7439c49b9380e26032060b3cc}{
+\index{corta.c@{corta.c}!cortar@{cortar}}
+\index{cortar@{cortar}!corta.c@{corta.c}}
+\subsubsection[{cortar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Baralho} cortar (
+\begin{DoxyParamCaption}
+\item[{{\bf Baralho}}]{ B, }
+\item[{int}]{ pos}
+\end{DoxyParamCaption}
+)}}
+\label{corta_8c_ad6c1ede7439c49b9380e26032060b3cc}
+This file is part of Baralho.
+
+Copyright 2012 Cristiano Ribeiro $<$\href{mailto:cristiano.daitx@gmail.com}{\tt cristiano.daitx@gmail.com}$>$
+
+Copyright 2012 Evair Severo $<$\href{mailto:evairsevero@gmail.com}{\tt evairsevero@gmail.com}$>$
+
+This library is free software; you can redistribute it and/or
+
+modify it under the terms of the GNU Lesser General Public
+
+License as published by the Free Software Foundation; either
+
+version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+
+License along with this library. If not, see $<$\href{http://www.gnu.org/licenses/}{\tt http://www.gnu.org/licenses/}$>$.
+
+Corta um baralho em uma determinada posição. 
+\begin{DoxyParams}{Parâmetros}
+\item[{\em B}]-\/ Baralho a ser cortado. \item[{\em pos}]-\/ posição em que o baralho vai ser cortado. \end{DoxyParams}
+\hypertarget{corta_8c_a2a27d98e3838f3a5282d83ca3ed54f2d}{
+\index{corta.c@{corta.c}!insere\_\-aux@{insere\_\-aux}}
+\index{insere\_\-aux@{insere\_\-aux}!corta.c@{corta.c}}
+\subsubsection[{insere\_\-aux}]{\setlength{\rightskip}{0pt plus 5cm}void insere\_\-aux (
+\begin{DoxyParamCaption}
+\item[{{\bf Baralho} $\ast$}]{ A, }
+\item[{int}]{ carta, }
+\item[{char}]{ naipe}
+\end{DoxyParamCaption}
+)}}
+\label{corta_8c_a2a27d98e3838f3a5282d83ca3ed54f2d}
+Função interna. Utilizada apenas por outras funções. Insere cartas em um baralho auxiliar. 
+\begin{DoxyParams}{Parâmetros}
+\item[{\em A}]-\/ Baralho a ser inserida a carta \item[{\em carta}]-\/ Numero da carta que vai ser inserida. \item[{\em carta}]-\/ Naipe da carta. \end{DoxyParams}

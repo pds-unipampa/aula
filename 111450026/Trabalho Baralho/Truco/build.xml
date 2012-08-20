@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Modelo de projeto build.xml para trabalho Baralho-->
+<!-- Contribuições:                     -->
+<!-- 	Nasser Rahman                   -->
+<!-- 	Giovanni Pereira Garcia         -->
+<!-- 	Maicon Alves                    -->
+<!-- 	Ricardo Machado                 -->
+
+
+
+
+
+
+	<project name="baralho" default="gerajar" basedir=".">
+	<description>Testando o ant.</description>
+
+
+<!-- Define algumas variáveis que serão utilizadas -->
+	<property name="src.dir" value="."/>
+	<property name="build.dir" value="classes"/>
+
+
+<!-- Alvo inicial -->	
+	<target name="init">
+		<mkdir dir="${build.dir}"/>
+	</target>
+	
+
+
+<!-- Compila as classes e salva os arquivos .class na pasta definida na variável build.dir-->
+	<target name="compile" depends="init" description="Compila os fontes">
+		<javac srcdir="${src.dir}" destdir="${build.dir}">
+		<classpath>
+			<pathelement location="${build.dir}" />
+			
+			<pathelement location="../Baralho/classes" />
+		</classpath>
+
+		</javac>
+	</target>
+
+
+
+
+<!-- Alvo padrão, pra gerar um arquivo .jar-->
+
+	<target name="gerajar" depends="compile" description="Gera arquivo Jar">
+
+		<jar destfile="executavel.jar">
+                   <manifest>
+                     <attribute name="Main-Class" value="Exec.Main" />
+                   </manifest>
+			<fileset dir="${build.dir}"/>
+		</jar>
+	</target>	
+
+</project>

@@ -1,0 +1,2 @@
+/home/cristiano/src/aula/111150558/Baralho/CMakeFiles/Baralho.dir
+/home/cristiano/src/aula/111150558/Baralho/CMakeFiles/aplicacao.dir
