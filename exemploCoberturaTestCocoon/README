@@ -1,0 +1,21 @@
+Esse diretório contém o exemplo que acompanha o TestCocoon 1.6.
+
+Para construir é necessário possuir as aplicações do testcocoon no PATH do sistema.
+O modo mais rápido é invocar o comando:
+coveragescanner
+que deve apresentar a lista de opções. Caso o sistema avise que não encontrou a aplicação,
+tente encontrar onde ela se encontra e adicione o local ao PATH do sistema.
+
+com o sistema funcionando, basta executar o script build(.sh ou .bat)
+Ele irá construir o software e gerará alguns arquivos extras necessários.
+
+O aplicativo hello pode ser executado e cada medição é armazenada para uso posterior
+
+O aplicatico coveragebrowser permite carregar os arquios de instrumentação (gerados
+automaticamente durante a construção) e também importar os arquivos de execução, onde 
+estão os dados de execução.
+
+Para mostrar um pouco mais as funcionalidades, execute a suite de casos de testes:
+testsuite(.sh ou .bat) 
+e importe os dados de execução no coveragebrowser
+
