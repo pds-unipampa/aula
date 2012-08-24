@@ -25,7 +25,7 @@ public class Baralho {
     ArrayList<Naipe> naipes = new ArrayList();
     ArrayList<Valor> valores = new ArrayList();
     static ArrayList<Carta> descarte = new ArrayList();
-    private Carta descartando;
+    private Carta descartando[];
 
     /**
      * 
@@ -177,10 +177,10 @@ public class Baralho {
         return descarte.get(posicao);
     }
     
-    public Carta PegaDescarteInteiro(){
+    public Carta[] PegaDescarteInteiro(){
        
        for (int i = 0; i <= tamanhoDescarte(); i++) {
-           descartando =  descarte.remove(i);
+           descartando[i] =  descarte.remove(i);
        }
  
             return descartando;
