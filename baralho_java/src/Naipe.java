@@ -1,31 +1,26 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
 
 /**
- *
+ * Enum que representa as naipes do baralho.
  * @author Nasser Rahman 101151428
  * @author Giovanni Pereira Garcia  111150199
  */
-public class Naipe {
-    /**
-     * 
+public enum Naipe {
+     /**
+     * Naipe Copas
      */
-    public String n;
-
-    @Override
-    public String toString() {
-        return  n ;
-    }
-
+    COPAS,
     /**
-     * 
-     * @param n
+     * Naipe Ouros
      */
-    public Naipe(String n) {
-        this.n = n;
-    }
+    OUROS, 
+    /**
+     * Naipe Espadas
+     */
+    ESPADAS, 
+    /**
+     * Naipe Paus
+     */
+    PAUS
     
 }
