@@ -9,23 +9,24 @@
  * @author Nasser Rahman 101151428
  * @author Giovanni Pereira Garcia  111150199
  */
-public class Naipe {
-    /**
-     * 
-     */
-    public String n;
-
-    @Override
-    public String toString() {
-        return  n ;
-    }
-
-    /**
-     * 
-     * @param n
-     */
-    public Naipe(String n) {
-        this.n = n;
-    }
+public enum Naipe {
+   /**
+    * Naipe Copas
+    */
+    COPAS, 
     
+    /**
+     * Naipe Ouro
+     */
+    OURO,
+    
+    /**
+     * Naipe Paus
+     */
+    PAUS, 
+    
+    /**
+     * Naipe Espada
+     */
+     ESPADA
 }
