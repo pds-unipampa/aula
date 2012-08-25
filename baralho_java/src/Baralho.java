@@ -1,3 +1,6 @@
+
+
+
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
@@ -24,24 +27,24 @@ public class Baralho {
      */
     public Baralho() {
 
-        naipes.add(Naipe.OUROS);
-        naipes.add(Naipe.ESPADAS);
-        naipes.add(Naipe.PAUS);
-        naipes.add(Naipe.COPAS);
+        naipes.add(new Naipe("ouro"));
+        naipes.add(new Naipe("espada"));
+        naipes.add(new Naipe("paus"));
+        naipes.add(new Naipe("copas"));
 
-        valores.add(Valor.AS);
-        valores.add(Valor.DOIS);
-        valores.add(Valor.TRES);
-        valores.add(Valor.QUATRO);
-        valores.add(Valor.CINCO);
-        valores.add(Valor.SEIS);
-        valores.add(Valor.SETE);
-        valores.add(Valor.OITO);
-        valores.add(Valor.NOVE);
-        valores.add(Valor.DEZ);
-        valores.add(Valor.VALETE);
-        valores.add(Valor.DAMA);
-        valores.add(Valor.REI);
+        valores.add(new Valor("A"));
+        valores.add(new Valor("2"));
+        valores.add(new Valor("3"));
+        valores.add(new Valor("4"));
+        valores.add(new Valor("5"));
+        valores.add(new Valor("6"));
+        valores.add(new Valor("7"));
+        valores.add(new Valor("8"));
+        valores.add(new Valor("9"));
+        valores.add(new Valor("10"));
+        valores.add(new Valor("J"));
+        valores.add(new Valor("Q"));
+        valores.add(new Valor("K"));
 
         preencheBaralho();
 
@@ -169,10 +172,6 @@ public class Baralho {
         return descarte.get(posicao);
     }
     
-    /**
-     * Método que retorna o monte de descarte
-     * @return array com cartas descartadas no jogo
-     */
     public Carta[] PegaDescarteInteiro(){
        
        for (int i = 0; i <= tamanhoDescarte(); i++) {
