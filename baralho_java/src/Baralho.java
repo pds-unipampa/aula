@@ -62,13 +62,11 @@ public class Baralho {
         }
     }
     /**
-     * Mistura as cartas do baralho
-     */
+     * Metodo que muda aleatoriamente a ordem das carta do baralho. Mas antes faz
+    * a verificacao se existe alguma carta no baralho
+    */
     public void embaralha() {
         
-        /*Metodo que muda aleatoriamente a ordem das carta do baralho. Mas antes faz
-        * a verificacao se existe alguma carta no baralho
-        */
         if(verificaBaralho(cartas)){
             java.util.Collections.shuffle(cartas);
         }
