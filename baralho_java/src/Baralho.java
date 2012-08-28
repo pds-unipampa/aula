@@ -1,6 +1,7 @@
 
 
 import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JOptionPane;
 
 /**
@@ -64,7 +65,13 @@ public class Baralho {
      * Mistura as cartas do baralho
      */
     public void embaralha() {
-        java.util.Collections.shuffle(cartas);
+        
+        /*Metodo que muda aleatoriamente a ordem das carta do baralho. Mas antes faz
+        * a verificacao se existe alguma carta no baralho
+        */
+        if(verificaBaralho(cartas)){
+            java.util.Collections.shuffle(cartas);
+        }
     }
     /**
      * Realiza o corte no baralho conforme entrada
@@ -183,6 +190,24 @@ public class Baralho {
  
             return descartando;
     }
+    
+    
+    /**
+     * Metodo de uso interno que faz a verificacao do baralho passado por parametro
+     * se o mesmo possui alguma carta. Se o baralho conter pelo menos uma carta a
+     * função retorna true, caso contrário false.
+     * @return boolean
+     */
+    private boolean verificaBaralho(List baralhoAVerificar){
+
+        if(baralhoAVerificar.size() == 0)
+            return false;
+        else
+            return true;
+    }
+
+    
+    
     
     /*public static void main(String args[]) {
         Baralho b = new Baralho();
