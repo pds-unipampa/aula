@@ -217,45 +217,45 @@ public class Baralho {
         int par = 0;
        
         switch (c.getValor().toString()){
-                case "AS":
-                        par = 1;
-                    break;
-                case "DOIS":
-                        par = 0;
-                    break;
-                case "TRES":
-                        par = 1;    
-                    break;
-                case "QUATRO":
-                        par = 0;    
-                    break;
-                case "CINCO":
-                        par = 1;    
-                    break;
-                case "SEIS":
-                        par = 0;    
-                    break;
-                case "SETE":
-                        par = 1;    
-                    break;
-                case "OITO":
-                        par = 0;    
-                    break;
-                case "NOVE":
-                        par = 1;    
-                    break;
-                case "DEZ":
-                        par = 0;    
-                    break;
-                case "VALETE":
-                        par = 1;    
-                    break;
-                case "DAMA":
-                        par = 0;    
-                    break;
-                case "REI":
-                        par = 1;    
-                    break;
+            case "AS":
+                    par = 1;
+                break;
+            case "DOIS":
+                    par = 0;
+                break;
+            case "TRES":
+                    par = 1;    
+                break;
+            case "QUATRO":
+                    par = 0;    
+                break;
+            case "CINCO":
+                    par = 1;    
+                break;
+            case "SEIS":
+                    par = 0;    
+                break;
+            case "SETE":
+                    par = 1;    
+                break;
+            case "OITO":
+                    par = 0;    
+                break;
+            case "NOVE":
+                    par = 1;    
+                break;
+            case "DEZ":
+                    par = 0;    
+                break;
+            case "VALETE":
+                    par = 1;    
+                break;
+            case "DAMA":
+                    par = 0;    
+                break;
+            case "REI":
+                    par = 1;    
+                break;
         }    
         
         return par;
