@@ -19,13 +19,14 @@ public class Baralho {
 
     static ArrayList<Carta> cartas = new ArrayList();
     static ArrayList<Carta> descarte = new ArrayList();
-    private Carta descartando[];
+    private ArrayList<Carta> descartando;
 
     /**
      * 
      */
     public Baralho() {
-
+        
+        descartando = new ArrayList<>();
         preencheBaralho();
     }
 
@@ -171,22 +172,21 @@ public class Baralho {
      * @param posicao
      * @return carta
      */
-    public Carta visualizaCartaDescarte(int posicao){
+    /*public Carta visualizaCartaDescarte(int posicao){
         
         return descarte.get(posicao);
-    }
+    }*/
    
     /*
      * Método que retorna o monte de descarte
      * @return array com cartas descartadas no jogo
      */
-    public Carta[] PegaDescarteInteiro(){
+    public ArrayList<Carta> PegaDescarteInteiro(){
        
-       /*for (int i = 0; i <= tamanhoDescarte(); i++) {
-           descartando[i] =  descarte.remove(i);
-       }*/
-        descartando = (Carta[]) descarte.toArray();
-        descarte.clear();
+        
+       for (int i = 0; i <= tamanhoDescarte(); i++) {
+           descartando.add(descarte.remove(i));
+       }
             
         return descartando;
     }
@@ -199,7 +199,7 @@ public class Baralho {
      */
     private boolean verificaBaralho(List baralhoAVerificar){
 
-        if(baralhoAVerificar.size() == 0)
+        if(baralhoAVerificar.isEmpty())
             return false;
         else
             return true;
@@ -260,9 +260,24 @@ public class Baralho {
         
         return par;
     }
-
     
+    /**
+     * Exibe uma carta do monte de decarte. A carta não é retirada do monte.
+     * Se não existe carta na posição especificada, uma mensagem é exibida informando o ocorrido.
+     * @param pos Posição da carta a ser exibida.
+     */
+    public void verCartaDoDescarte(int pos){
+        
+        try{
+            
+            JOptionPane.showMessageDialog(null, descarte.get(pos-1));
+        }catch (IndexOutOfBoundsException iobe){
+            
+            JOptionPane.showMessageDialog(null, "Não existe carta na posição indicada no monte de descarte.");
+        }
+    }
     
+ 
     
     /*public static void main(String args[]) {
         Baralho b = new Baralho();
