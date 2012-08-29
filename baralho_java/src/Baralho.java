@@ -203,6 +203,46 @@ public class Baralho {
         else
             return true;
     }
+    
+    /***
+     * Metodo que verifica se a carta é par ou impar
+     * Retorna 0(zero) para par e 1(um) para impar]
+     * @param carta
+     * @return int
+     */
+    
+    public int verificaPar(Carta c){
+        int par = 0;
+        switch (c.getValor().toString()){
+                case "AS":
+                        par = 1;
+                case "DOIS":
+                        par = 0;
+                case "TRES":
+                        par = 1;    
+                case "QUATRO":
+                        par = 0;    
+                case "CINCO":
+                        par = 1;    
+                case "SEIS":
+                        par = 0;    
+                case "SETE":
+                        par = 1;    
+                case "OITO":
+                        par = 0;    
+                case "NOVE":
+                        par = 1;    
+                case "DEZ":
+                        par = 0;    
+                case "VALETE":
+                        par = 1;    
+                case "DAMA":
+                        par = 0;    
+                case "REI":
+                        par = 1;    
+        }    
+        return par;
+    }
 
     
     
