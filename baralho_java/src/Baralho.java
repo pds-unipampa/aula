@@ -1,13 +1,16 @@
-
-
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
 
 /**
- *
  * @author Nasser Rahman 101151428
- * @author Giovanni Pereira Garcia  111150199
+ * @author Ricardo Burg Machado
+ * @author Rafael Fernando dos Santos
+ * @author Giovanni Garcia
+ * @author Mateus Dal Forno
+ * @author Bruno Segui
+ * @author Isabel Boaventura
+ * @author Rafhael Cunha
  */
 
 /**
@@ -17,6 +20,7 @@ import javax.swing.JOptionPane;
  */
 public class Baralho {
 
+    
     static ArrayList<Carta> cartas = new ArrayList();
     static ArrayList<Carta> descarte = new ArrayList();
     private ArrayList<Carta> descartando;
@@ -28,6 +32,7 @@ public class Baralho {
         
         descartando = new ArrayList<>();
         preencheBaralho();
+        embaralha();
     }
 
     /**
@@ -65,7 +70,7 @@ public class Baralho {
     /**
      * Realiza o corte no baralho conforme entrada
      * aceita valores entre 2 e 50
-     * @param valor correspondente ao posição de corte
+     * @param valor correspondente ao posiÃ§Ã£o de corte
      */
     public void corta(int valor) {
         if ((valor < 2) || (valor > 50)) {
@@ -158,7 +163,7 @@ public class Baralho {
     
     /**
      * Remove uma carta do descarte e retorna essa carta conforme a 
-     * posição solicitada
+     * posiÃ§Ã£o solicitada
      * @param posicao
      * @return carta
      */
@@ -168,7 +173,7 @@ public class Baralho {
     }
     
     /**
-     * Visualiza a carta do descarte conforme a posição solicitada
+     * Visualiza a carta do descarte conforme a posiÃ§Ã£o solicitada
      * @param posicao
      * @return carta
      */
@@ -178,7 +183,7 @@ public class Baralho {
     }*/
    
     /*
-     * Método que retorna o monte de descarte
+     * MÃ©todo que retorna o monte de descarte
      * @return array com cartas descartadas no jogo
      */
     public ArrayList<Carta> PegaDescarteInteiro(){
@@ -194,7 +199,7 @@ public class Baralho {
     /**
      * Metodo de uso interno que faz a verificacao do baralho passado por parametro
      * se o mesmo possui alguma carta. Se o baralho conter pelo menos uma carta a
-     * função retorna true, caso contrário false.
+     * funÃ§Ã£o retorna true, caso contrÃ¡rio false.
      * @return boolean
      */
     private boolean verificaBaralho(List baralhoAVerificar){
@@ -206,7 +211,7 @@ public class Baralho {
     }
     
     /***
-     * Metodo que verifica se a carta é par ou impar
+     * Metodo que verifica se a carta Ã© par ou impar
      * Retorna 0(zero) para par e 1(um) para impar]
      * @param carta
      * @return int
@@ -262,9 +267,9 @@ public class Baralho {
     }
     
     /**
-     * Exibe uma carta do monte de decarte. A carta não é retirada do monte.
-     * Se não existe carta na posição especificada, uma mensagem é exibida informando o ocorrido.
-     * @param pos Posição da carta a ser exibida.
+     * Exibe uma carta do monte de decarte. A carta nÃ£o Ã© retirada do monte.
+     * Se nÃ£o existe carta na posiÃ§Ã£o especificada, uma mensagem Ã© exibida informando o ocorrido.
+     * @param pos PosiÃ§Ã£o da carta a ser exibida.
      */
     public void verCartaDoDescarte(int pos){
         
@@ -273,7 +278,7 @@ public class Baralho {
             JOptionPane.showMessageDialog(null, descarte.get(pos-1));
         }catch (IndexOutOfBoundsException iobe){
             
-            JOptionPane.showMessageDialog(null, "Não existe carta na posição indicada no monte de descarte.");
+            JOptionPane.showMessageDialog(null, "NÃ£o existe carta na posiÃ§Ã£o indicada no monte de descarte.");
         }
     }
     

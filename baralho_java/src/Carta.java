@@ -1,13 +1,13 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
 /**
  *
  * @author Nasser Rahman 101151428
- * @author Giovanni Pereira Garcia  111150199
+ * @author Ricardo Burg Machado
+ * @author Rafael Fernando dos Santos
+ * @author Giovanni Garcia
+ * @author Mateus Dal Forno
+ * @author Bruno Segui
+ * @author Isabel Boaventura
+ * @author Rafhael Cunha
  */
 public class Carta {
 
