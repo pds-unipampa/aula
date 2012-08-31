@@ -1,0 +1,16 @@
+
+	CardSeller
+------------------------------------------------
+        Copyright (C) 2012 Adriano Quilião
+        Copyright (C) 2012 Douglas Almeida
+        Copyright (C) 2012 Thiago Lima
+
+Repositório: https://github.com/DouglasAlmeida/Cards
+
+﻿####### PROJETO CARDSLIBRARY #######
+O projeto apresenta uma biblioteca de cartas que objetiva facilitar o desenvolvimento de jogos.
+A biblioteca implementa um baralho de 52 cartas convencional e apresenta os seguintes métodos abaixo:
+Embaralhar, cortar em duas partes em uma posição determinada, passar a carta de cima do baralho para baixo e vice-versa,
+retornar a carta de cima do baralho ou a de baixo removendo-a.
+Esta também possui um monte de descarte que tem as opções de inserção de cartas no monte de descarte e 
+a visualização de uma carta de uma determinada posição. 
