@@ -1,0 +1,17 @@
+Esse projeto visa realizar um biblioteca para a manipulação de um baralho
+tradicional de 52 cartas, onde implementam-se as seguintes funcionalidades:
+
+Embaralhar - ao instanciar o baralho, o mesmo é preenchido de forma embaralhada
+
+Cortar o baralho - realiza o corte do baralho em duas partes e inverte ambas
+    para juntarem-se novamente
+
+Compra cartas - possibilita distribuir cartas tanto a partir da parte de 
+    cima quanto da parte de baixo do baralho
+
+Passar cartas - possibilita passar uma carta da parte de cima para a parte de
+    baixo do baralho e vice-versa
+
+Descarte - possibilita colocar cartas em um monte de descarte e manipulá-las
+
+Teste do git

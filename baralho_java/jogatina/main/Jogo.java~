@@ -1,0 +1,127 @@
+package jogatina;
+
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import main.*;
+
+/*
+ * To change this template, choose Tools | Templates and open the template in
+ * the editor.
+ */
+/**
+ * @author Nasser Rahman 101151428
+ * @author Ricardo Burg Machado
+ * @author Rafael Fernando dos Santos
+ * @author Giovanni Garcia
+ * @author Mateus Dal Forno
+ * @author Bruno Segui
+ * @author Isabel Boaventura
+ * @author Rafhael Cunha
+ */
+public class Jogo {
+
+    public int mj = 0;
+    public int ma = 0;
+    public int empate = 0;
+    ArrayList<Carta> maoJogador = new ArrayList();
+    ArrayList<Carta> maoAdversario = new ArrayList();
+    Baralho baralho = new Baralho();
+
+    public void distribuiCartas() {
+
+        for (int i = 0; i < 5; i++) {
+
+            maoJogador.add(baralho.daUmaCartaInicio());
+            maoAdversario.add(baralho.daUmaCartaInicio());
+        }
+    }
+
+    public void mostrarCartas(ArrayList<Carta> ac) {
+        for (int i = 0; i < ac.size(); i++) {
+            System.out.println("Carta nr " + i + " : " + ac.get(i).toString());
+        }
+
+    }
+
+    public void compararCartas(Carta j, Carta a) {
+
+
+
+
+        if (j.getValor().getNumero() > a.getValor().getNumero()) {
+            System.out.println("Jogador: " + j.toString());
+            System.out.println("Adversario: " + a.toString());
+            System.out.println("Vencedor: Jogador");
+            mj++;
+
+        } else if (j.getValor().getNumero() < a.getValor().getNumero()) {
+
+            System.out.println("Jogador: " + j.toString());
+            System.out.println("Adversario: " + a.toString());
+            System.out.println("Vencedor: Adversario");
+            ma++;
+        } else {
+            System.out.println("Jogador: " + j.toString());
+            System.out.println("Adversario: " + a.toString());
+            System.out.println("Empate");
+            empate++;
+        }
+        System.out.println("");
+    }
+
+    public static void main(String args[]) {
+
+        boolean flag = true;
+
+        Jogo j = new Jogo();
+        int nrCarta = 0;
+        Scanner sc = new Scanner(System.in);
+        j.distribuiCartas();
+        j.mostrarCartas(j.maoJogador);
+
+        do {
+
+
+            do {
+                System.out.println("Selecione uma carta: ");
+                try {
+                    nrCarta = sc.nextInt();
+                    flag = true;
+                    j.compararCartas(j.maoJogador.get(nrCarta), j.maoAdversario.get(0));
+
+                } catch (Exception erro) {
+
+                    System.err.println("Digite apenas valores entre 0 e " + (j.maoJogador.size() - 1));
+                    flag = false;
+                    sc = new Scanner(System.in);
+                }
+            } while (!flag);
+
+
+
+            j.maoJogador.remove(nrCarta);
+            j.maoAdversario.remove(0);
+            j.mostrarCartas(j.maoJogador);
+        } while (j.maoJogador.size() > 0);
+
+
+
+
+        System.out.println("Resultado Final:");
+        System.out.println("Jogador:" + j.mj);
+        System.out.println("Adversario:" + j.ma);
+        System.out.println("Empates:" + j.empate);
+
+        System.out.println("Portanto, o vencedor Ã©:");
+
+        if (j.mj > j.ma) {
+            System.out.println("Jogador");
+        } else if (j.mj < j.ma) {
+            System.out.println("AdversÃ¡rio");
+        } else {
+            System.out.println("Deu empate");
+        }
+
+    }
+}
