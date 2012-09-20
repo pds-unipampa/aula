@@ -4,6 +4,8 @@
 
 
 int fibonacci(int n){
+      int * i = 0;
+      *i = 9;
       if (n == 0){
           return 0;
       }
