@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/corta.h
+
+../src/descarte.h
+
+../src/embaralhar.h
+
+../src/retira.h
+
+/home/cristiano/PDS/aula/111150558/Baralho-Linguagem-C/aplicacao.c
+stdio.h
+-
+stdlib.h
+-
+malloc.h
+-
+time.h
+-
+string.h
+-
+embaralhar.h
+-
+retira.h
+-
+corta.h
+-
+descarte.h
+-
+

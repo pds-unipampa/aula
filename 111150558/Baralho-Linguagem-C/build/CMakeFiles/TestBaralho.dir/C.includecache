@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/corta.h
+
+../src/descarte.h
+
+../src/embaralhar.h
+
+../src/retira.h
+
+/home/cristiano/PDS/aula/111150558/Baralho-Linguagem-C/Testes/minunit.c
+stdio.h
+-
+stdlib.h
+-
+minunit.h
+/home/cristiano/PDS/aula/111150558/Baralho-Linguagem-C/Testes/minunit.h
+embaralhar.h
+/home/cristiano/PDS/aula/111150558/Baralho-Linguagem-C/Testes/embaralhar.h
+retira.h
+/home/cristiano/PDS/aula/111150558/Baralho-Linguagem-C/Testes/retira.h
+descarte.h
+/home/cristiano/PDS/aula/111150558/Baralho-Linguagem-C/Testes/descarte.h
+corta.h
+/home/cristiano/PDS/aula/111150558/Baralho-Linguagem-C/Testes/corta.h
+
+/home/cristiano/PDS/aula/111150558/Baralho-Linguagem-C/Testes/minunit.h
+

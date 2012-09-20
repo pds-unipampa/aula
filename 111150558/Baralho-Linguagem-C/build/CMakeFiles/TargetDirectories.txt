@@ -1,0 +1,3 @@
+/home/cristiano/PDS/aula/111150558/Baralho-Linguagem-C/build/CMakeFiles/Baralho.dir
+/home/cristiano/PDS/aula/111150558/Baralho-Linguagem-C/build/CMakeFiles/TestBaralho.dir
+/home/cristiano/PDS/aula/111150558/Baralho-Linguagem-C/build/CMakeFiles/aplicacao.dir
