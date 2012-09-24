@@ -132,17 +132,17 @@ TestBaralho/fast:
 .PHONY : TestBaralho/fast
 
 #=============================================================================
-# Target rules for targets named aplicacao
+# Target rules for targets named hi-lo
 
 # Build rule for target.
-aplicacao: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 aplicacao
-.PHONY : aplicacao
+hi-lo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hi-lo
+.PHONY : hi-lo
 
 # fast build rule for target.
-aplicacao/fast:
-	$(MAKE) -f CMakeFiles/aplicacao.dir/build.make CMakeFiles/aplicacao.dir/build
-.PHONY : aplicacao/fast
+hi-lo/fast:
+	$(MAKE) -f CMakeFiles/hi-lo.dir/build.make CMakeFiles/hi-lo.dir/build
+.PHONY : hi-lo/fast
 
 # target to build an object file
 Testes/minunit.o:
@@ -161,17 +161,17 @@ Testes/minunit.s:
 
 # target to build an object file
 aplicacao.o:
-	$(MAKE) -f CMakeFiles/aplicacao.dir/build.make CMakeFiles/aplicacao.dir/aplicacao.o
+	$(MAKE) -f CMakeFiles/hi-lo.dir/build.make CMakeFiles/hi-lo.dir/aplicacao.o
 .PHONY : aplicacao.o
 
 # target to preprocess a source file
 aplicacao.i:
-	$(MAKE) -f CMakeFiles/aplicacao.dir/build.make CMakeFiles/aplicacao.dir/aplicacao.i
+	$(MAKE) -f CMakeFiles/hi-lo.dir/build.make CMakeFiles/hi-lo.dir/aplicacao.i
 .PHONY : aplicacao.i
 
 # target to generate assembly for a file
 aplicacao.s:
-	$(MAKE) -f CMakeFiles/aplicacao.dir/build.make CMakeFiles/aplicacao.dir/aplicacao.s
+	$(MAKE) -f CMakeFiles/hi-lo.dir/build.make CMakeFiles/hi-lo.dir/aplicacao.s
 .PHONY : aplicacao.s
 
 # target to build an object file
@@ -242,8 +242,8 @@ help:
 	@echo "... depend"
 	@echo "... Baralho"
 	@echo "... TestBaralho"
-	@echo "... aplicacao"
 	@echo "... edit_cache"
+	@echo "... hi-lo"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... Testes/minunit.o"

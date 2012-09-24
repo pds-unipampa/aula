@@ -8,12 +8,17 @@
 #include <corta.h>
 #include <descarte.h>
 
+/*! Estrutura para os nomes dos jogadores
+ * contendo uma string para o nome e um inteiro para o número do jogador
+ */
 typedef struct _nomes{
 	char* nome;
 	int jogador;
 }Nome;
 
-
+/*! Função que cria os nomes dos jogadores
+ * @param qtd - Quantidade de jogadores.
+ */
 Nome* crianomes(int qtd){
 	int i;
 	Nome *nomes;
@@ -43,7 +48,7 @@ void imprime(Baralho B){
 }
 
 int main(){
-    int i, aux;
+    int i, aux, war;
     int numjogador;
     char escolha[10];
     char fim[4] = "fim";
@@ -52,10 +57,22 @@ int main(){
     Nome *nomes; 
     lista C;
     char *strings[4] = { "Copas", "Espadas", "Ouros", "Paus" };
-	printf("\nInsira a quantidade de jogadores:");
+	printf("\nInsira a quantidade de jogadores (de 2 a 8):");
 	scanf("%d",&numjogador);
 	getchar();
-	nomes=crianomes(32);
+	if (numjogador > 8){
+		printf("Por favor respeite o tamanho máximo de jogadores que é 8, o restante joga com o vencedor :)");
+		printf("\nInsira a quantidade de jogadores (de 2 a 8):");
+		scanf("%d",&numjogador);
+		getchar();
+	}
+	if (numjogador< 2 ){
+		printf("Chame mais alguém para jogar com você, este jogo é para no minimo 2 pessoas!");
+		printf("\nInsira a quantidade de jogadores (de 2 a 8):");
+		scanf("%d",&numjogador);
+		getchar();
+	}
+	nomes=crianomes(9);
 	aux =0;
 	aux = numjogador;
     for (i=0;i<numjogador;i++){
@@ -70,10 +87,9 @@ int main(){
 		for (i=0;i<numjogador;i++){
 				printf("\nCarta: %d de %s\n", B->carta, strings[B->naipe]);
 				if ( (strcmp(nomes[i].nome,"fim")) != 0){
-					printf("\n\n %s. maior ou menor?\n", nomes[i].nome);
+					printf("\n\n %s, a proxima carta sera maior ou menor?\n", nomes[i].nome);
 					gets(escolha);     
 					C = retiraInicio(&B);
-					D = cria();
 					D = insereCartaDescarte(D, C.carta, C.naipe);
 					if  ((strcmp(escolha,"maior")) == 0) { 
 						if ((D->carta)<=(B->carta)){
@@ -84,7 +100,7 @@ int main(){
 						printf("\nCarta: %d de %s\n", B->carta, strings[B->naipe]);
 						printf("\nFim de jogo para %s\n",nomes[i].nome);
 						nomes[i].nome="fim";
-						aux = aux--;
+						aux--;
 					}
 					}
 					if ((strcmp(escolha,"menor")) == 0){
@@ -96,19 +112,29 @@ int main(){
 						printf("\nCarta: %d de %s\n", B->carta, strings[B->naipe]);
 						printf("\nFim de jogo para %s\n",nomes[i].nome);
 						nomes[i].nome="fim";
-						aux = aux--;
+						aux--;
 					}
 					}
+					
 				}
 				}
 		}		
 		
     printf("\n\nFIM DE JOGO!\n");
+	war = 0;
     for (i=0;i<numjogador;i++){
 		if ( (strcmp(nomes[i].nome,"fim")) != 0){
 				printf("\n\n O(a) vencedor(a) foi o(a) %s. \n", nomes[i].nome);
 			}
+		else{
+			war++;
+		}
+		
     }
+    //! variavel war, tem este nome porque não há vencedores na guerra.
+    if (war == numjogador){
+		printf("\n\n Não houve ganhadores.\n");
+	}
 
 
     liberaBaralho(&B);

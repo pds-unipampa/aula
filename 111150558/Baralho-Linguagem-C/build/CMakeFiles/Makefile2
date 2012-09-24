@@ -120,38 +120,38 @@ clean: CMakeFiles/TestBaralho.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/aplicacao.dir
+# Target rules for target CMakeFiles/hi-lo.dir
 
 # All Build rule for target.
-CMakeFiles/aplicacao.dir/all: CMakeFiles/Baralho.dir/all
-	$(MAKE) -f CMakeFiles/aplicacao.dir/build.make CMakeFiles/aplicacao.dir/depend
-	$(MAKE) -f CMakeFiles/aplicacao.dir/build.make CMakeFiles/aplicacao.dir/build
+CMakeFiles/hi-lo.dir/all: CMakeFiles/Baralho.dir/all
+	$(MAKE) -f CMakeFiles/hi-lo.dir/build.make CMakeFiles/hi-lo.dir/depend
+	$(MAKE) -f CMakeFiles/hi-lo.dir/build.make CMakeFiles/hi-lo.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristiano/PDS/aula/111150558/Baralho-Linguagem-C/build/CMakeFiles  6
-	@echo "Built target aplicacao"
-.PHONY : CMakeFiles/aplicacao.dir/all
+	@echo "Built target hi-lo"
+.PHONY : CMakeFiles/hi-lo.dir/all
 
 # Include target in all.
-all: CMakeFiles/aplicacao.dir/all
+all: CMakeFiles/hi-lo.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/aplicacao.dir/rule: cmake_check_build_system
+CMakeFiles/hi-lo.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristiano/PDS/aula/111150558/Baralho-Linguagem-C/build/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/aplicacao.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hi-lo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristiano/PDS/aula/111150558/Baralho-Linguagem-C/build/CMakeFiles 0
-.PHONY : CMakeFiles/aplicacao.dir/rule
+.PHONY : CMakeFiles/hi-lo.dir/rule
 
 # Convenience name for target.
-aplicacao: CMakeFiles/aplicacao.dir/rule
-.PHONY : aplicacao
+hi-lo: CMakeFiles/hi-lo.dir/rule
+.PHONY : hi-lo
 
 # clean rule for target.
-CMakeFiles/aplicacao.dir/clean:
-	$(MAKE) -f CMakeFiles/aplicacao.dir/build.make CMakeFiles/aplicacao.dir/clean
-.PHONY : CMakeFiles/aplicacao.dir/clean
+CMakeFiles/hi-lo.dir/clean:
+	$(MAKE) -f CMakeFiles/hi-lo.dir/build.make CMakeFiles/hi-lo.dir/clean
+.PHONY : CMakeFiles/hi-lo.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/aplicacao.dir/clean
+clean: CMakeFiles/hi-lo.dir/clean
 .PHONY : clean
 
 #=============================================================================
