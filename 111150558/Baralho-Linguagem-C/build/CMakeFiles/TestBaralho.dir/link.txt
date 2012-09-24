@@ -1,1 +1,0 @@
-/usr/bin/gcc  -g    CMakeFiles/TestBaralho.dir/Testes/minunit.o  -o TestBaralho -rdynamic libBaralho.so -Wl,-rpath,/home/cristiano/PDS/aula/111150558/Baralho-Linguagem-C/build 

@@ -1,1 +1,0 @@
-/usr/bin/gcc  -fPIC -g   -shared -Wl,-soname,libBaralho.so -o libBaralho.so CMakeFiles/Baralho.dir/src/embaralhar.o CMakeFiles/Baralho.dir/src/corta.o CMakeFiles/Baralho.dir/src/descarte.o CMakeFiles/Baralho.dir/src/retira.o 
