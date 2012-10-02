@@ -1,0 +1,3 @@
+/home/evair/Documentos/moscao/build/CMakeFiles/Baralho.dir
+/home/evair/Documentos/moscao/build/CMakeFiles/TestBaralho.dir
+/home/evair/Documentos/moscao/build/CMakeFiles/moscao.dir
