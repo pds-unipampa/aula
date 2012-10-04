@@ -1,0 +1,14 @@
+[1mdiff --git a/101150941/readme b/101150941/readme[m
+[1mindex a784753..53d1398 100644[m
+[1m--- a/101150941/readme[m
+[1m+++ b/101150941/readme[m
+[36m@@ -1,4 +1,5 @@[m
+[31m-README MODIFICADO[m
+[31m-[m
+ BIBLITECA MOVIDA PARA OUTRO ENDERECO[m
+[31m-https://github.com/Helisonrt/Baralho[m
+\ No newline at end of file[m
+[32m+[m[32mhttps://github.com/Helisonrt/Baralho[m
+[32m+[m
+[32m+[m[32mAPLICATIVO SE ENCONTRA NO ENDEREÇO:[m
+[32m+[m[32mhttps://github.com/Helisonrt/JogoPDSBaralho[m
