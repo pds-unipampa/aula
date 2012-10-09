@@ -1,6 +1,7 @@
 project(Baralho)
 
-include_directories( src Testes) 
+include_directories( src Testes)
+include(CPack)
 			
 
 SET (Baralho_SRC src/embaralhar.c src/corta.c src/descarte.c src/retira.c)
@@ -13,28 +14,28 @@ target_link_libraries(moscao Baralho)
 
 
 install (
-	 TARGETS Soma #Nome do alvo que vai ser instalado (aqui é a biblioteca
-	 #Onde os componentes de tempo de execução devem ser instaldos? (aqui indica uma pasta atual)
-         RUNTIME DESTINATION .
-         #Pode ser usado para instalar apenas parte (componentes) do software
-	 COMPONENT somaLibs
-	 #Onde as bibliotecas devem ser instaladas?
-         LIBRARY DESTINATION . 
-         #Onde os demais arquivos devem ser instalados?
-         ARCHIVE DESTINATION .
+	 TARGETS Baralho 
+
+         RUNTIME DESTINATION bin
+
+	 COMPONENT bib
+	
+         LIBRARY DESTINATION lib 
+
+         ARCHIVE DESTINATION bin
 )
 
 
-install (#Nome do alvo que vai ser instalado (aqui é a applicação)
-	 TARGETS somador 
-	 #Onde os componentes de tempo de execução devem ser instaldos? (aqui indica uma pasta atual)
-         RUNTIME DESTINATION . 
-         #Pode ser usado para instalar apenas parte (componentes) do software
-	 COMPONENT somaApps
-	 #Onde as bibliotecas devem ser instaladas?
-         LIBRARY DESTINATION . 
-         #Onde os demais arquivos devem ser instalados?
-         ARCHIVE DESTINATION .
+install (
+	 TARGETS moscao
+	 
+         RUNTIME DESTINATION bin
+      
+	 COMPONENT aplicacao
+
+         LIBRARY DESTINATION lib
+        
+         ARCHIVE DESTINATION bin
 )
 
 
