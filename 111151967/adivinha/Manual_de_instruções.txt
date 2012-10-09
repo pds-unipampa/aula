@@ -1,0 +1,18 @@
+					Manual de instruções.
+
+--> Objetivo
+
+Juntar o máximo de cartas possíveis.
+
+--> Como jogar
+
+O jogo inicia solicitando aos jogadores seus respectivos nomes.
+Cada jogador tem como meta tentar advinhar se a carta que está no topo do baralho é par ou impar. Uma vez de cada um.
+
+--> Pontuação
+
+Se o um jogador fizer uma escolha certa, a carta vai para sua mão e todo o descarte também. Se errar, a carta vai para o descarte.
+
+--> Vencedor
+
+O vencedor consiste no jogador que tiver mais cartas em sua mão no final do jogo.

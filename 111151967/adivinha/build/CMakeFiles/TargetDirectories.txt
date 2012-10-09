@@ -1,0 +1,3 @@
+/home/ezequiel/Área de Trabalho/repositorio/aula/111151967/adivinha/Baralho-Linguagem-C/build/CMakeFiles/Baralho.dir
+/home/ezequiel/Área de Trabalho/repositorio/aula/111151967/adivinha/Baralho-Linguagem-C/build/CMakeFiles/TestBaralho.dir
+/home/ezequiel/Área de Trabalho/repositorio/aula/111151967/adivinha/Baralho-Linguagem-C/build/CMakeFiles/aplicacao.dir
