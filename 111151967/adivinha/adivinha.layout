@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="adivinha.c" open="1" top="1" tabpos="1">
+		<Cursor position="204" topLine="0" />
+	</File>
+	<File name="corta.c" open="1" top="0" tabpos="2">
+		<Cursor position="720" topLine="27" />
+	</File>
+	<File name="corta.h" open="1" top="0" tabpos="8">
+		<Cursor position="0" topLine="17" />
+	</File>
+	<File name="descarte.c" open="1" top="0" tabpos="3">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="descarte.h" open="1" top="0" tabpos="7">
+		<Cursor position="0" topLine="22" />
+	</File>
+	<File name="embaralhar.c" open="1" top="0" tabpos="4">
+		<Cursor position="201" topLine="39" />
+	</File>
+	<File name="embaralhar.h" open="1" top="0" tabpos="9">
+		<Cursor position="1056" topLine="52" />
+	</File>
+	<File name="retira.c" open="1" top="0" tabpos="5">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="retira.h" open="1" top="0" tabpos="6">
+		<Cursor position="0" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

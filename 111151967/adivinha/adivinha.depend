@@ -1,0 +1,58 @@
+# depslib dependency file v1.0
+1349573842 source:/home/ezequiel/Documentos/codigos/adivinha/adivinha.c
+	<stdlib.h>
+	<stdio.h>
+	"embaralhar.h"
+	"descarte.h"
+	"retira.h"
+	"corta.h"
+	<string.h>
+	<time.h>
+
+1349213935 /home/ezequiel/Documentos/codigos/adivinha/embaralhar.h
+
+1348095956 /home/ezequiel/Documentos/codigos/adivinha/descarte.h
+
+1348095956 /home/ezequiel/Documentos/codigos/adivinha/retira.h
+
+1348095956 /home/ezequiel/Documentos/codigos/adivinha/corta.h
+
+1348104039 source:/home/ezequiel/Documentos/codigos/adivinha/corta.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	<time.h>
+	<string.h>
+	"embaralhar.h"
+	"retira.h"
+	"corta.h"
+
+1348095956 source:/home/ezequiel/Documentos/codigos/adivinha/descarte.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	<time.h>
+	<string.h>
+	"embaralhar.h"
+	"retira.h"
+	"corta.h"
+	"descarte.h"
+
+1348522920 source:/home/ezequiel/Documentos/codigos/adivinha/embaralhar.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	<time.h>
+	<string.h>
+	"embaralhar.h"
+
+1348095956 source:/home/ezequiel/Documentos/codigos/adivinha/retira.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	<time.h>
+	<string.h>
+	"embaralhar.h"
+	"retira.h"
+	"corta.h"
+
