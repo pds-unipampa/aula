@@ -1,0 +1,10 @@
+Relatório do grupo-
+
+
+Dia 19/05/2012  -  Foi realizada uma reunião do grupo onde foi decidido utilizar a biblioteca que estava na pasta 111150558\Baralho
+
+Dia 19/05/2012  -  Na mesma reunião foi implementada a aplicação (jogo) onde houve a participação de todos do grupo.
+
+Dia 22/05/2012  -  Foi criada a pasta Baralho-Linguagem-C no repositório com a biblioteca e a aplicação. 
+
+A partir de agora os integrantes do grupo irão realizar as alterações que acharem necessárias diretamente no github devidamente commitadas.
