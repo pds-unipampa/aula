@@ -1,7 +1,7 @@
 project(Baralho)
 
 include_directories( src Testes) 
-			
+include(CPack)			
 
 SET (Baralho_SRC src/embaralhar.c src/corta.c src/descarte.c src/retira.c)
 
@@ -10,30 +10,30 @@ add_executable(hi-lo  aplicacao.c)
 
 target_link_libraries(hi-lo Baralho)
 
-#install (
-#	 TARGETS Soma #Nome do alvo que vai ser instalado (aqui é a biblioteca
+install (
+	 TARGETS hi-lo  #Nome do alvo que vai ser instalado (aqui é a biblioteca
 	 #Onde os componentes de tempo de execução devem ser instaldos? (aqui indica uma pasta atual)
- #        RUNTIME DESTINATION .
+         RUNTIME DESTINATION bin
          #Pode ser usado para instalar apenas parte (componentes) do software
-#	 COMPONENT somaLibs
+	 COMPONENT aplicacao
 	 #Onde as bibliotecas devem ser instaladas?
- #        LIBRARY DESTINATION . 
+        LIBRARY DESTINATION lib 
          #Onde os demais arquivos devem ser instalados?
-  #       ARCHIVE DESTINATION .
-#)
+         ARCHIVE DESTINATION bin
+)
 
 
-#install (#Nome do alvo que vai ser instalado (aqui é a applicação)
-#	 TARGETS somador 
+install (#Nome do alvo que vai ser instalado (aqui é a applicação)
+	 TARGETS  Baralho
 	 #Onde os componentes de tempo de execução devem ser instaldos? (aqui indica uma pasta atual)
- #        RUNTIME DESTINATION . 
+         RUNTIME DESTINATION bin 
          #Pode ser usado para instalar apenas parte (componentes) do software
-#	 COMPONENT somaApps
+	 COMPONENT biblioteca
 	 #Onde as bibliotecas devem ser instaladas?
- #        LIBRARY DESTINATION . 
+         LIBRARY DESTINATION lib 
          #Onde os demais arquivos devem ser instalados?
-  #       ARCHIVE DESTINATION .
-#)
+         ARCHIVE DESTINATION bin
+)
 
 
 ENABLE_TESTING()
