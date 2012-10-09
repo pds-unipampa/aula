@@ -5,3 +5,10 @@ Deck Handling Library (Biblioteca de Manipulação de Baralho)
     Para iniciar a manipulação do baralho, é necessário criar um. Utilizando a função de criar um baralho com todas as cartas, já é possível criar o monte de compras. A criação de um baralho vazio pode ser considerado o monte de descarte.
     
     Pode-se remover uma carta do monte de compras, e inserí-la diretamente no monte de descarte ou em outro baralho considerada a "mão" do jogador.
+
+COMPILAR
+Para compilar esse jogo utiliza-se o comando abaixo:
+$ gcc deckHandling.c mainDeckHandling.c -o DeckHandling
+
+Para iniciar o jogo, utiliza-se o comando abaixo:
+$ ./DeckHandling

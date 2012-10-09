@@ -1,0 +1,1 @@
+Para utilizar o construtor XML, basta navegar através do dos até a pasta aonde se encontra o ApiCartasTestandoXML e logo acessar a mesma dar um comando chamando "ant". Lembro que tem que ter o mesmo instalado na maquina já e setado nas variaveis de ambiente (windows). Após isso, vai ser criado uma pasta chamada JOGO aonde se encontra os .jar que rodam o mesmo.

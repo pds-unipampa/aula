@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Modelo de projeto build.xml ferramenta Apache ANT (trabalho Baralho)-->
+<project name="projeto_baralho" default="gerajar_jogatina" basedir=".">
+
+<description>usando ant para projetar.</description>
+	<property name="src.baralho.dir" value="src"/>
+	<property name="src.jogatina.dir" value="jogatina"/>
+
+	<property name="build.baralho.dir" value="JOGO/baralho"/>	
+	<property name="build.jogatina.dir" value="JOGO/jogatina"/>
+
+	<property name="lib.baralho.dir" value="JOGO/lib"/>
+
+	<property name="jogo.dir" value="JOGO"/>
+
+
+	<path id="classpath"> <!-- inclui a biblioteca criada no classpath -->
+        	<fileset dir="${lib.baralho.dir}" includes="**/*.jar"/>
+	</path>
+
+	<!-- Alvo inicial -->
+	<target name="init">
+		<mkdir dir="${jogo.dir}"/>
+		<mkdir dir="${build.baralho.dir}"/>
+		<mkdir dir="${build.jogatina.dir}"/>
+		<mkdir dir="${lib.baralho.dir}"/>
+
+	</target>
+
+
+<!-- Compila as classes do BARALHO e salva os arquivos .class na pasta definida na variavel build.baralho.dir-->
+	<target name="compile_baralho" depends="init" description="Compila os fontes">
+		<javac srcdir="${src.baralho.dir}" destdir="${build.baralho.dir}">
+			<classpath>
+				<pathelement location="${build.baralho.dir}"/>
+			</classpath>
+		</javac>
+	</target>
+
+
+<!-- Compila as classes do JOGO e salva os arquivos .class na pasta definida na variavel build.jogatina.dir-->
+	<target name="compile_jogatina" depends="gerajar_baralho" description="Compila os fontes">
+		<javac srcdir="${src.jogatina.dir}" destdir="${build.jogatina.dir}" classpathref="classpath">
+			<!--"-->
+			<classpath>
+				<pathelement location="${build.jogatina.dir}"/>
+			</classpath>
+		</javac>
+	</target>
+
+
+<!-- Gera o arquivo executavel .jar-->
+	<target name="gerajar_baralho" depends="compile_baralho" description="Gera arquivo Jar do Baralho">
+		<jar destfile="${lib.baralho.dir}/baralho.jar">
+			<fileset dir="${build.baralho.dir}"/>
+		</jar>
+
+	</target>
+
+
+
+
+<!-- Gera o arquivo executavel .jar-->
+	<target name="gerajar_jogatina" depends="compile_jogatina" description="Gera arquivo Jar do Jogatina">
+		<jar destfile="${lib.baralho.dir}/jogatina.jar">
+			<manifest>
+				<attribute name= "Class-Path" value="baralho.jar"/>
+				<attribute name="Main-class" value="main.Jogo"/>
+			</manifest>
+			<fileset dir="${build.jogatina.dir}"/>
+		</jar>
+	</target>
+
+
+
+</project>

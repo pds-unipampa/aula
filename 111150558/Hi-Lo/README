@@ -1,0 +1,60 @@
+			Baralho
+        _________________________________________
+        Copyright (C) 2012 Cristiano Ribeiro
+        Copyright (C) 2012 Evair Severo
+        Copyright (C) 2012 Fabiano Cassol
+        Copyright (C) 2012 Ezequiel Butzke
+        Copyright (C) 2012 Lucas Abreu
+        Copyright (C) 2012 Adriano Gomes
+        Copyright (C) 2012 Thayson Karlinski
+        Copyright (C) 2012 Brandon Marques
+        Copyright (C) 2012 Holisson Soares
+        Copyright (C) 2012 Bruno Fontoura
+        Copyright (C) 2012 Jader Saldanha
+
+
+
+1) Introdução...............................................13
+2) Informações para contato.................................36
+3) Retratação...............................................82
+
+
+1 Introdução__________________________________________________
+
+Baralho é um projeto acadêmico de biblioteca de baralho para
+ser utilizado em jogos de cartas.
+Implementado em C, com as funções devidamente documentadas 
+no arquivo refman.rtf na pasta rtf. Contém também uma 
+aplicação que está devidamente documentado e com manual.
+
+
+
+
+
+2 Informações para contato____________________________________
+
+E-mail: mega-biblioteca-pds@googlegroups.com
+
+
+
+3 Retratação__________________________________________________
+
+This library is free software; you can redistribute it and/or
+	
+modify it under the terms of the GNU Lesser General Public
+
+License as published by the Free Software Foundation; either
+	
+version 2.1 of the License, or (at your option) any later version.
+	
+	
+This library is distributed in the hope that it will be useful,
+
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+	
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+	
+Lesser General Public License for more details.
+	
+You should have received a copy of the GNU Lesser General Public
+License along with this library.  If not, see <http://www.gnu.org/licenses/>.

@@ -1,0 +1,19 @@
+					Manual de instruções.
+
+--> Objetivo
+
+Prever o valor da próxima carta.
+
+--> Como jogar
+
+O jogo inicia solicitando quantos jogadores vão participar do jogo em seguida é solicitado seus respectivos nomes.
+Cada jogador tem como meta tentar advinhar se a carta que está no topo do baralho é maior, menor  ou de igual valor da carta que está
+ no descarte.
+
+--> Pontuação
+
+Se o um jogador fizer uma escolha certa, ele permanece na mesa. Se errar, é o fim do jogo.
+
+--> Vencedor
+
+O vencedor consiste no jogador que estiver por ultimo na mesa e prever de forma satisfatória qual o valor da próxima  carta.
