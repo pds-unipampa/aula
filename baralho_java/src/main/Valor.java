@@ -1,4 +1,4 @@
-package main;
+package baralho;
 
 
 /**
@@ -12,8 +12,9 @@ package main;
  * @author Isabel Boaventura
  * @author Rafhael Cunha
  */
+
 /**
- * Classe que contém as cartas com seus respectivos valores
+ * Classe que contÃ©m as cartas com seus respectivos nomes e valores
  * @author Greicy
  */
 public enum Valor {
