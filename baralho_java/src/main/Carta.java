@@ -1,4 +1,4 @@
-package main;
+package baralho;
 
 /**
  *
@@ -10,6 +10,11 @@ package main;
  * @author Bruno Segui
  * @author Isabel Boaventura
  * @author Rafhael Cunha
+ */
+
+/**
+ * Classe Carta com os construtores valor e naipe para inicializar 
+ * @author Greicy
  */
 public class Carta {
 
@@ -24,7 +29,8 @@ public class Carta {
 
     
     /**
-     * 
+     * construtor inicializa naipe com n como argumento
+     * construtor inicializa valor com v como argumento
      * @param v
      * @param n
      */
@@ -39,7 +45,7 @@ public class Carta {
     }
     
     /**
-     * 
+     * metodo que recupera o naipe
      * @return
      */
     public Naipe getNaipe() {
@@ -47,7 +53,7 @@ public class Carta {
     }
 
     /**
-     * 
+     * metodo que configura o naipe
      * @param n
      */
     public void setNaipe(Naipe n) {
@@ -55,7 +61,7 @@ public class Carta {
     }
 
     /**
-     * 
+     * metodo que recupera o valor 
      * @return
      */
     public Valor getValor() {
@@ -63,7 +69,7 @@ public class Carta {
     }
 
     /**
-     * 
+     * metodo que configura o valor
      * @param valor
      */
     public void setValor(Valor valor) {
